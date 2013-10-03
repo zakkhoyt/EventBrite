@@ -1,11 +1,10 @@
 //
 //  VWWRESTConfig.h
-//  VWWModel
+//  EventBrite
 //
-//  Created by Aleksandar Tosovic on 4/24/12.
-//  Copyright (c) 2012 Webshots. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
 #import <Foundation/Foundation.h>
 
 

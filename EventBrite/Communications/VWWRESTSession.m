@@ -1,9 +1,10 @@
 //
 //  VWWRESTSession.m
+//  EventBrite
 //
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-//
-
 #import "VWWRESTSession.h"
 #import "VWWRESTEngine.h"
 #import "VWWUtility.h"

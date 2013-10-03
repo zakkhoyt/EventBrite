@@ -1,17 +1,17 @@
 //
 // VWWHTTPForm.m
-//  Smile
+//  EventBrite
 //
-//  Created by Zakk Hoyt. Webshots 2013.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
-#import "SMHTTPForm.h"
-#import "SMUtility.h"
+#import "VWWHTTPForm.h"
+#import "VWWUtility.h"
 
 
 const NSInteger kItemsPerPageMax = 999999;
 
-@implementationVWWHTTPForm
+@implementation VWWHTTPForm
 
 - (NSDictionary *)httpParametersDictionary {
     NSAssert(NO, @"Subclasses must implement method");
@@ -42,7 +42,7 @@ const NSInteger kItemsPerPageMax = 999999;
         dictionary[key] = [NSString stringWithFormat:@"%d", [value intValue]];
     }
     else if ([value isKindOfClass:[NSDate class]]) {
-        dictionary[key] = [[SMUtility sharedUtility] stringFromDate:value
+        dictionary[key] = [[VWWUtility sharedUtility] stringFromDate:value
                                                             usingFormat:@"yyyy'-'MM'-'dd HH':'mm':'ss UTC"];
 
     }

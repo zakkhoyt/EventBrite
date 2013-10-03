@@ -1,18 +1,17 @@
 //
-// VWWHTTPForm.h
-//  Smile
+//  VWWHTTPForm.h
+//  EventBrite
 //
-//  Created by Zakk Hoyt
-//  Copyright (c) 2013. Webshots.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
 #import <Foundation/Foundation.h>
 
-#import "SMHTTPFormProtocol.h"
+#import "VWWHTTPFormProtocol.h"
 
 extern const NSInteger kItemsPerPageMax;
 
-@interfaceVWWHTTPForm : NSObject <SMHTTPFormProtocol>
+@interface VWWHTTPForm : NSObject <VWWHTTPFormProtocol>
 - (NSDictionary *)httpParametersDictionary;
 - (NSString *)JSONString;
 - (void)setObject:(id)value forKey:(NSString *)key inDictionary:(NSMutableDictionary *)dictionary;

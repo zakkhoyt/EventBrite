@@ -1,21 +1,15 @@
 //
 //  VWWRESTParser.h
-//  VWW
+//  EventBrite
 //
-//  Created by Zakk Hoyt on 2/12/13.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-//
-
 #import <Foundation/Foundation.h>
-@classVWWPagination;
-@classVWWSource;
-@classVWWAsset;
-@classVWWEvent;
-@classVWWUser;
-@classVWWInvite;
-@classVWWNote;
+@class VWWEvent;
+@class VWWPagination;
 
 @interface VWWRESTParser : NSObject
-//+(BOOL)parseJSON:(id)json asset:(SMAsset**)asset users:(NSArray**)users;
-//+(BOOL)parseJSON:(id)json assets:(NSArray**)assets page:(SMPagination**)page;
++(BOOL)parseJSON:(id)json event:(VWWEvent**)event;
++(BOOL)parseJSON:(id)json events:(NSArray**)events page:(VWWPagination**)page;
 @end

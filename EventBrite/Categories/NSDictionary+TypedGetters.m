@@ -1,6 +1,13 @@
 
-#import "NSDictionary+TypedGetters.h"
 
+//  EventBrite
+//
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
+//
+
+
+#import "NSDictionary+TypedGetters.h"
 #import "VWWUtility.h"
 
 @implementation NSDictionary (TypedGetters)

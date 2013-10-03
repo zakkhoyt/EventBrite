@@ -1,13 +1,13 @@
 //
-//  SMHTTPFormProtocol.h
-//  SmileModel
+// VWWHTTPFormProtocol.h
+//  EventBrite
 //
-//  Copyright (c) 2012 Webshots. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
 #import <Foundation/Foundation.h>
 
-@protocol SMHTTPFormProtocol <NSObject>
+@protocol VWWHTTPFormProtocol <NSObject>
 @optional
 - (NSDictionary *)httpParametersDictionary;
 - (NSString *)JSONString;

@@ -2,10 +2,9 @@
 //  VWWBlocks.h
 //  EventBrite
 //
-//  Created by Zakk Hoyt on 10/3/13.
-//  Copyright (c) 2013 Zakk Hoyt. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
 #ifndef EventBrite_VWWBlocks_h
 #define EventBrite_VWWBlocks_h
 

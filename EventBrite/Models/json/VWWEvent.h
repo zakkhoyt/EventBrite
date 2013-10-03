@@ -1,18 +1,17 @@
 //
 // VWWEvent.h
-//  Heartstream
+//  EventBrite
 //
-//  Created by Zakk Hoyt on 7/3/13.
-//  Copyright (c) 2013 Zakk Hoyt. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
-#import "SMModel.h"
+#import "VWWModel.h"
 #import <CoreLocation/CoreLocation.h>
 
 typedef void (^SMEventDistanceCompletion)(CLLocationDistance distance);
 
 
-@interfaceVWWEvent :VWWModel
+@interface VWWEvent : VWWModel
 @property (copy, nonatomic) NSString *uuid;
 @property (copy, nonatomic) NSString *ownerUUID;
 @property (copy, nonatomic) NSDate *startAt;
@@ -30,8 +29,8 @@ typedef void (^SMEventDistanceCompletion)(CLLocationDistance distance);
 -(id)initWithDictionary:(NSDictionary *)dictionary;
 @end
 
-@interfaceVWWEvent (Utilities)
--(NSInteger)distanceFromLocationInFeet:(CLLocation*)location;
--(void)distanceFromEventWithCompletion:(SMEventDistanceCompletion)completion;
--(BOOL)belongsToActiveUser;
+@interface VWWEvent (Utilities)
+//-(NSInteger)distanceFromLocationInFeet:(CLLocation*)location;
+//-(void)distanceFromEventWithCompletion:(SMEventDistanceCompletion)completion;
+//-(BOOL)belongsToActiveUser;
 @end

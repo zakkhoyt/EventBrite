@@ -1,13 +1,13 @@
 //
 // VWWModel.m
-//  Smile
+//  EventBrite
 //
-//  Created by Thomas Goyne on 7/30/12.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
+#import "VWWModel.h"
 
-#import "SMModel.h"
-
-@implementationVWWModel
+@implementation VWWModel
 
 - (NSString *)descriptionForKeys:(NSString *)first, ... {
     NSMutableString *desc = [NSMutableString stringWithFormat:@"<%@:%p %@:%@",

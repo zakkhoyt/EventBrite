@@ -16,4 +16,5 @@
 #import "VWWDefines.h"
 #import "VWWBlocks.h"
 #import "VWWTypes.h"
+#import "VWWUserDefaults.h"
 #endif

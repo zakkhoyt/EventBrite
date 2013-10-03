@@ -1,13 +1,13 @@
 //
 // VWWUser.h
-//  SmileModel
+//  EventBrite
 //
-//  Created by Aleksandar Tosovic on 4/23/12.
-//  Copyright (c) 2012 Webshots. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
+#import "VWWModel.h"
 
-
-@interfaceVWWUser :VWWModel
+@interface VWWUser : VWWModel
 
 //@property (copy, nonatomic) NSString *uuid;
 //@property (copy, nonatomic) NSString *firstName;
@@ -33,7 +33,7 @@
 
 @end
 
-@interfaceVWWUser (Utilities)
+@interface VWWUser (Utilities)
 
 //-(BOOL)isUser:(SMUser*)user;
 //-(BOOL)isEmployee;

@@ -54,13 +54,18 @@
 		C6B4817917FE2B620047EB66 /* VWWRESTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4817517FE2B620047EB66 /* VWWRESTSession.m */; };
 		C6B4817C17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4817B17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m */; };
 		C6B4818017FE2C540047EB66 /* VWWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4817F17FE2C540047EB66 /* VWWUtility.m */; };
-		C6B4819017FE2EF30047EB66 /* VWWCreateAssetForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4818817FE2EF30047EB66 /* VWWCreateAssetForm.m */; };
-		C6B4819117FE2EF30047EB66 /* VWWGetAssetsForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4818A17FE2EF30047EB66 /* VWWGetAssetsForm.m */; };
 		C6B4819217FE2EF30047EB66 /* VWWHTTPForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4818C17FE2EF30047EB66 /* VWWHTTPForm.m */; };
-		C6B4819317FE2EF30047EB66 /* VWWUpdateAssetForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4818F17FE2EF30047EB66 /* VWWUpdateAssetForm.m */; };
 		C6B4819917FE2F200047EB66 /* VWWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819617FE2F200047EB66 /* VWWEvent.m */; };
 		C6B4819A17FE2F200047EB66 /* VWWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819817FE2F200047EB66 /* VWWUser.m */; };
 		C6B4819D17FE2F580047EB66 /* VWWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819C17FE2F580047EB66 /* VWWModel.m */; };
+		C6B481A017FE31520047EB66 /* VWWPagination.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819F17FE31520047EB66 /* VWWPagination.m */; };
+		C6B481A317FE31DD0047EB66 /* VWWPageForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A217FE31DD0047EB66 /* VWWPageForm.m */; };
+		C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A517FE324A0047EB66 /* VWWUserDefaults.m */; };
+		C6B481AB17FE34330047EB66 /* VWWCreateEventForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A817FE34330047EB66 /* VWWCreateEventForm.m */; };
+		C6B481AC17FE34330047EB66 /* VWWGetEventsForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481AA17FE34330047EB66 /* VWWGetEventsForm.m */; };
+		C6B481B217FE35CD0047EB66 /* VWWCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481AF17FE35CD0047EB66 /* VWWCredential.m */; };
+		C6B481B317FE35CD0047EB66 /* VWWKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B117FE35CD0047EB66 /* VWWKeychain.m */; };
+		C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B617FE36370047EB66 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,21 +167,31 @@
 		C6B4818317FE2DA00047EB66 /* VWWBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWBlocks.h; path = Include/VWWBlocks.h; sourceTree = "<group>"; };
 		C6B4818417FE2DAF0047EB66 /* VWWTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VWWTypes.h; path = Include/VWWTypes.h; sourceTree = "<group>"; };
 		C6B4818517FE2DBD0047EB66 /* VWWDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VWWDefines.h; path = Include/VWWDefines.h; sourceTree = "<group>"; };
-		C6B4818717FE2EF30047EB66 /* VWWCreateAssetForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCreateAssetForm.h; sourceTree = "<group>"; };
-		C6B4818817FE2EF30047EB66 /* VWWCreateAssetForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCreateAssetForm.m; sourceTree = "<group>"; };
-		C6B4818917FE2EF30047EB66 /* VWWGetAssetsForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWGetAssetsForm.h; sourceTree = "<group>"; };
-		C6B4818A17FE2EF30047EB66 /* VWWGetAssetsForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWGetAssetsForm.m; sourceTree = "<group>"; };
 		C6B4818B17FE2EF30047EB66 /* VWWHTTPForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWHTTPForm.h; sourceTree = "<group>"; };
 		C6B4818C17FE2EF30047EB66 /* VWWHTTPForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWHTTPForm.m; sourceTree = "<group>"; };
 		C6B4818D17FE2EF30047EB66 /* VWWHTTPFormProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWHTTPFormProtocol.h; sourceTree = "<group>"; };
-		C6B4818E17FE2EF30047EB66 /* VWWUpdateAssetForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUpdateAssetForm.h; sourceTree = "<group>"; };
-		C6B4818F17FE2EF30047EB66 /* VWWUpdateAssetForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWUpdateAssetForm.m; sourceTree = "<group>"; };
 		C6B4819517FE2F200047EB66 /* VWWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEvent.h; sourceTree = "<group>"; };
 		C6B4819617FE2F200047EB66 /* VWWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEvent.m; sourceTree = "<group>"; };
 		C6B4819717FE2F200047EB66 /* VWWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUser.h; sourceTree = "<group>"; };
 		C6B4819817FE2F200047EB66 /* VWWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWUser.m; sourceTree = "<group>"; };
 		C6B4819B17FE2F580047EB66 /* VWWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWModel.h; sourceTree = "<group>"; };
 		C6B4819C17FE2F580047EB66 /* VWWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWModel.m; sourceTree = "<group>"; };
+		C6B4819E17FE31520047EB66 /* VWWPagination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWPagination.h; sourceTree = "<group>"; };
+		C6B4819F17FE31520047EB66 /* VWWPagination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWPagination.m; sourceTree = "<group>"; };
+		C6B481A117FE31DD0047EB66 /* VWWPageForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWPageForm.h; sourceTree = "<group>"; };
+		C6B481A217FE31DD0047EB66 /* VWWPageForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWPageForm.m; sourceTree = "<group>"; };
+		C6B481A417FE324A0047EB66 /* VWWUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUserDefaults.h; sourceTree = "<group>"; };
+		C6B481A517FE324A0047EB66 /* VWWUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWUserDefaults.m; sourceTree = "<group>"; };
+		C6B481A717FE342A0047EB66 /* VWWCreateEventForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCreateEventForm.h; sourceTree = "<group>"; };
+		C6B481A817FE34330047EB66 /* VWWCreateEventForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCreateEventForm.m; sourceTree = "<group>"; };
+		C6B481A917FE34330047EB66 /* VWWGetEventsForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWGetEventsForm.h; sourceTree = "<group>"; };
+		C6B481AA17FE34330047EB66 /* VWWGetEventsForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWGetEventsForm.m; sourceTree = "<group>"; };
+		C6B481AE17FE35CD0047EB66 /* VWWCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCredential.h; sourceTree = "<group>"; };
+		C6B481AF17FE35CD0047EB66 /* VWWCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCredential.m; sourceTree = "<group>"; };
+		C6B481B017FE35CD0047EB66 /* VWWKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWKeychain.h; sourceTree = "<group>"; };
+		C6B481B117FE35CD0047EB66 /* VWWKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWKeychain.m; sourceTree = "<group>"; };
+		C6B481B517FE36370047EB66 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		C6B481B617FE36370047EB66 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +347,7 @@
 		C6B4811117FE27D10047EB66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C6B481AD17FE35CD0047EB66 /* authentication */,
 				C6B4819417FE2F200047EB66 /* json */,
 				C6B4818617FE2EF30047EB66 /* forms */,
 			);
@@ -348,6 +364,7 @@
 		C6B4811317FE27D10047EB66 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				C6B481B417FE36370047EB66 /* KeychainitemWrapper */,
 				C6B4811F17FE2A0B0047EB66 /* MBProgressHUD */,
 				C6B4812017FE2A0B0047EB66 /* MKNetworkKit */,
 				C6B4813617FE2A0B0047EB66 /* SDWebImage */,
@@ -470,6 +487,8 @@
 		C6B4817D17FE2C540047EB66 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C6B481A417FE324A0047EB66 /* VWWUserDefaults.h */,
+				C6B481A517FE324A0047EB66 /* VWWUserDefaults.m */,
 				C6B4817E17FE2C540047EB66 /* VWWUtility.h */,
 				C6B4817F17FE2C540047EB66 /* VWWUtility.m */,
 			);
@@ -479,15 +498,15 @@
 		C6B4818617FE2EF30047EB66 /* forms */ = {
 			isa = PBXGroup;
 			children = (
-				C6B4818717FE2EF30047EB66 /* VWWCreateAssetForm.h */,
-				C6B4818817FE2EF30047EB66 /* VWWCreateAssetForm.m */,
-				C6B4818917FE2EF30047EB66 /* VWWGetAssetsForm.h */,
-				C6B4818A17FE2EF30047EB66 /* VWWGetAssetsForm.m */,
+				C6B481A717FE342A0047EB66 /* VWWCreateEventForm.h */,
+				C6B481A817FE34330047EB66 /* VWWCreateEventForm.m */,
+				C6B481A917FE34330047EB66 /* VWWGetEventsForm.h */,
+				C6B481AA17FE34330047EB66 /* VWWGetEventsForm.m */,
+				C6B481A117FE31DD0047EB66 /* VWWPageForm.h */,
+				C6B481A217FE31DD0047EB66 /* VWWPageForm.m */,
 				C6B4818B17FE2EF30047EB66 /* VWWHTTPForm.h */,
 				C6B4818C17FE2EF30047EB66 /* VWWHTTPForm.m */,
 				C6B4818D17FE2EF30047EB66 /* VWWHTTPFormProtocol.h */,
-				C6B4818E17FE2EF30047EB66 /* VWWUpdateAssetForm.h */,
-				C6B4818F17FE2EF30047EB66 /* VWWUpdateAssetForm.m */,
 			);
 			path = forms;
 			sourceTree = "<group>";
@@ -495,6 +514,8 @@
 		C6B4819417FE2F200047EB66 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				C6B4819E17FE31520047EB66 /* VWWPagination.h */,
+				C6B4819F17FE31520047EB66 /* VWWPagination.m */,
 				C6B4819B17FE2F580047EB66 /* VWWModel.h */,
 				C6B4819C17FE2F580047EB66 /* VWWModel.m */,
 				C6B4819517FE2F200047EB66 /* VWWEvent.h */,
@@ -503,6 +524,26 @@
 				C6B4819817FE2F200047EB66 /* VWWUser.m */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		C6B481AD17FE35CD0047EB66 /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C6B481AE17FE35CD0047EB66 /* VWWCredential.h */,
+				C6B481AF17FE35CD0047EB66 /* VWWCredential.m */,
+				C6B481B017FE35CD0047EB66 /* VWWKeychain.h */,
+				C6B481B117FE35CD0047EB66 /* VWWKeychain.m */,
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
+		C6B481B417FE36370047EB66 /* KeychainitemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C6B481B517FE36370047EB66 /* KeychainItemWrapper.h */,
+				C6B481B617FE36370047EB66 /* KeychainItemWrapper.m */,
+			);
+			path = KeychainitemWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,17 +654,19 @@
 				C6B4815617FE2A0B0047EB66 /* NSDictionary+RequestEncoding.m in Sources */,
 				C6B4817817FE2B620047EB66 /* VWWRESTParser.m in Sources */,
 				C6B480D917FE26D20047EB66 /* main.m in Sources */,
+				C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */,
 				C6B4819217FE2EF30047EB66 /* VWWHTTPForm.m in Sources */,
 				C6B4815417FE2A0B0047EB66 /* NSData+MKBase64.m in Sources */,
 				C6B4816317FE2A0B0047EB66 /* SDWebImageDownloaderOperation.m in Sources */,
+				C6B481B317FE35CD0047EB66 /* VWWKeychain.m in Sources */,
 				C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */,
 				C6B4815F17FE2A0B0047EB66 /* SDImageCache.m in Sources */,
 				C6B4819D17FE2F580047EB66 /* VWWModel.m in Sources */,
 				C6B4819917FE2F200047EB66 /* VWWEvent.m in Sources */,
 				C6B4815B17FE2A0B0047EB66 /* MKNetworkOperation.m in Sources */,
 				C6B4815817FE2A0B0047EB66 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
-				C6B4819117FE2EF30047EB66 /* VWWGetAssetsForm.m in Sources */,
 				C6B4816017FE2A0B0047EB66 /* SDWebImageCompat.m in Sources */,
+				C6B481AB17FE34330047EB66 /* VWWCreateEventForm.m in Sources */,
 				C6B4815E17FE2A0B0047EB66 /* NSData+GIF.m in Sources */,
 				C6B4811B17FE288B0047EB66 /* EventBrite.xcdatamodeld in Sources */,
 				C6B4816417FE2A0B0047EB66 /* SDWebImageManager.m in Sources */,
@@ -632,18 +675,21 @@
 				C6B4815D17FE2A0B0047EB66 /* MKAnnotationView+WebCache.m in Sources */,
 				C6B4816717FE2A0B0047EB66 /* UIImage+GIF.m in Sources */,
 				C6B4815717FE2A0B0047EB66 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				C6B481A017FE31520047EB66 /* VWWPagination.m in Sources */,
 				C6B4817917FE2B620047EB66 /* VWWRESTSession.m in Sources */,
 				C6B4816517FE2A0B0047EB66 /* SDWebImagePrefetcher.m in Sources */,
 				C6B4816617FE2A0B0047EB66 /* UIButton+WebCache.m in Sources */,
+				C6B481AC17FE34330047EB66 /* VWWGetEventsForm.m in Sources */,
 				C6B4816A17FE2A0B0047EB66 /* UIImageView+WebCache.m in Sources */,
 				C6B4816817FE2A0B0047EB66 /* UIImage+MultiFormat.m in Sources */,
+				C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */,
 				C6B4816117FE2A0B0047EB66 /* SDWebImageDecoder.m in Sources */,
+				C6B481B217FE35CD0047EB66 /* VWWCredential.m in Sources */,
 				C6B4816D17FE2ADC0047EB66 /* UIColor+VWW.m in Sources */,
 				C6B4817C17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m in Sources */,
-				C6B4819017FE2EF30047EB66 /* VWWCreateAssetForm.m in Sources */,
 				C6B4817617FE2B620047EB66 /* VWWRESTConfig.m in Sources */,
+				C6B481A317FE31DD0047EB66 /* VWWPageForm.m in Sources */,
 				C6B4815517FE2A0B0047EB66 /* NSDate+RFC1123.m in Sources */,
-				C6B4819317FE2EF30047EB66 /* VWWUpdateAssetForm.m in Sources */,
 				C6B4817717FE2B620047EB66 /* VWWRESTEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,10 @@
  //
 // VWWUser.m
-//  SmileModel
+//  EventBrite
 //
-//  Created by Aleksandar Tosovic on 4/23/12.
-//  Copyright (c) 2012 Webshots. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
 #import "VWWUser.h"
 #import "NSDictionary+TypedGetters.h"
 //#import "SMSource.h"
@@ -235,7 +234,7 @@
 //                                              [SMMixPanel peopleNumberOfBuddies:-1];
 //                                              completionBlock();
 //                                          } errorBlock:^(NSError *error, NSString *additionalInfo) {
-//                                              DDLogError(@"ERROR: Could not delete buddy from Smile. Buddy UUID: %@", self.uuid);
+//                                              NSLog(@"ERROR: Could not delete buddy from Smile. Buddy UUID: %@", self.uuid);
 //                                              errorBlock(error);
 //                                          }];
 //}

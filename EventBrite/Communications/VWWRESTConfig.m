@@ -1,12 +1,12 @@
 //
 //  VWWRESTConfig.m
-//  VWWModel
+//  EventBrite
 //
-//  Created by Zakk hoyt
-//  Copyright (c) 2013 Webshots. All rights reserved.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-
 #import "VWWRESTConfig.h"
+
 //#import "SMAppDelegate.h"
 
 static VWWRESTConfig *instance;
@@ -63,8 +63,8 @@ static VWWRESTConfig *instance;
 }
 
 -(void)readUserDefaults{
-    _serviceSecure = [SMUserDefaults VWWServerSecure];
-    _server =  [SMUserDefaults VWWServer];
+//    _serviceSecure = [VWWUserDefaults VWWServerSecure];
+//    _server =  [VWWUserDefaults VWWServer];
     _server = [_server stringByReplacingOccurrencesOfString:@"http://" withString:@""];
     _server = [_server stringByReplacingOccurrencesOfString:@"HTTP://" withString:@""];
     _server = [_server stringByReplacingOccurrencesOfString:@"ftp://" withString:@""];

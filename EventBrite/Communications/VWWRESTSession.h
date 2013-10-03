@@ -1,11 +1,10 @@
 //
 //  VWWRESTSession.h
-//  VWW
+//  EventBrite
 //
-//  Created by Zakk Hoyt on 2/20/13.
+//  Created by Zakk Hoyt (VaporWareWolf)
+//  Copyright (c) 2013. Zakk Hoyt
 //
-//
-
 #import <Foundation/Foundation.h>
 
 
