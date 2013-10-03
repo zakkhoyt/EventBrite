@@ -1,5 +1,5 @@
 //
-//  VWWViewController.h
+//  VWWWelcomViewController.h
 //  EventBrite
 //
 //  Created by Zakk Hoyt on 10/3/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VWWViewController : UIViewController
+@interface VWWWelcomViewController : UIViewController
 
 @end

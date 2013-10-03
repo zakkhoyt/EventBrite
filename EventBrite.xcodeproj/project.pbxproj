@@ -15,7 +15,6 @@
 		C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B480DC17FE26D20047EB66 /* VWWAppDelegate.m */; };
 		C6B480E017FE26D20047EB66 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B480DE17FE26D20047EB66 /* Main_iPhone.storyboard */; };
 		C6B480E317FE26D20047EB66 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B480E117FE26D20047EB66 /* Main_iPad.storyboard */; };
-		C6B480E617FE26D20047EB66 /* VWWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B480E517FE26D20047EB66 /* VWWViewController.m */; };
 		C6B480E817FE26D20047EB66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B480E717FE26D20047EB66 /* Images.xcassets */; };
 		C6B480EF17FE26D20047EB66 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480EE17FE26D20047EB66 /* XCTest.framework */; };
 		C6B480F017FE26D20047EB66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CC17FE26D20047EB66 /* Foundation.framework */; };
@@ -25,6 +24,7 @@
 		C6B4810B17FE273D0047EB66 /* README in Resources */ = {isa = PBXBuildFile; fileRef = C6B4810A17FE273D0047EB66 /* README */; };
 		C6B4811717FE28350047EB66 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B4811617FE28350047EB66 /* CoreData.framework */; };
 		C6B4811B17FE288B0047EB66 /* EventBrite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6B4811917FE288B0047EB66 /* EventBrite.xcdatamodeld */; };
+		C6B4811E17FE29500047EB66 /* VWWWelcomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4811D17FE29500047EB66 /* VWWWelcomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,6 @@
 		C6B480DC17FE26D20047EB66 /* VWWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWWAppDelegate.m; sourceTree = "<group>"; };
 		C6B480DF17FE26D20047EB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C6B480E217FE26D20047EB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C6B480E417FE26D20047EB66 /* VWWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VWWViewController.h; path = ../VWWViewController.h; sourceTree = "<group>"; };
-		C6B480E517FE26D20047EB66 /* VWWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VWWViewController.m; path = ../VWWViewController.m; sourceTree = "<group>"; };
 		C6B480E717FE26D20047EB66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6B480ED17FE26D20047EB66 /* EventBriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B480EE17FE26D20047EB66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,6 +59,8 @@
 		C6B4810A17FE273D0047EB66 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		C6B4811617FE28350047EB66 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C6B4811A17FE288B0047EB66 /* EventBrite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventBrite.xcdatamodel; sourceTree = "<group>"; };
+		C6B4811C17FE29500047EB66 /* VWWWelcomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWWelcomViewController.h; sourceTree = "<group>"; };
+		C6B4811D17FE29500047EB66 /* VWWWelcomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWWelcomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +187,8 @@
 		C6B4810F17FE27D10047EB66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6B480E417FE26D20047EB66 /* VWWViewController.h */,
-				C6B480E517FE26D20047EB66 /* VWWViewController.m */,
+				C6B4811C17FE29500047EB66 /* VWWWelcomViewController.h */,
+				C6B4811D17FE29500047EB66 /* VWWWelcomViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B480E617FE26D20047EB66 /* VWWViewController.m in Sources */,
+				C6B4811E17FE29500047EB66 /* VWWWelcomViewController.m in Sources */,
 				C6B480D917FE26D20047EB66 /* main.m in Sources */,
 				C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */,
 				C6B4811B17FE288B0047EB66 /* EventBrite.xcdatamodeld in Sources */,
