@@ -16,6 +16,11 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 @interface VWWSearchViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *keywordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *cityTextField;
+@property (weak, nonatomic) IBOutlet UITextField *addressTextField;
+@property (weak, nonatomic) IBOutlet UITextField *regionTextField;
+@property (weak, nonatomic) IBOutlet UITextField *postalCodeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *countryTextField;
+
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (nonatomic, strong) VWWRESTSession *session;
 @end
@@ -74,12 +79,15 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
     VWWGetEventSearchForm *form = [[VWWGetEventSearchForm alloc]init];
     form.city = self.cityTextField.text;
     form.keywords = self.keywordTextField.text;
-    
+    form.address = self.addressTextField.text;
+    form.region = self.regionTextField.text;
+    form.postalCode = self.postalCodeTextField.text;
+    form.country = self.countryTextField.text;
     
     [self.session.searches removeAllObjects];
     
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form
-                                           completionBlock:^(VWWEvents *events) {
+                                           completionBlock:^(VWWEvents *events, VWWError *error) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                                
                                                
@@ -101,5 +109,11 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 }
 
 
+
+#pragma   mark UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
 
 @end

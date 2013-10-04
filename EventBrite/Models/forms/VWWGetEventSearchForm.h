@@ -11,4 +11,8 @@
 @interface VWWGetEventSearchForm : VWWHTTPForm
 @property (copy, nonatomic) NSString *keywords;
 @property (copy, nonatomic) NSString *city;
+@property (copy, nonatomic) NSString *address;
+@property (copy, nonatomic) NSString *region;
+@property (copy, nonatomic) NSString *postalCode;
+@property (copy, nonatomic) NSString *country;
 @end

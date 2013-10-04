@@ -1455,7 +1455,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite {
     errorBlock(self, error);
   
 #if TARGET_OS_IPHONE
-  DLog(@"State: %ld", [[UIApplication sharedApplication] applicationState]);
+  DLog(@"State: %ld", (long)[[UIApplication sharedApplication] applicationState]);
   if([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground)
     [self showLocalNotification];
 #endif

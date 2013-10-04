@@ -10,11 +10,13 @@
 
 @implementation VWWGetEventSearchForm
 - (NSDictionary *)httpParametersDictionary {
-//    NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-  
     NSMutableDictionary *dictionary = [super paramDictionary];
-    [self setObject:self.keywords forKey:@"keywords" inDictionary:dictionary];
-    [self setObject:self.city forKey:@"city" inDictionary:dictionary];
+    [self setObject:self.keywords forKey:kVWWKeywordsKey inDictionary:dictionary];
+    [self setObject:self.city forKey:kVWWCityKey inDictionary:dictionary];
+    [self setObject:self.address forKey:kVWWAddressKey inDictionary:dictionary];
+    [self setObject:self.region forKey:kVWWRegionKey inDictionary:dictionary];
+    [self setObject:self.postalCode forKey:kVWWPostalCodeKey inDictionary:dictionary];
+    [self setObject:self.country forKey:kVWWCountryKey inDictionary:dictionary];
     return dictionary;
 }
 

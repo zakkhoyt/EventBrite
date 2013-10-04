@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F37" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+    <entity name="Results" syncable="YES">
+        <attribute name="dictionary_count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="search" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Search" inverseName="results" inverseEntity="Search" syncable="YES"/>
+    </entity>
+    <entity name="Search" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywords" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="results" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Results" inverseName="search" inverseEntity="Results" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Results" positionX="189" positionY="216" width="128" height="73"/>
+        <element name="Search" positionX="-243" positionY="372" width="128" height="148"/>
+    </elements>
 </model>

@@ -24,6 +24,7 @@
 		C6537E3B17FE8DCA00A56A7C /* VWWEventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */; };
 		C6537E3F17FE8E8900A56A7C /* VWWResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */; };
 		C6537E4217FE905900A56A7C /* VWWEventsSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E4117FE905900A56A7C /* VWWEventsSearch.m */; };
+		C694FE0A17FF47CA003E729E /* VWWCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = C694FE0917FF47CA003E729E /* VWWCoreData.m */; };
 		C6B480CD17FE26D20047EB66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CC17FE26D20047EB66 /* Foundation.framework */; };
 		C6B480CF17FE26D20047EB66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CE17FE26D20047EB66 /* CoreGraphics.framework */; };
 		C6B480D117FE26D20047EB66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480D017FE26D20047EB66 /* UIKit.framework */; };
@@ -129,6 +130,8 @@
 		C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWResultsTableViewCell.m; sourceTree = "<group>"; };
 		C6537E4017FE905900A56A7C /* VWWEventsSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventsSearch.h; sourceTree = "<group>"; };
 		C6537E4117FE905900A56A7C /* VWWEventsSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventsSearch.m; sourceTree = "<group>"; };
+		C694FE0817FF47CA003E729E /* VWWCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCoreData.h; sourceTree = "<group>"; };
+		C694FE0917FF47CA003E729E /* VWWCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCoreData.m; sourceTree = "<group>"; };
 		C6B480C917FE26D20047EB66 /* EventBrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B480CC17FE26D20047EB66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6B480CE17FE26D20047EB66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -573,6 +576,8 @@
 			isa = PBXGroup;
 			children = (
 				C6B4811917FE288B0047EB66 /* EventBrite.xcdatamodeld */,
+				C694FE0817FF47CA003E729E /* VWWCoreData.h */,
+				C694FE0917FF47CA003E729E /* VWWCoreData.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -839,6 +844,7 @@
 				C6B4815C17FE2A0B0047EB66 /* Reachability.m in Sources */,
 				C6537E1217FE75D900A56A7C /* VWWEventsSummary.m in Sources */,
 				C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */,
+				C694FE0A17FF47CA003E729E /* VWWCoreData.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
 				C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */,
 				C6F470B117FF3AEE00630BCB /* VWWCredential.m in Sources */,
