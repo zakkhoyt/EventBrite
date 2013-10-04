@@ -11,7 +11,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self setSettings];
+    [self setupAppearance];
     return YES;
 }
 							
@@ -40,6 +41,56 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark Custom methods
+-(void)setSettings{
+    
+    NSString* server = [VWWUserDefaults server];
+    if(server == nil || [server isEqualToString:@""] || [server isKindOfClass:[NSNull class]]){
+        [VWWUserDefaults setServer:VWW_EVENT_BRITE_SERVER];
+    }
+    
+    NSLog(@"Debug mode enabled: %@", [VWWUserDefaults debugMode] ? @"YES": @"NO");
+}
+
+
+-(void)setupAppearance{
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    
+//    //    [[UIToolbar appearance] setTintColor:[UIColor whiteColor]];
+//    //    [[UIToolbar appearance] setBackgroundImage:[UIImage imageNamed:@"back_top_bar.png"] forToolbarPosition:UIToolbarPositionBottom barMetrics:UIBarMetricsDefault];
+//    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")){
+//        [[UIToolbar appearance] setBarTintColor:[UIColor smileBrownColor]];
+//    }
+//    
+//    NSDictionary *d = @{UITextAttributeTextColor : [UIColor whiteColor]};
+//    [[UINavigationBar appearance] setTitleTextAttributes:d];
+//    
+//    //    [[UINavigationBar appearance] setBackgroundColor:[UIColor smileBrownColor]];
+//    //    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"back_top_bar.png"] forBarMetrics:UIBarMetricsDefault];
+//    
+//    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")){
+//        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+//        [[UINavigationBar appearance] setBarTintColor:[UIColor smileBrownColor]];
+//    }
+//    else{
+//        [[UINavigationBar appearance] setTintColor:[UIColor smileBrownColor ]];
+//    }
+//    
+//    
+//    [[UITabBar appearance] setTintColor:[UIColor smileBrownColor]];
+//    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"bottom_nav_bg.png"]];
+//    //    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -20)];
+//    //    [[UITabBar appearance] setSelectedImageTintColor:[UIColor smileGreenColor]];
+//    //        if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")){
+//    //        [[UITabBar appearance] setBarTintColor:[UIColor smileBrownColor]];
+//    //    }
+//    
+//    
+//    //    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor smileGreenColor]} forState:UIControlStateSelected];
 }
 
 @end

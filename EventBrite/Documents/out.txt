@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<events>
+	<summary>
+		<filters>
+			<city>San Francisco</city>
+		</filters>
+		<first_event>7774785593</first_event>
+		<last_event>7855376643</last_event>
+		<num_showing>10</num_showing>
+		<total_items>2148</total_items>
+	</summary>
+	<event>
+		<id>7774785593</id>
+		<background_color>2996CC</background_color>
+		<box_background_color>FFFFFF</box_background_color>
+		<box_border_color>94BE00</box_border_color>
+		<box_header_background_color>94BE00</box_header_background_color>
+		<box_header_text_color>FFFFFF</box_header_text_color>
+		<box_text_color>0077B3</box_text_color>
+		<capacity>0</capacity>
+		<category>seminars,conferences</category>
+		<created>2013-08-06 13:09:11</created>
+		<description>&lt;TABLE STYLE=&quot;background: none repeat scroll 0% 0% darkblue; width: 599px; height: 134px;&quot; BORDER=&quot;25&quot; CELLPADDING=&quot;0&quot;&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD STYLE=&quot;text-align: center;&quot;&gt;&lt;SPAN STYLE=&quot;font-size: x-large; color: white;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-size: xx-large;&quot;&gt;&lt;EM&gt; Six Sigma Green Belt Certification&lt;/EM&gt;&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TBODY&gt;
+&lt;/TABLE&gt;
+&lt;TABLE STYLE=&quot;width: 599px; height: 92px;&quot; BORDER=&quot;1&quot;&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD&gt;&lt;A HREF=&quot;http://www.simplilearn.com/list?course_type_id=1&amp;country_id=34&amp;city_id=2560&amp;course_id=120&amp;mode=s&quot;&gt;&lt;IMG SRC=&quot;https://evbdn.eventbrite.com/s3-s3/eventlogos/52084516/7.jpeg&quot; ALT=&quot;&quot; WIDTH=&quot;152&quot; HEIGHT=&quot;87&quot; BORDER=&quot;1&quot;&gt;&lt;/A&gt;&lt;/TD&gt;
+&lt;TD&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: large; color: darkblue;&quot;&gt;&lt;STRONG&gt;Grow exponentially in your Career Be a Six Sigma certified professional&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;/TD&gt;
+&lt;TD&gt;&lt;A HREF=&quot;http://www.simplilearn.com/list?course_type_id=1&amp;country_id=34&amp;city_id=2560&amp;course_id=120&amp;mode=s&quot;&gt;&lt;IMG SRC=&quot;https://evbdn.eventbrite.com/s3-s3/eventlogos/52084516/5500861224-1.jpg&quot; ALT=&quot;&quot; WIDTH=&quot;152&quot; HEIGHT=&quot;82&quot; BORDER=&quot;1&quot;&gt;&lt;/A&gt;&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TBODY&gt;
+&lt;/TABLE&gt;
+&lt;TABLE STYLE=&quot;width: 598px; height: 229px;&quot; BORDER=&quot;1&quot;&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+&lt;P&gt;&lt;A HREF=&quot;http://www.simplilearn.com/list?course_type_id=1&amp;country_id=34&amp;city_id=2169&amp;course_id=120&amp;mode=s&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;SPAN CLASS=&quot;vevent&quot;&gt;&lt;SPAN CLASS=&quot;description&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;color: darkblue; text-decoration: underline;&quot;&gt;Certified Six Sigma Green Belt (CSSGB): 3-Day Certification Training:&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/A&gt;&lt;BR&gt;&lt;SPAN CLASS=&quot;vevent&quot;&gt;&lt;SPAN CLASS=&quot;description&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;This training intends to provide participants the skill to improve business significantly using Six Sigma methodology. On Completion of this training program delegates will be able to develop a capability for using simulation tools, process mapping, and decision point analysis and process management to minimize the risks associated with the improvements in a services company&#39;s situation. Delegates will also be able to understand how to use software tools like Minitab®.&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;/TD&gt;
+&lt;TD&gt;&lt;A HREF=&quot;http://www.simplilearn.com/list?course_type_id=1&amp;country_id=34&amp;city_id=2560&amp;course_id=120&amp;mode=s&quot;&gt;&lt;IMG SRC=&quot;https://evbdn.eventbrite.com/s3-s3/eventlogos/52084516/dmaicroadmap-1.png&quot; ALT=&quot;&quot; WIDTH=&quot;278&quot; HEIGHT=&quot;219&quot; BORDER=&quot;1&quot;&gt;&lt;/A&gt;&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TBODY&gt;
+&lt;/TABLE&gt;
+&lt;TABLE STYLE=&quot;width: 598px; height: 306px;&quot; BORDER=&quot;1&quot;&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD&gt;
+&lt;H1 STYLE=&quot;text-align: left;&quot;&gt;&lt;A HREF=&quot;http://www.simplilearn.com/list?course_type_id=1&amp;country_id=34&amp;city_id=2169&amp;course_id=120&amp;mode=s&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-family: arial,helvetica,sans-serif; text-decoration: underline;&quot;&gt;&lt;SPAN STYLE=&quot;color: darkblue; text-decoration: underline;&quot;&gt;What is included?&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/A&gt;&lt;/H1&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: darkblue;&quot;&gt;&lt;STRONG&gt;Blended model: &lt;/STRONG&gt;&lt;/SPAN&gt;&lt;BR&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;Six Sigma Green Belt certification classroom training &lt;/SPAN&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;is a blend of 3-day intensive classroom&lt;/SPAN&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt; training from experienced trainers in your city &lt;/SPAN&gt;&lt;/SPAN&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;and 90 days online training. &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: darkblue;&quot;&gt;&lt;STRONG&gt;Six Sigma Green Belt Certification : &lt;/STRONG&gt;&lt;/SPAN&gt;&lt;BR&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;Get Six Sigma Green Belt certified at no additional cost.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: darkblue;&quot;&gt;&lt;STRONG&gt;Practice Tests: &lt;/STRONG&gt;&lt;/SPAN&gt;&lt;BR&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;Get 3 Six Sigma Green Belt simulation tests for extensive practice and to get a feel of the actual exam.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: darkblue;&quot;&gt;&lt;STRONG&gt;45 Hours PMI® PDU Certificate: &lt;/STRONG&gt;&lt;/SPAN&gt;&lt;BR&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;Earn 45 PMI® PDUs at the end of the CSSGB training course towards maintaining your PMP® certification.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;&lt;BR&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;/TD&gt;
+&lt;TD&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;color: darkblue; font-size: small; font-family: arial,helvetica,sans-serif;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;text-decoration: underline;&quot;&gt;Course Kit:&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: #000000;&quot;&gt;• Workshop includes interactive &lt;STRONG&gt;exercises and quizzes.&lt;/STRONG&gt; &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: #000000;&quot;&gt;• Teaches you the methods like &lt;STRONG&gt;DMAIC, FMEA, DFMEA,PFMEA &amp; road maps for DFSS.&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: darkblue;&quot;&gt;• &lt;/SPAN&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;SPAN STYLE=&quot;color: darkblue;&quot;&gt;&lt;STRONG&gt;Online (Open Book) Certification Exam Post Classroom Training&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;SPAN STYLE=&quot;color: darkblue;&quot;&gt;.&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: #000000;&quot;&gt;• Access to world-class e-learning content for 24*7 self-study. &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: #000000;&quot;&gt;• 3 Months of online Audio Visual Learning Content. &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small; font-family: arial,helvetica,sans-serif; color: #000000;&quot;&gt;• Course content is aligned with ASQ Body of Knowledge.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TBODY&gt;
+&lt;/TABLE&gt;
+&lt;TABLE STYLE=&quot;width: 599px; height: 138px;&quot; BORDER=&quot;1&quot;&gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD&gt;&lt;A HREF=&quot;mailto:richard.brown@simplilearn.com&quot;&gt;&lt;IMG SRC=&quot;https://evbdn.eventbrite.com/s3-s3/eventlogos/52084516/ssgb.jpg&quot; ALT=&quot;&quot; WIDTH=&quot;177&quot; HEIGHT=&quot;125&quot; BORDER=&quot;1&quot;&gt;&lt;/A&gt;&lt;/TD&gt;
+&lt;TD&gt;&lt;IMG SRC=&quot;https://evbdn.eventbrite.com/s3-s3/eventlogos/52084516/sbj.jpg&quot; ALT=&quot;&quot; WIDTH=&quot;196&quot; HEIGHT=&quot;133&quot; BORDER=&quot;1&quot;&gt;&lt;/TD&gt;
+&lt;TD&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;A HREF=&quot;http://www.simplilearn.com/list?course_type_id=1&amp;country_id=34&amp;city_id=2169&amp;course_id=120&amp;mode=s&quot;&gt;&lt;SPAN STYLE=&quot;color: darkblue; font-size: small; text-decoration: underline;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;For Further Queries Please Contact:&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/A&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;SPAN STYLE=&quot;color: #000000;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt; Contact us: +1-281-816-4724&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;STRONG&gt; &lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;color: #000000; font-size: small;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-family: arial,helvetica,sans-serif;&quot;&gt;Email Address: &lt;A HREF=&quot;mailto:richard.brown@simplilearn.com&quot;&gt;&lt;SPAN STYLE=&quot;color: #000000;&quot;&gt;richard.brown@simplilearn.com&lt;/SPAN&gt;&lt;/A&gt;&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;color: #150f8d; font-family: arial,helvetica,sans-serif;&quot;&gt;&lt;SPAN STYLE=&quot;color: #150f8d;&quot;&gt;&lt;SPAN STYLE=&quot;color: #000000;&quot;&gt; Website: &lt;A HREF=&quot;http://www.simplilearn.com&quot;&gt;www.simplilearn.com&lt;/A&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/TBODY&gt;
+&lt;/TABLE&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-10-25 17:00:00</end_date>
+		<link_color>0077B3</link_color>
+		<locale>en_US</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-s3/eventlogos/52084516/7774785593-1.png</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-s3/eventlogos/52084516/7774785593-1.png</logo_ssl>
+		<modified>2013-08-06 13:14:07</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description>Simplilearn SSGB Certification
+
+ 
+Website:www.simplilearn.com
+Email:richard.brown@simplilearn.com
+Call: +1-281-816-4724
+For invoicing options,Onsite training, large group rates or questions please inquire.
+The Company
+
+Simplilearn is a leading provider of a suite of professional certification courses that address unique learning needs of working professionals. We&#39;ve trained over 50,000 aspirants across 145+ countries, including those from the world&#39;s leading Fortune 500 companies
+SSGB Certification Training
+Our Certified Six Sigma Green Belt Classroom training is ideal for those who have enough time to dedicate for a full time Six Sigma Green Belt classroom training and are keen towards interacting with a Six Sigma certified instructor. Along with this Certification Training course
+ </description>
+			<id>3819209627</id>
+			<long_description></long_description>
+			<name>Simplilearn SSGB Certification</name>
+			<url>http://www.eventbrite.com/org/3819209627</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-10-23 08:00:00</start_date>
+		<status>Live</status>
+		<tags>six sigma green belt certification, green belt training in San Diego, ssgb training simplilearn, ssgb online and classroom training, ssgb workshop in San Diego,  six sigma green belt bootcamp in San Francisco</tags>
+		<text_color>E5E600</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>1,399.00</display_price>
+				<end_date>2013-10-23 07:00:00</end_date>
+				<id>19970407</id>
+				<max>0</max>
+				<min>0</min>
+				<name>Six Sigma Certification Training San Francisco, CA on Oct 23-25,2013 </name>
+				<price>1,408.95</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Chicago</timezone>
+		<timezone_offset>GMT-0500</timezone_offset>
+		<title>Six Sigma Certification Training San Francisco, CA on Oct 23-25,2013 | Six Sigma Green Belt Training  San Francisco, CA  | Six Sigma Green Belt Classes | SSGB Training Courses | Six Sigma certification USA .</title>
+		<title_text_color></title_text_color>
+		<url>http://ssgbcertificationinsanfranciscoca-SRCH.eventbrite.com</url>
+		<venue>
+			<Lat-Long>37.77493 / -122.419416</Lat-Long>
+			<address></address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>3935499</id>
+			<latitude>37.77493</latitude>
+			<longitude>-122.419416</longitude>
+			<name>San Francisco, CA</name>
+			<postal_code></postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+	<event>
+		<id>7776037337</id>
+		<background_color>f7f7f7</background_color>
+		<box_background_color>ffffff</box_background_color>
+		<box_border_color>dedede</box_border_color>
+		<box_header_background_color>fafafa</box_header_background_color>
+		<box_header_text_color>404040</box_header_text_color>
+		<box_text_color>666666</box_text_color>
+		<capacity>10000</capacity>
+		<category>fairs,food</category>
+		<created>2013-08-06 14:15:31</created>
+		<description>&lt;P&gt;This festival is for a non-profit organization Latinos Medicine Students Association.&lt;/P&gt;
+&lt;P&gt;We will have between 8 to 12 booths from craft beers producers giving free samples&lt;/P&gt;
+&lt;P&gt;The festival showcases new and traditional styles of cooking form all over latin america and their main&lt;/P&gt;
+&lt;P&gt;manu will show chorizos in diferent styles for everybody to enjoy.&lt;/P&gt;
+&lt;P&gt;We will have one Center stage throghout the afternoon attendees will be able to enjoy a variety of&lt;/P&gt;
+&lt;P&gt;entertainment. live music and traditional dances. Dance all the afternoon with Salsa, Cumbia, Merengue&lt;/P&gt;
+&lt;P&gt;and some Mexican music like mariachis.&lt;/P&gt;
+&lt;P&gt;Late evening after 8pm t0 1;30 pm enjoy an after party in the Club with the music of el Zoruyo Manyoma&lt;/P&gt;
+&lt;P&gt;and his Sonora Dinamita and DJ Mazamorra Mix. &lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-10-05 20:00:00</end_date>
+		<link_color>0f90ba</link_color>
+		<locale>en_US</locale>
+		<modified>2013-08-06 15:04:37</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description>LMSA It is a non-profit national organization that helps latinos to get into medical schools.</description>
+			<id>4495859249</id>
+			<long_description></long_description>
+			<name>Mi Tierra Production/ Jorge Galvis &amp; mario patino.</name>
+			<url>http://www.eventbrite.com/org/4495859249</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-10-05 13:00:00</start_date>
+		<status>Live</status>
+		<tags></tags>
+		<text_color>404040</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description>One ticket for adults over 21yrs only. Entrance to the event, a 50z cup, bracelet, unlimited beer tasting,
+and enjoy the entertainment. For $15.00 extra you get admission to the after party.</description>
+				<display_price>35.00</display_price>
+				<end_date>2013-10-05 18:00:00</end_date>
+				<id>19973735</id>
+				<max>500</max>
+				<min>1</min>
+				<name>SSF Beer and Chorizo Festival</name>
+				<price>36.87</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0700</timezone_offset>
+		<title>South San Francisco beer and sauce fall festival.</title>
+		<title_text_color></title_text_color>
+		<url>http://ssfbeerandchorizofest-SRCH.eventbrite.com</url>
+		<venue>
+			<Lat-Long>37.658203 / -122.434281</Lat-Long>
+			<address>41 Oak Avenue</address>
+			<address_2></address_2>
+			<city>South San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>3984633</id>
+			<latitude>37.658203</latitude>
+			<longitude>-122.434281</longitude>
+			<name>Santo Cristo Hall</name>
+			<postal_code>94080</postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+	<event>
+		<id>7793300973</id>
+		<background_color>9ec27e</background_color>
+		<box_background_color>f5faf0</box_background_color>
+		<box_border_color>c3d9b0</box_border_color>
+		<box_header_background_color>ffffff</box_header_background_color>
+		<box_header_text_color>6c8059</box_header_text_color>
+		<box_text_color>666666</box_text_color>
+		<capacity>400</capacity>
+		<category>social,reunions</category>
+		<created>2013-08-07 14:50:20</created>
+		<description>&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: 11.0pt; line-height: 150%; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-weight: normal; font-style: normal; mso-bidi-font-style: italic;&quot;&gt;The Business Hall of Fame is Junior Achievement’s signature event and principal annual fundraiser, attracting 400 of the Bay Area and Silicon Valley’s top executives. This event represents one of the largest gatherings of business leaders, including presidents and CEOs from many of the area’s most dynamic companies.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;SPAN STYLE=&quot;font-family: arial,helvetica,sans-serif; font-size: medium;&quot;&gt;Please join us as we celebrate, on November 14, 2013 at the InterContinental Mark Hopkins Hotel in San Francisco where we will honor:&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-size: 12.0pt;&quot;&gt;Jeffrey Weiner&lt;EM&gt;, &lt;/EM&gt;&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-size: 12.0pt;&quot;&gt;CEO of LinkedIn&lt;STRONG&gt; &lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/EM&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;font-size: 12.0pt;&quot;&gt;Deborah Rieman&lt;EM&gt;, &lt;/EM&gt;&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-size: 12.0pt;&quot;&gt;Chairman of Metamarkets &lt;/SPAN&gt;&lt;/EM&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin-right: 67.5pt; line-height: 150%;&quot;&gt;&lt;SPAN STYLE=&quot;font-size: 11.0pt; line-height: 150%; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;;&quot;&gt;At this heart-warming and inspirational event, Junior Achievement (JA) presents its mission and efforts through the eyes’ of the children it serves. From kindergartners to high school seniors, JA shines a deserving spotlight on its students as they share how their lives have been impacted and even transformed by JA mentors and experiences. Importantly, the evening highlight is the induction of a group of outstanding business leaders who represent the spirit of achievement and American business ideals JA strives to instill in Northern California youth. Unlike any other gala, attendees leave uplifted, energized and eager to prepare the next generation of leaders!&lt;/SPAN&gt;&lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-11-14 20:30:00</end_date>
+		<link_color>06c9a8</link_color>
+		<locale>en</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-build/images/2175813/572011245/1/logo.jpg</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-build/images/2175813/572011245/1/logo.jpg</logo_ssl>
+		<modified>2013-09-04 12:45:32</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description>Junior Achievement is a non-profit organization dedicated to inspiring and preparing young people to succeed in a global economy.  Your support not only impacts childrens lives, but provides vital support to economic education in our schools during a time of funding cutbacks.
+ 
+Funds raised from the event provide a range of Junior Achievement in-school and after-school programs to more than 111,000 JA students throughout Northern California.
+ 
+ 
+Would you like to Volunteer for JA? Please contact kblanchette@janorcal.org  </description>
+			<id>133268394</id>
+			<long_description>Junior Achievement is a non-profit organization dedicated to inspiring and preparing young people to succeed in a global economy.  Your support not only impacts children’s lives, but provides vital support to economic education in our schools during a time of funding cutbacks.
+ 
+Funds raised from the event provide a range of Junior Achievement in-school and after-school programs to more than 120,000 JA students throughout Northern California.
+ 
+ 
+Would you like to Volunteer for JA? Please contact kblanchette@janorcal.org  </long_description>
+			<name>Junior Achievement of Northern California</name>
+			<url>http://www.eventbrite.com/org/133268394</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-11-14 17:00:00</start_date>
+		<status>Live</status>
+		<tags>Junior Achievement, JA, Tribute Dinner, Spirit of Achievement, JA Students, JA Alumni</tags>
+		<text_color>6c8059</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description>Reception and Gala attendance for one (1).</description>
+				<display_price>375.00</display_price>
+				<end_date>2013-11-08 17:00:00</end_date>
+				<id>19994001</id>
+				<max>None</max>
+				<min>1</min>
+				<name>Individual -- JA Friend</name>
+				<price>384.95</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<end_date>2013-11-14 16:00:00</end_date>
+				<id>19994501</id>
+				<max>None</max>
+				<min>1</min>
+				<name>Donation</name>
+				<type>1</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>JA Business Hall Of Fame</title>
+		<title_text_color></title_text_color>
+		<url>http://jahalloffame-SRCH.eventbrite.com</url>
+		<venue>
+			<Lat-Long>37.791853 / -122.410811</Lat-Long>
+			<address>999 California Street</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>3992317</id>
+			<latitude>37.791853</latitude>
+			<longitude>-122.410811</longitude>
+			<name>InterContinental Mark Hopknis </name>
+			<postal_code>94108</postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+	<event>
+		<id>7821441141</id>
+		<background_color>FFFFFF</background_color>
+		<box_background_color>FFFFFF</box_background_color>
+		<box_border_color>000000</box_border_color>
+		<box_header_background_color>027A16</box_header_background_color>
+		<box_header_text_color>FFFFFF</box_header_text_color>
+		<box_text_color>030303</box_text_color>
+		<capacity>900</capacity>
+		<category>sports</category>
+		<created>2013-08-09 10:15:02</created>
+		<description>&lt;P&gt;TBD&lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2014-02-22 21:30:00</end_date>
+		<link_color>0000CC</link_color>
+		<locale>en</locale>
+		<modified>2013-08-09 10:21:21</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description></description>
+			<id>49713576</id>
+			<long_description>Promoting Professional Wrestling with an approach that has been met with great success. The goal is not to try to reinvent the sport of professional wrestling but take back to where it needs to be with a mixture of what it has become today. One of the major ingredients of Pro Wrestling Revolution is the mixture of Lucha Libre. It is obvious to all, this is something that can not be contained. We have made many friends over the years and we look forward to showcasing these incredible talented luchadores.</long_description>
+			<name>Pro Wrestling Revolution</name>
+			<url>http://www.eventbrite.com/org/49713576</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2014-02-22 19:00:00</start_date>
+		<status>Live</status>
+		<tags>Pro Wrestling, NWA, Professional Wrestling</tags>
+		<text_color>000000</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>20.00</display_price>
+				<end_date>2015-02-22 17:00:00</end_date>
+				<id>20028275</id>
+				<max>30</max>
+				<min>1</min>
+				<name>Ringside</name>
+				<price>21.49</price>
+				<start_date>2010-09-08 15:00:00</start_date>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>10.00</display_price>
+				<end_date>2013-02-23 17:00:00</end_date>
+				<id>20028277</id>
+				<max>30</max>
+				<min>1</min>
+				<name>General Admission</name>
+				<price>11.24</price>
+				<start_date>2010-09-08 15:00:00</start_date>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>Revolution - San Francisco  February 22nd</title>
+		<title_text_color></title_text_color>
+		<url>http://www.eventbrite.com/event/7821441141/SRCH</url>
+		<venue>
+			<Lat-Long>37.75955 / -122.414625</Lat-Long>
+			<address>2355 Folsom St</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>56559</id>
+			<latitude>37.75955</latitude>
+			<longitude>-122.414625</longitude>
+			<name>John A. O’Connell High School</name>
+			<postal_code>94110</postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+	<event>
+		<id>7824983737</id>
+		<background_color>71b4c7</background_color>
+		<box_background_color>c0edfa</box_background_color>
+		<box_border_color>96d2e3</box_border_color>
+		<box_header_background_color>9cd6e6</box_header_background_color>
+		<box_header_text_color>ffffff</box_header_text_color>
+		<box_text_color>4691a6</box_text_color>
+		<capacity>0</capacity>
+		<category>fundraisers,recreation</category>
+		<created>2013-08-12 09:08:12</created>
+		<description>&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: large;&quot;&gt;Tech Search Party is back and the time is nigh when you can &lt;STRONG&gt;Get Your Geek On&lt;/STRONG&gt; while trekking around San Francisco&#39;s Noe Valley with your smart phone and smart friends.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;Apart from the frolic and geek.fun, all money raised benefits local public schools. &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;It works like this:&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;STRONG&gt;Arrive on time&lt;/STRONG&gt; at the auditorium at &lt;A HREF=&quot;http://www.jameslickptsa.org/&quot;&gt;James Lick Middle School&lt;/A&gt; (entrance is at the corner of Noe and 25th Street). Check in runs from 5:15 to 6:00.  At 6:00 pm &lt;STRONG&gt;sharp &lt;/STRONG&gt;participants will be given a map with some challenging clues to decipher. Deciphering those clues will lead you to various locations in Noe Valley. When you arrive at the mystery location, you take a photo of the answer with your phone and email it back to an address provided at the beginning of the event. The first team to complete the clues will be the winner.   &lt;A HREF=&quot;http://techsearchparty.com/blog/?p=104&quot;&gt;Here&lt;/A&gt; are the clues and answers from our last event.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;STRONG&gt;Why&lt;/STRONG&gt;: For fun, mostly. And &lt;STRONG&gt;prizes&lt;/STRONG&gt;. And also because all money raised goes toward improving technology for students at three San Francisco public schools, &lt;A HREF=&quot;http://www.alvaradoschool.net/&quot;&gt;Alvarado Elementary&lt;/A&gt;, &lt;A HREF=&quot;http://www.jameslickptsa.org/&quot;&gt;James Lick Middle School&lt;/A&gt;, and &lt;A HREF=&quot;http://marshall-sfusd-ca.schoolloop.com/&quot;&gt;Marshall Elementary&lt;/A&gt;.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;STRONG&gt;Cost&lt;/STRONG&gt;: The fee is $50 for a team of up to 4 and $75 for a team of up to 6.  A bargain for memories that will last a lifetime. Don&#39;t forget to come up with a great team name. Be creative; you might get bonus points.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;font-size: small;&quot;&gt;&lt;STRONG&gt;Rules&lt;/STRONG&gt;: You’ll need a phone that can take a photo and send email.  Be on time, or you’ll be &lt;SPAN STYLE=&quot;text-decoration: line-through;&quot;&gt;screwed &lt;/SPAN&gt;at a disadvantage.  Teams have to &lt;SPAN STYLE=&quot;text-decoration: underline;&quot;&gt;stick together and stay on foot&lt;/SPAN&gt;. Bring a flashlight (or flashlight app). Charge up your batteries.  Respect the neighborhood.&lt;/SPAN&gt;&lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2014-02-08 20:00:00</end_date>
+		<link_color>067ab5</link_color>
+		<locale>en_US</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-build/images/2209387/2681644021/1/logo.jpg</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-build/images/2209387/2681644021/1/logo.jpg</logo_ssl>
+		<modified>2013-08-12 09:24:55</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description>Tech Search Party is set up to put the fun in fundraising.  All money raised through this event will go toward improving technology for students at four San Francisco public schools: Alvarado Elementary, James Lick Middle School, and Marshall Elementary. 
+
+
+
+
+
+
+
+
+</description>
+			<id>355241404</id>
+			<long_description>Tech Search Party is set up to put the fun in fundraising.  All money raised through this event will go toward improving technology for students at four San Francisco public schools: Alvarado Elementary, James Lick Middle School, Marshall Elementary and Harvey Milk. 
+
+
+
+
+
+
+
+
+</long_description>
+			<name>Tech Search Party</name>
+			<url>http://www.eventbrite.com/org/355241404</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2014-02-08 17:30:00</start_date>
+		<status>Live</status>
+		<tags></tags>
+		<text_color>dffca6</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>50.00</display_price>
+				<end_date>2014-02-08 16:30:00</end_date>
+				<id>20057151</id>
+				<max>None</max>
+				<min>1</min>
+				<name>Team of 4</name>
+				<price>53.74</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>75.00</display_price>
+				<end_date>2014-02-08 16:30:00</end_date>
+				<id>20057153</id>
+				<max>None</max>
+				<min>1</min>
+				<name>Team of 6</name>
+				<price>80.12</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>Tech Search Party</title>
+		<title_text_color></title_text_color>
+		<url>http://www.eventbrite.com/event/7824983737/SRCH</url>
+		<venue>
+			<Lat-Long>37.749403 / -122.431846</Lat-Long>
+			<address>1220 Noe Street</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>4015579</id>
+			<latitude>37.749403</latitude>
+			<longitude>-122.431846</longitude>
+			<name>James Lick Middle School</name>
+			<postal_code>94114</postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+	<event>
+		<id>7827429051</id>
+		<background_color>f7f7f7</background_color>
+		<box_background_color>ffffff</box_background_color>
+		<box_border_color>dedede</box_border_color>
+		<box_header_background_color>fafafa</box_header_background_color>
+		<box_header_text_color>464648</box_header_text_color>
+		<box_text_color>8a8b8f</box_text_color>
+		<capacity>0</capacity>
+		<category>seminars,other</category>
+		<created>2013-08-09 20:08:41</created>
+		<description>&lt;H1 STYLE=&quot;font-size: 22px; margin: 10px 0px 5px; color: #58585a; font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;SPAN STYLE=&quot;color: #656464; font-size: 13px;&quot;&gt;OM (Orgasmic Meditation) is a simple way for people to practice their orgasm. It&#39;s like....yoga for your orgasm. And, the more you do this practice, the more you feel.&lt;/SPAN&gt;&lt;/H1&gt;
+&lt;P&gt;&lt;SPAN STYLE=&quot;color: #656464; font-size: 13px;&quot;&gt;&lt;BR&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;The day long OM Class is the perfect way to learn the basics of the practice of OM and the philosophy behind OneTaste&#39;s signature practice. Spend the day with two Certified OneTaste instructors.&lt;/P&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;The one-day course will include:&lt;/P&gt;
+&lt;UL STYLE=&quot;color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;The beginning philosophy behind OM&lt;/LI&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;Introduction of a new definition of Orgasm -- the difference between Climax and Orgasm&lt;/LI&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;Exploration of OneTaste principles: Attention, Simplicity &amp; Desire and how it relates to your OM practice&lt;/LI&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;The benefits of an OM practice&lt;/LI&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;Live demonstration of the OMing Practice&lt;/LI&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;Introduction to the 1&#39;oclock spot&lt;/LI&gt;
+&lt;LI STYLE=&quot;margin-bottom: 4px;&quot;&gt;Basic Stroking Technique&lt;/LI&gt;
+&lt;/UL&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;The OM Class is a great starting point for both men and women and will give you the right foundation to begin building your OM practice. Whether you&#39;re learning OM for the first time or brushing up your skills, the OM Class is a great way to begin cultivating your Orgasm.&lt;/P&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;&lt;EM&gt;Open to singles and couples&lt;/EM&gt;&lt;BR&gt;Pre-requisite: Watch the How to OM Video&lt;/P&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;&lt;STRONG&gt;In this landmark course, you&#39;ll learn OneTaste&#39;s signature practice of OM (Orgasmic Meditation), a simple practice with revolutionary results. Learn how to feel more, connect more deeply to your partner, and enliven your sex in just fifteen minutes a day.&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;Includes a one-year OM Badge &lt;BR&gt;Membership (access to OM Circles &amp; The OM Hub)&lt;/P&gt;
+&lt;P STYLE=&quot;margin-bottom: 8px; margin-top: 0px; color: #656464; font-family: Arial, Helvetica, sans-serif; font-size: 13px;&quot;&gt;&lt;STRONG&gt;Hours:&lt;/STRONG&gt;&lt;BR&gt;Course: 10am - 5:00pm&lt;BR&gt;Optional Lab: 5:00 - 6:00pm&lt;BR&gt;Includes a Lunch break&lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-11-16 18:00:00</end_date>
+		<link_color>D7DF23</link_color>
+		<locale>en_US</locale>
+		<modified>2013-08-13 10:03:46</modified>
+		<num_attendee_rows>2</num_attendee_rows>
+		<organizer>
+			<description></description>
+			<id>3499887913</id>
+			<long_description>
+ 
+OneTaste is an organization that teaches Orgasmic Meditation (and everything that goes with it). It&#39;s a practice. It&#39;s a gateway to more vitality, connection and turn on. It&#39;s profound, yet simple.
+Description What if there was a regenerative resource within you that unlocks an ability to access this potential and feel deeply nourished, revitalized, ignited and Turned ON? There is a simple solution that leads you to a place where this is not only possible, but inevitable.
+Its called Orgasmic Meditation (OM).
+Its like sex, only not the sex weve known. It fosters connection. It feels good. Its deliberate and structured with repeatable results. Its a meditation, equally powerful for both partners  only the object of focus is the clitoris. Its a source of power  a well from which to draw energy. Whether you are single or coupled, this practice will lead you to discover who you are and to live every moment to full potential. Its profound, yet simple. Fifteen minutes.
+Fifteen minutes of practice at a time, you begin to actually access this potential. You become a more complex, attentive and connected human being. You have a gateway to more vitality, energy, connection and turn ON. What starts as untapped potential grows into a knowing. This is your catalyst for change. Your Orgasm.</long_description>
+			<name>OneTaste</name>
+			<url>http://www.eventbrite.com/org/3499887913</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-11-16 10:00:00</start_date>
+		<status>Live</status>
+		<tags></tags>
+		<text_color>464648</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>195.00</display_price>
+				<end_date>2013-09-07 18:00:00</end_date>
+				<id>20035863</id>
+				<max>30</max>
+				<min>1</min>
+				<name>General Admission</name>
+				<price>195.00</price>
+				<start_date>2013-03-20 10:00:00</start_date>
+				<type>0</type>
+				<visible>false</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>0.00</display_price>
+				<end_date>2013-09-07 10:00:00</end_date>
+				<id>20035865</id>
+				<max>30</max>
+				<min>1</min>
+				<name>General Admission</name>
+				<price>0.00</price>
+				<type>0</type>
+				<visible>false</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>149.00</display_price>
+				<end_date>2013-11-16 09:00:00</end_date>
+				<id>20035867</id>
+				<max>30</max>
+				<min>1</min>
+				<name>Do not use</name>
+				<price>149.00</price>
+				<type>0</type>
+				<visible>false</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>149.00</display_price>
+				<end_date>2013-11-16 09:00:00</end_date>
+				<id>20035869</id>
+				<max>None</max>
+				<min>1</min>
+				<name>General admission MALE (At The Door)</name>
+				<price>149.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>149.00</display_price>
+				<end_date>2013-09-07 18:00:00</end_date>
+				<id>20035875</id>
+				<max>None</max>
+				<min>1</min>
+				<name>General admission FEMALE (At The Door)</name>
+				<price>149.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>195.00</display_price>
+				<end_date>2013-11-16 09:00:00</end_date>
+				<id>20035871</id>
+				<max>30</max>
+				<min>1</min>
+				<name>General admission MALE</name>
+				<price>195.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>195.00</display_price>
+				<end_date>2013-11-16 09:00:00</end_date>
+				<id>20035873</id>
+				<max>30</max>
+				<min>1</min>
+				<name>General admission FEMALE</name>
+				<price>195.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>SF: OM Course</title>
+		<title_text_color></title_text_color>
+		<url>http://www.eventbrite.com/event/7827429051/SRCH</url>
+		<venue>
+			<Lat-Long>37.777914 / -122.4081</Lat-Long>
+			<address>47 Moss St</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>3420873</id>
+			<latitude>37.777914</latitude>
+			<longitude>-122.4081</longitude>
+			<name>OneTaste</name>
+			<postal_code>94103</postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+	<event>
+		<id>7851964437</id>
+		<background_color>FFFFFF</background_color>
+		<box_background_color>FFFFFF</box_background_color>
+		<box_border_color>D5D5D3</box_border_color>
+		<box_header_background_color>EFEFEF</box_header_background_color>
+		<box_header_text_color>005580</box_header_text_color>
+		<box_text_color>000000</box_text_color>
+		<capacity>60</capacity>
+		<category>sales,seminars</category>
+		<created>2013-08-12 12:04:03</created>
+		<description>&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt; &lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;Starting a Business in San Francisco&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;11:00 AM - 12:30 PM&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;Hear directly from San Francisco officials. How do you obtain permits? How do you register your business name? Learn what the City can do for you in this one-stop seminar.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt; &lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;SBAs’ posting of this event is not an endorsement of the views, opinions, products, or services of any Cosponsor or other person or entity.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;All SBA programs or cosponsored programs are extended to the public on a nondiscriminatory basis.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;Reasonable arrangements for persons with disabilities will be made, if requested at least 2 weeks in advance.&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; line-height: 50%; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt; &lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;To receive our electronic email listing of future classes, sign-up @ &lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;color: black; font-size: 10pt;&quot;&gt;&lt;A HREF=&quot;mailto:sfoevents@sba.gov&quot;&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: blue; font-size: 11pt;&quot;&gt;&lt;SPAN STYLE=&quot;text-decoration: underline;&quot;&gt;sfomail@sba.gov&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/A&gt;&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;Please note, we do not sell, rent or trade the names on our email list. Your email address is only used to send messages from the SBA.&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; line-height: 50%; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;line-height: 50%; font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt; &lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-11-06 12:30:00</end_date>
+		<link_color>EE6600</link_color>
+		<locale>en</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-build/images/2211881/246794553/1/logo.jpg</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-build/images/2211881/246794553/1/logo.jpg</logo_ssl>
+		<modified>2013-08-12 12:07:08</modified>
+		<num_attendee_rows>2</num_attendee_rows>
+		<organizer>
+			<description> 
+For a full list of classes at the SBA Entrepreneur Center click HERE.</description>
+			<id>187338252</id>
+			<long_description> 
+For a full list of classes at the SBA Entrepreneur Center click HERE.</long_description>
+			<name>U.S. Small Business AdministrationSan Francisco District Office</name>
+			<url>http://sbatrainings.eventbrite.com</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-11-06 11:00:00</start_date>
+		<status>Live</status>
+		<tags>small business, SBA, business, #sba</tags>
+		<text_color>005580</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>0.00</display_price>
+				<end_date>2013-11-06 08:00:00</end_date>
+				<id>20061573</id>
+				<max>30</max>
+				<min>1</min>
+				<name>register</name>
+				<price>0.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>Starting A Business In San Francisco</title>
+		<title_text_color></title_text_color>
+		<url>http://www.eventbrite.com/event/7851964437/SRCH</url>
+		<venue>
+			<Lat-Long>37.79115 / -122.398797</Lat-Long>
+			<address>455 Market Street, Suite 600</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>178966</id>
+			<latitude>37.79115</latitude>
+			<longitude>-122.398797</longitude>
+			<name></name>
+			<postal_code>94105</postal_code>
+		</venue>
+	</event>
+	<event>
+		<id>7852026623</id>
+		<background_color>FFFFFF</background_color>
+		<box_background_color>FFFFFF</box_background_color>
+		<box_border_color>D5D5D3</box_border_color>
+		<box_header_background_color>EFEFEF</box_header_background_color>
+		<box_header_text_color>005580</box_header_text_color>
+		<box_text_color>000000</box_text_color>
+		<capacity>60</capacity>
+		<category>sales,seminars</category>
+		<created>2013-08-12 12:07:39</created>
+		<description>&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;Financing Your Business&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;1:00 PM - 3:00 PM&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;Discover the right way to seek financing for your business. We will discuss loan proposal requirements, financing options and SBA programs. &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt; &lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;SBAs’ posting of this event is not an endorsement of the views, opinions, products, or services of any Cosponsor or other person or entity.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;All SBA programs or cosponsored programs are extended to the public on a nondiscriminatory basis.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;Reasonable arrangements for persons with disabilities will be made, if requested at least 2 weeks in advance.&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; line-height: 50%; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt; &lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;To receive our electronic email listing of future classes, sign-up @ &lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;color: black; font-size: 10pt;&quot;&gt;&lt;A HREF=&quot;mailto:sfoevents@sba.gov&quot;&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: blue; font-size: 11pt;&quot;&gt;&lt;SPAN STYLE=&quot;text-decoration: underline;&quot;&gt;sfomail@sba.gov&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/A&gt;&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;Please note, we do not sell, rent or trade the names on our email list. Your email address is only used to send messages from the SBA.&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; line-height: 50%; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;line-height: 50%; font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt; &lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-11-06 15:00:00</end_date>
+		<link_color>EE6600</link_color>
+		<locale>en</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-build/images/2211943/246794553/1/logo.jpg</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-build/images/2211943/246794553/1/logo.jpg</logo_ssl>
+		<modified>2013-08-12 12:08:30</modified>
+		<num_attendee_rows>3</num_attendee_rows>
+		<organizer>
+			<description> 
+For a full list of classes at the SBA Entrepreneur Center click HERE.</description>
+			<id>187338252</id>
+			<long_description> 
+For a full list of classes at the SBA Entrepreneur Center click HERE.</long_description>
+			<name>U.S. Small Business AdministrationSan Francisco District Office</name>
+			<url>http://sbatrainings.eventbrite.com</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-11-06 13:00:00</start_date>
+		<status>Live</status>
+		<tags>small business, SBA, business, #sba</tags>
+		<text_color>005580</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>0.00</display_price>
+				<end_date>2013-11-06 10:00:00</end_date>
+				<id>20061673</id>
+				<max>30</max>
+				<min>1</min>
+				<name>register</name>
+				<price>0.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>Financing Your Business</title>
+		<title_text_color></title_text_color>
+		<url>http://www.eventbrite.com/event/7852026623/SRCH</url>
+		<venue>
+			<Lat-Long>37.79115 / -122.398797</Lat-Long>
+			<address>455 Market Street, Suite 600</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>178966</id>
+			<latitude>37.79115</latitude>
+			<longitude>-122.398797</longitude>
+			<name></name>
+			<postal_code>94105</postal_code>
+		</venue>
+	</event>
+	<event>
+		<id>7852050695</id>
+		<background_color>FFFFFF</background_color>
+		<box_background_color>FFFFFF</box_background_color>
+		<box_border_color>D5D5D3</box_border_color>
+		<box_header_background_color>EFEFEF</box_header_background_color>
+		<box_header_text_color>005580</box_header_text_color>
+		<box_text_color>000000</box_text_color>
+		<capacity>60</capacity>
+		<category>sales,seminars</category>
+		<created>2013-08-12 12:09:00</created>
+		<description>&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none;&quot;&gt;&lt;STRONG&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;Business Law Basics&lt;/SPAN&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;3:30 PM - 5:30 PM &lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none;&quot;&gt; &lt;/P&gt;
+&lt;P STYLE=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial&#39;,&#39;sans-serif&#39;; font-size: 10pt; mso-font-kerning: 15.0pt;&quot;&gt;An experienced business lawyer will discuss Choice of Legal Entity (corporations, LLC, partnership, etc.); Intellectual Property; Employee issues; and Real Estate issues.   This class does not constitute legal advice.&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; font-size: 11pt; mso-fareast-font-family: &#39;Times New Roman&#39;; mso-bidi-font-family: Arial; mso-font-kerning: 15.0pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;&quot;&gt;&lt;SPAN STYLE=&quot;color: black; font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; font-size: 11pt; mso-fareast-font-family: &#39;Times New Roman&#39;; mso-bidi-font-family: Arial; mso-font-kerning: 15.0pt; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;&quot;&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; font-size: 11pt; mso-bidi-font-family: Arial; mso-font-kerning: 15.0pt; mso-fareast-font-family: &#39;Times New Roman&#39;; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;&quot;&gt;&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt; &lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;margin: 0in 0in 0pt; mso-pagination: none; mso-layout-grid-align: none;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;SBAs’ posting of this event is not an endorsement of the views, opinions, products, or services of any Cosponsor or other person or entity.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;All SBA programs or cosponsored programs are extended to the public on a nondiscriminatory basis.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;Reasonable arrangements for persons with disabilities will be made, if requested at least 2 weeks in advance.&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; line-height: 50%; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt; &lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;To receive our electronic email listing of future classes, sign-up @ &lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;color: black; font-size: 10pt;&quot;&gt;&lt;A HREF=&quot;mailto:sfoevents@sba.gov&quot;&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: blue; font-size: 11pt;&quot;&gt;&lt;SPAN STYLE=&quot;text-decoration: underline;&quot;&gt;sfomail@sba.gov&lt;/SPAN&gt;&lt;/SPAN&gt;&lt;/A&gt;&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt;.&lt;SPAN STYLE=&quot;mso-spacerun: yes;&quot;&gt;  &lt;/SPAN&gt;Please note, we do not sell, rent or trade the names on our email list. Your email address is only used to send messages from the SBA.&lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P CLASS=&quot;MsoNormal&quot; STYLE=&quot;text-align: justify; line-height: 50%; margin: 0in 0in 0pt; vertical-align: top;&quot;&gt;&lt;STRONG&gt;&lt;EM&gt;&lt;SPAN STYLE=&quot;line-height: 50%; font-family: &#39;Arial Narrow&#39;,&#39;sans-serif&#39;; color: black; font-size: 11pt;&quot;&gt; &lt;/SPAN&gt;&lt;/EM&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;
+&lt;P&gt; &lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-11-06 17:30:00</end_date>
+		<link_color>EE6600</link_color>
+		<locale>en</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-build/images/2211963/246794553/1/logo.jpg</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-build/images/2211963/246794553/1/logo.jpg</logo_ssl>
+		<modified>2013-08-12 12:09:33</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description> 
+For a full list of classes at the SBA Entrepreneur Center click HERE.</description>
+			<id>187338252</id>
+			<long_description> 
+For a full list of classes at the SBA Entrepreneur Center click HERE.</long_description>
+			<name>U.S. Small Business AdministrationSan Francisco District Office</name>
+			<url>http://sbatrainings.eventbrite.com</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-11-06 15:30:00</start_date>
+		<status>Live</status>
+		<tags>small business, SBA, business, #sba</tags>
+		<text_color>005580</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<display_price>0.00</display_price>
+				<end_date>2013-11-06 12:30:00</end_date>
+				<id>20061709</id>
+				<max>30</max>
+				<min>1</min>
+				<name>register</name>
+				<price>0.00</price>
+				<type>0</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>Business Law Basics</title>
+		<title_text_color></title_text_color>
+		<url>http://www.eventbrite.com/event/7852050695/SRCH</url>
+		<venue>
+			<Lat-Long>37.79115 / -122.398797</Lat-Long>
+			<address>455 Market Street, Suite 600</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>178966</id>
+			<latitude>37.79115</latitude>
+			<longitude>-122.398797</longitude>
+			<name></name>
+			<postal_code>94105</postal_code>
+		</venue>
+	</event>
+	<event>
+		<id>7855376643</id>
+		<background_color>FFFFFF</background_color>
+		<box_background_color>FFFFFF</box_background_color>
+		<box_border_color>D5D5D3</box_border_color>
+		<box_header_background_color>EFEFEF</box_header_background_color>
+		<box_header_text_color>005580</box_header_text_color>
+		<box_text_color>000000</box_text_color>
+		<capacity>0</capacity>
+		<category></category>
+		<created>2013-08-12 15:38:06</created>
+		<description>&lt;P&gt;A donation in honor of &lt;STRONG&gt;Dr. Shinya Yamanaka, Ms. Margrit Biever Mondavi, and Mr. Kenzo Tsujimoto &lt;/STRONG&gt;may be made to the Japan Society of Northern California and will be utilized for operating expenses. To make a cash donation, you may do so online. Contributors of $500 or more will be recognized as a sponsor of the event unless otherwise requested. Your contribution to the Japan Society is tax-deductible to the full extent allowed by law. We are grateful for your support. Thank you. &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/P&gt;</description>
+		<distance>0.00M</distance>
+		<end_date>2013-11-16 21:00:00</end_date>
+		<link_color>EE6600</link_color>
+		<locale>en_US</locale>
+		<logo>http://ebmedia.eventbrite.com/s3-build/images/2214603/10851058403/1/logo.png</logo>
+		<logo_ssl>https://ebmedia.eventbrite.com/s3-build/images/2214603/10851058403/1/logo.png</logo_ssl>
+		<modified>2013-08-12 15:42:41</modified>
+		<num_attendee_rows>None</num_attendee_rows>
+		<organizer>
+			<description></description>
+			<id>879051587</id>
+			<long_description>The Japan Society of Northern California is an educational non-profit organization and the West Coasts leading forum on Japan and US-Japan relations. Its mission is to strengthen cooperation and understanding between the peoples of the United States and Japan by providing programs that help to expand knowledge, increase personal interaction and facilitate discussion of important issues.</long_description>
+			<name>Japan Society of Northern California</name>
+			<url>http://corporategovernance.eventbrite.com</url>
+		</organizer>
+		<privacy>Public</privacy>
+		<repeats>no</repeats>
+		<start_date>2013-11-16 18:00:00</start_date>
+		<status>Live</status>
+		<tags></tags>
+		<text_color>005580</text_color>
+		<tickets>
+			<ticket>
+				<currency>USD</currency>
+				<description></description>
+				<end_date>2013-11-16 23:55:00</end_date>
+				<id>20066511</id>
+				<max>None</max>
+				<min>1</min>
+				<name>2013 Gala Donation</name>
+				<type>1</type>
+				<visible>true</visible>
+			</ticket>
+		</tickets>
+		<timezone>America/Los_Angeles</timezone>
+		<timezone_offset>GMT-0800</timezone_offset>
+		<title>2013 Award of Honor Gala Donations</title>
+		<title_text_color></title_text_color>
+		<url>http://2013galadonations-SRCH.eventbrite.com</url>
+		<venue>
+			<Lat-Long>37.78783 / -122.408598</Lat-Long>
+			<address>335 Powell St</address>
+			<address_2></address_2>
+			<city>San Francisco</city>
+			<country>United States</country>
+			<country_code>US</country_code>
+			<id>4019209</id>
+			<latitude>37.78783</latitude>
+			<longitude>-122.408598</longitude>
+			<name>The Westin St. Francis</name>
+			<postal_code>94102</postal_code>
+			<region>CA</region>
+		</venue>
+	</event>
+</events>

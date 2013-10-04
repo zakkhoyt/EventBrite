@@ -52,7 +52,7 @@ static VWWRESTEngine *instance;
     if(self){
         _service = [VWWRESTConfig sharedInstance];
         self = [super initWithHostName:_service.serviceEndpoint
-                               apiPath:_service.serviceVersion
+                               apiPath:_service.serviceDataFormat
                     customHeaderFields:nil];
     }
     return self;
@@ -106,14 +106,14 @@ static VWWRESTEngine *instance;
                                                         ssl:self.service.serviceSecure];
     
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-#if defined(SM_LOG_CURL_COMMANDS)
+#if defined(VWW_LOG_CURL_COMMANDS)
 
-        DDLogVerbose(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
+        NSLog(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         completionBlock(completedOperation.responseJSON);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-#if defined(SM_LOG_CURL_COMMANDS)
-        DDLogVerbose(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+        NSLog(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         [self examineHTTPError:completedOperation];
         errorBlock(error, completedOperation.responseJSON);
@@ -137,13 +137,13 @@ static VWWRESTEngine *instance;
     [operation setPostDataEncoding:MKNKPostDataEncodingTypeJSON];
     
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-#if defined(SM_LOG_CURL_COMMANDS)
-        DDLogVerbose(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+        NSLog(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         completionBlock(completedOperation.responseJSON);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-#if defined(SM_LOG_CURL_COMMANDS)
-         DDLogVerbose(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+         NSLog(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         [self examineHTTPError:completedOperation];
         errorBlock(error, completedOperation.responseJSON);
@@ -166,13 +166,13 @@ static VWWRESTEngine *instance;
     [operation setPostDataEncoding:MKNKPostDataEncodingTypeJSON];
     
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-#if defined(SM_LOG_CURL_COMMANDS)
-        DDLogVerbose(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+        NSLog(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         completionBlock(completedOperation.responseJSON);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-#if defined(SM_LOG_CURL_COMMANDS)
-        DDLogVerbose(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+        NSLog(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         [self examineHTTPError:completedOperation];
         errorBlock(error, completedOperation.responseJSON);
@@ -193,13 +193,13 @@ static VWWRESTEngine *instance;
                                                         ssl:self.service.serviceSecure];
     
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-#if defined(SM_LOG_CURL_COMMANDS)
-        DDLogVerbose(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+        NSLog(@"Success! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         completionBlock(completedOperation.responseJSON);
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-#if defined(SM_LOG_CURL_COMMANDS)
-        DDLogVerbose(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
+#if defined(VWW_LOG_CURL_COMMANDS)
+        NSLog(@"Error! CURL command: %@", completedOperation.curlCommandLineString);
 #endif
         [self examineHTTPError:completedOperation];
         errorBlock(error, completedOperation.responseJSON);
@@ -246,43 +246,61 @@ static VWWRESTEngine *instance;
 
 
 #pragma mark Events
--(MKNetworkOperation*)createEventWithForm:(VWWCreateEventForm*)form
-                          completionBlock:(VWWRESTEngineEventBlock)completionBlock
-                               errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
+//-(MKNetworkOperation*)createEventWithForm:(VWWCreateEventForm*)form
+//                          completionBlock:(VWWRESTEngineEventBlock)completionBlock
+//                               errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
+//    @autoreleasepool {
+//        
+//        return [self httpPostEndpoint:self.service.serviceEventsURI
+//                       jsonDictionary:[form httpParametersDictionary]
+//                      completionBlock:^(id responseJSON){
+//                         VWWEvent *event;
+//                          [VWWRESTParser parseJSON:responseJSON event:&event];
+//                          completionBlock(event);
+//                      }
+//                           errorBlock:^(NSError *error, id responseJSON){
+//                               errorBlock(error);
+//                           }];
+//    }
+//}
+//
+//
+//-(MKNetworkOperation*)getEventsWithForm:(VWWGetEventsForm*)form
+//                        completionBlock:(VWWRESTEngineEventsBlock)completionBlock
+//                             errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
+//    @autoreleasepool {
+//    
+//    return [self httpGetEndpoint:self.service.serviceEventsURI
+//                  jsonDictionary:[form httpParametersDictionary]
+//                 completionBlock:^(id responseJSON){
+//                     NSArray *events;
+//                    VWWPagination *page;
+//                     [VWWRESTParser parseJSON:responseJSON events:&events page:&page];
+//                     completionBlock(events);
+//                 }
+//                      errorBlock:^(NSError *error, id responseJSON){
+//                          errorBlock(error);
+//                      }];
+//    }
+//}
+//
+-(MKNetworkOperation*)getEventSearchWithForm:(VWWGetEventSearchForm*)form
+                             completionBlock:(VWWRESTEngineEventsBlock)completionBlock
+                                  errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
     @autoreleasepool {
-        
-        return [self httpPostEndpoint:self.service.serviceEventsURI
-                       jsonDictionary:[form httpParametersDictionary]
-                      completionBlock:^(id responseJSON){
-                         VWWEvent *event;
-                          [VWWRESTParser parseJSON:responseJSON event:&event];
-                          completionBlock(event);
-                      }
-                           errorBlock:^(NSError *error, id responseJSON){
-                               errorBlock(error);
-                           }];
-    }
-}
-
-
--(MKNetworkOperation*)getEventsWithForm:(VWWGetEventsForm*)form
-                        completionBlock:(VWWRESTEngineEventsBlock)completionBlock
-                             errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
-    @autoreleasepool {
-    
-    return [self httpGetEndpoint:self.service.serviceEventsURI
+    return [self httpGetEndpoint:self.service.serviceEventSearchURI
                   jsonDictionary:[form httpParametersDictionary]
                  completionBlock:^(id responseJSON){
-                     NSArray *events;
-                    VWWPagination *page;
-                     [VWWRESTParser parseJSON:responseJSON events:&events page:&page];
-                     completionBlock(events);
+                     NSLog(@"responseJSON: %@", responseJSON);
+//                     NSArray *events;
+//                    VWWPagination *page;
+//                     [VWWRESTParser parseJSON:responseJSON events:&events page:&page];
+                     completionBlock(nil);
                  }
                       errorBlock:^(NSError *error, id responseJSON){
                           errorBlock(error);
                       }];
     }
 }
-
 
 @end

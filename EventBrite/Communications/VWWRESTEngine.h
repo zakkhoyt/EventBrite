@@ -15,9 +15,7 @@
 #import "VWWEvent.h"
 
 // Form includes
-#import "VWWCreateEventForm.h"
-#import "VWWGetEventsForm.h"
-
+#import "VWWGetEventSearchForm.h"
 
 typedef void (^VWWRESTEngineEventBlock)(VWWEvent *event);
 typedef void (^VWWRESTEngineEventsBlock)(NSArray *events);
@@ -31,17 +29,9 @@ typedef void (^VWWRESTEngineErrorBlock)(NSError *error);
 @property (nonatomic, strong) VWWRESTConfig* service;
 @property (nonatomic, readonly) BOOL useHTTPS;
 
-
-
-
 #pragma mark Events
--(MKNetworkOperation*)createEventWithForm:(VWWCreateEventForm*)form
-                           completionBlock:(VWWRESTEngineEventBlock)completionBlock
-                                errorBlock:(VWWRESTEngineErrorBlock)errorBlock;
-
--(MKNetworkOperation*)getEventsWithForm:(VWWGetEventsForm*)form
-                        completionBlock:(VWWRESTEngineEventsBlock)completionBlock
-                             errorBlock:(VWWRESTEngineErrorBlock)errorBlock;
-
+-(MKNetworkOperation*)getEventSearchWithForm:(VWWGetEventSearchForm*)form
+                             completionBlock:(VWWRESTEngineEventsBlock)completionBlock
+                                  errorBlock:(VWWRESTEngineErrorBlock)errorBlock;
 
 @end

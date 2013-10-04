@@ -25,12 +25,15 @@ __attribute ((unused)) static NSString* kVWWUserDefaultServerSecureKey = @"serve
 +(NSString*)server{
     return [[NSUserDefaults standardUserDefaults] stringForKey:kVWWUserDefaultServerKey];
 }
++(void)setServer:(NSString*)server{
+    [[NSUserDefaults standardUserDefaults] setObject:server forKey:kVWWUserDefaultServerKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
-
-+(BOOL)smileServerSecure{
++(BOOL)serverSecure{
     return [[NSUserDefaults standardUserDefaults] boolForKey:kVWWUserDefaultServerSecureKey];
 }
-+(void)setSmileServerSecure:(BOOL)secure{
++(void)setServerSecure:(BOOL)secure{
     [[NSUserDefaults standardUserDefaults] setBool:secure forKey:kVWWUserDefaultServerSecureKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }

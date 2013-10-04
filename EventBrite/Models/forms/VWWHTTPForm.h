@@ -17,4 +17,5 @@ extern const NSInteger kItemsPerPageMax;
 - (void)setObject:(id)value forKey:(NSString *)key inDictionary:(NSMutableDictionary *)dictionary;
 - (void)setBool:(BOOL)value forKey:(NSString *)key inDictionary:(NSMutableDictionary *)dictionary;
 - (NSString *)descriptionForKeys:(NSString *)first, ...;
+- (NSMutableDictionary*)paramDictionary;
 @end

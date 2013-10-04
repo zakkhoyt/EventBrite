@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "VWWRESTEngine.h"
+
+
 
 @interface EventBriteTests : XCTestCase
 
@@ -26,9 +29,35 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testExample{
+    __block BOOL complete = NO;
+    
+    
+    [self eventSearchWithCompletion:^(NSError *error) {
+        XCTAssertNil(error, @"Failed event search");
+        complete = YES;
+    }];
+    
+    while (!complete) {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    }
+    complete = NO;
+
+}
+
+
+
+
+-(void)eventSearchWithCompletion:(VWWErrorBlock)completion{
+    VWWGetEventSearchForm *form = [[VWWGetEventSearchForm alloc]init];
+    form.keywords = @"";
+    form.city = @"boise";
+    [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form
+                                           completionBlock:^(NSArray *events) {
+                                               completion(nil);
+                                           } errorBlock:^(NSError *error) {
+                                               completion(error);
+                                           }];
 }
 
 @end

@@ -10,5 +10,5 @@
 
 typedef void (^VWWEmptyBlock)(void);
 typedef void (^VWWBoolBlock)(BOOL success);
-
+typedef void (^VWWErrorBlock)(NSError *error);
 #endif

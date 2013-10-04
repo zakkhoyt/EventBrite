@@ -11,13 +11,11 @@
 
 +(BOOL)debugMode;
 
-
-
-
 +(NSString*)server;
++(void)setServer:(NSString*)server;
 
-+(BOOL)smileServerSecure;
-+(void)setSmileServerSecure:(BOOL)secure;
++(BOOL)serverSecure;
++(void)setServerSecure:(BOOL)secure;
 
 
 

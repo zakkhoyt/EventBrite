@@ -66,6 +66,10 @@
 		C6B481B217FE35CD0047EB66 /* VWWCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481AF17FE35CD0047EB66 /* VWWCredential.m */; };
 		C6B481B317FE35CD0047EB66 /* VWWKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B117FE35CD0047EB66 /* VWWKeychain.m */; };
 		C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B617FE36370047EB66 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C6B481B917FE3BDE0047EB66 /* Links in Resources */ = {isa = PBXBuildFile; fileRef = C6B481B817FE3BDE0047EB66 /* Links */; };
+		C6B481BB17FE3C140047EB66 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6B481BA17FE3C140047EB66 /* Settings.bundle */; };
+		C6B481BD17FE3EEF0047EB66 /* CURL in Resources */ = {isa = PBXBuildFile; fileRef = C6B481BC17FE3EEF0047EB66 /* CURL */; };
+		C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481BF17FE416B0047EB66 /* VWWGetEventSearchForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +196,11 @@
 		C6B481B117FE35CD0047EB66 /* VWWKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWKeychain.m; sourceTree = "<group>"; };
 		C6B481B517FE36370047EB66 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		C6B481B617FE36370047EB66 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		C6B481B817FE3BDE0047EB66 /* Links */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Links; sourceTree = "<group>"; };
+		C6B481BA17FE3C140047EB66 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C6B481BC17FE3EEF0047EB66 /* CURL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CURL; sourceTree = "<group>"; };
+		C6B481BE17FE416B0047EB66 /* VWWGetEventSearchForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWGetEventSearchForm.h; sourceTree = "<group>"; };
+		C6B481BF17FE416B0047EB66 /* VWWGetEventSearchForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWGetEventSearchForm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +272,7 @@
 				C6B4811117FE27D10047EB66 /* Models */,
 				C6B4810A17FE273D0047EB66 /* README */,
 				C6B4811217FE27D10047EB66 /* Resources */,
+				C6B481BA17FE3C140047EB66 /* Settings.bundle */,
 				C6B480D317FE26D20047EB66 /* Supporting Files */,
 				C6B4811317FE27D10047EB66 /* Third Party */,
 				C6B4811417FE27D10047EB66 /* User Interface */,
@@ -340,6 +350,8 @@
 		C6B4811017FE27D10047EB66 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				C6B481B817FE3BDE0047EB66 /* Links */,
+				C6B481BC17FE3EEF0047EB66 /* CURL */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -507,6 +519,8 @@
 				C6B4818B17FE2EF30047EB66 /* VWWHTTPForm.h */,
 				C6B4818C17FE2EF30047EB66 /* VWWHTTPForm.m */,
 				C6B4818D17FE2EF30047EB66 /* VWWHTTPFormProtocol.h */,
+				C6B481BE17FE416B0047EB66 /* VWWGetEventSearchForm.h */,
+				C6B481BF17FE416B0047EB66 /* VWWGetEventSearchForm.m */,
 			);
 			path = forms;
 			sourceTree = "<group>";
@@ -623,11 +637,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B481B917FE3BDE0047EB66 /* Links in Resources */,
 				C6B4810B17FE273D0047EB66 /* README in Resources */,
+				C6B481BD17FE3EEF0047EB66 /* CURL in Resources */,
 				C6B480E317FE26D20047EB66 /* Main_iPad.storyboard in Resources */,
 				C6B480E817FE26D20047EB66 /* Images.xcassets in Resources */,
 				C6B480E017FE26D20047EB66 /* Main_iPhone.storyboard in Resources */,
 				C6B480D717FE26D20047EB66 /* InfoPlist.strings in Resources */,
+				C6B481BB17FE3C140047EB66 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +665,7 @@
 			files = (
 				C6B4815C17FE2A0B0047EB66 /* Reachability.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
+				C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */,
 				C6B4811E17FE29500047EB66 /* VWWWelcomViewController.m in Sources */,
 				C6B4815A17FE2A0B0047EB66 /* MKNetworkEngine.m in Sources */,
 				C6B4819A17FE2F200047EB66 /* VWWUser.m in Sources */,

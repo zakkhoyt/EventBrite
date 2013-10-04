@@ -30,48 +30,23 @@ static VWWRESTConfig *instance;
         
         [self readUserDefaults];
 
-        _serviceVersion = @"v3";
-        _serviceAlbumsURI = @"albums";
-        _serviceAssetsURI = @"assets";
-        _serviceAssetsBulkUpdateURI = @"assets/bulk_update";
-        _serviceBuddiesURI = @"buddies";
-        _serviceClientsURI = @"clients";
-        _serviceDevicesURI = @"devices";
-        _serviceEventAssetsURI = @"assets/event";
-        _serviceEventsURI = @"events";
-        _serviceFacetsURI = @"facets";
-        _serviceFacetsDateURI = @"facets/date";
-        _serviceFavoritesURI =	 @"favorites";
-        _serviceFeedbackURI = @"feedbacks/current";
-        _serviceFilterURI = @"filter";
-        _serviceFriendsURI = @"friends";
-        _serviceFollowersURI = @"followers";
-        _serviceHeartedAssetsURI = @"assets/hearted";
-        _serviceInvitationCodeValidateURI = @"invitations/validate";
-        _serviceInvitationsURI = @"invitations";
-        _serviceInvitationsReceivedURI = @"invitations/received";
-        _serviceNotesURI = @"notes";
-        _serviceNotificationsURI = @"notifications";
-        _serviceRelationsURI = @"relations";
-        _serviceSearchEventsURI = @"events/search";
-        _serviceServicesURI = @"services";
-        _serviceSourcesURI = @"sources";
-        _serviceTokensURI = @"tokens";
-        _serviceUsersURI = @"users";
+        _serviceDataFormat = @"json";
+//        _serviceEventsURI = @"events";
+        _serviceEventSearchURI = @"event_search";
     }
     return self;
 }
 
 -(void)readUserDefaults{
-//    _serviceSecure = [VWWUserDefaults VWWServerSecure];
-//    _server =  [VWWUserDefaults VWWServer];
+    _serviceSecure = [VWWUserDefaults serverSecure];
+    _server =  [VWWUserDefaults server];
     _server = [_server stringByReplacingOccurrencesOfString:@"http://" withString:@""];
     _server = [_server stringByReplacingOccurrencesOfString:@"HTTP://" withString:@""];
     _server = [_server stringByReplacingOccurrencesOfString:@"ftp://" withString:@""];
     _server = [_server stringByReplacingOccurrencesOfString:@"FTP://" withString:@""];
     
     _serviceDomain = _server;
-    _serviceEndpoint = [NSString stringWithFormat:@"%@/api", _server];
+    _serviceEndpoint = [NSString stringWithFormat:@"%@", _server];
 }
 
 -(void)refreshServerFromUserDefaults{
