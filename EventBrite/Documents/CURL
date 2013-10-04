@@ -2,3 +2,26 @@
 
 
 curl -X GET https://www.eventbrite.com/json/event_search?app_key=XWBZSYUMMSGVQPP5TJ&keywords=boise
+
+
+
+
+
+
+
+
+
+
+// no results:
+
+    error =     {
+        "error_message" = "No events found matching the following criteria. [keywords=iphone, city=boise ,  ]";
+        "error_type" = "Not Found";
+    };
+    events =     (
+    );
+    
+    
+    
+    
+    
