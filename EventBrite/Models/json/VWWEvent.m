@@ -46,7 +46,7 @@
         _backgroundColor = [dictionary colorForKey:@"background_color"];
         _boxBackgroundColor = [dictionary colorForKey:@"box_background_color"];
         _boxBorderColor = [dictionary colorForKey:@"box_border_color"];
-        _boxHeaderBackgorundColor  = [dictionary colorForKey:@"box_header_background_color"];
+        _boxHeaderBackgroundColor  = [dictionary colorForKey:@"box_header_background_color"];
         _boxHeaderTextColor = [dictionary colorForKey:@"box_header_text_color"];
         _boxTextColor = [dictionary colorForKey:@"box_text_color"];
         

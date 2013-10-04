@@ -20,7 +20,7 @@
 @property (nonatomic, strong) UIColor *backgroundColor;
 @property (nonatomic, strong) UIColor *boxBackgroundColor;
 @property (nonatomic, strong) UIColor *boxBorderColor;
-@property (nonatomic, strong) UIColor *boxHeaderBackgorundColor;
+@property (nonatomic, strong) UIColor *boxHeaderBackgroundColor;
 @property (nonatomic, strong) UIColor *boxHeaderTextColor;
 @property (nonatomic, strong) UIColor *boxTextColor;
 @property (nonatomic, strong) NSNumber *ID;

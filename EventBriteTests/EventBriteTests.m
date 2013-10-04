@@ -31,7 +31,8 @@
 
 
 -(void)testCoreData{
-
+    
+    
     VWWCoreData *coreData = [[VWWCoreData alloc]init];
     NSManagedObjectContext *context = [coreData managedObjectContext];
     NSManagedObject *search = [NSEntityDescription
@@ -64,6 +65,7 @@
         NSManagedObject *results = [info valueForKey:@"results"];
         NSLog(@"results count: %@", [results valueForKey:@"dictionary_count"]);
     }
+    
 }
 
 //- (void)testExample{
