@@ -67,16 +67,16 @@ static NSString *kSegueTableToDetails = @"segueTableToDetails";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     VWWEventsSearch *search = self.session.searches[0];
-    VWWEvents *events = search.events;
-    return events.events.count;
+    VWWEvents *results = search.results;
+    return results.events.count;
 //    return self.session.searches.events.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     VWWResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWResultsTableViewCell"];
     VWWEventsSearch *search = self.session.searches[0];
-    VWWEvents *events = search.events;
-    cell.event = events.events[indexPath.row];
+    VWWEvents *results = search.results;
+    cell.event = results.events[indexPath.row];
     return cell;
 //    cell.event = events
 //    return cell;

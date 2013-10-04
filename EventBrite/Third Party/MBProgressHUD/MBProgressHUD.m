@@ -23,6 +23,9 @@
     #define MBLabelAlignmentCenter UITextAlignmentCenter
 #endif
 
+#define MB_MULTILINE_TEXTSIZE(text, font, maxSize, mode) [text length] > 0 ? [text \
+    boundingRectWithSize:maxSize options:(NSStringDrawingUsesLineFragmentOrigin) \
+    attributes:@{NSFontAttributeName:font} context:nil].size : CGSizeZero;
 
 static const CGFloat kPadding = 4.f;
 static const CGFloat kLabelFontSize = 16.f;
@@ -514,7 +517,8 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 	totalSize.width = MAX(totalSize.width, indicatorF.size.width);
 	totalSize.height += indicatorF.size.height;
 	
-	CGSize labelSize = [label.text sizeWithFont:label.font];
+    NSDictionary *sizeDictionary = @{NSFontAttributeName:label.font};
+    CGSize labelSize = [label.text sizeWithAttributes:sizeDictionary];
 	labelSize.width = MIN(labelSize.width, maxWidth);
 	totalSize.width = MAX(totalSize.width, labelSize.width);
 	totalSize.height += labelSize.height;
@@ -524,8 +528,11 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 
 	CGFloat remainingHeight = bounds.size.height - totalSize.height - kPadding - 4 * margin; 
 	CGSize maxSize = CGSizeMake(maxWidth, remainingHeight);
-	CGSize detailsLabelSize = [detailsLabel.text sizeWithFont:detailsLabel.font 
-								constrainedToSize:maxSize lineBreakMode:detailsLabel.lineBreakMode];
+    
+
+//	CGSize detailsLabelSize = [detailsLabel.text sizeWithFont:detailsLabel.font 
+//								constrainedToSize:maxSize lineBreakMode:detailsLabel.lineBreakMode];
+    CGSize detailsLabelSize = MB_MULTILINE_TEXTSIZE(detailsLabel.text, detailsLabel.font, maxSize, detailsLabel.lineBreakMode);
 	totalSize.width = MAX(totalSize.width, detailsLabelSize.width);
 	totalSize.height += detailsLabelSize.height;
 	if (detailsLabelSize.height > 0.f && (indicatorF.size.height > 0.f || labelSize.height > 0.f)) {

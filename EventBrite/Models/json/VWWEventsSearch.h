@@ -11,6 +11,6 @@
 
 @interface VWWEventsSearch : NSObject
 @property (nonatomic, strong) NSDictionary *searchParemeters;
-@property (nonatomic, strong) VWWEvents *events;
+@property (nonatomic, strong) VWWEvents *results;
 -(NSString*)searchHash;
 @end

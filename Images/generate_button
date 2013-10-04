@@ -1,0 +1,31 @@
+# This script takes two params:
+#   1.) An image (ideally 1024x1024)
+#   2.) An output directory (will be created)
+# It will then resize the source image to many sizes used by XCode
+
+if [ "$#" -ne 2 ]; then
+  echo "usage: $0 image_name output_dir";
+  exit 1;
+fi
+
+if [ $1 = "--help" ]; then
+    echo "usage: $0 <image name>";
+    exit 1;
+fi
+
+OUTPUT_DIR=$2
+
+# Tell the user what is about to happen
+echo Resizing $1 to Xcode sizes in directory $2
+
+# Create an output directory
+rm -rf $OUTPUT_DIR > /dev/null
+mkdir $OUTPUT_DIR > /dev/null
+
+# Generate images 
+sips $1 -z 88 88 -o $OUTPUT_DIR/$2_44@2x.png > /dev/null
+sips $1 -z 44 44 -o $OUTPUT_DIR/$2_44.png > /dev/null
+
+# Show output to user
+echo Created the following images in $OUTPUT_DIR
+ls -l $OUTPUT_DIR

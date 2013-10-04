@@ -77,8 +77,6 @@
 		C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A517FE324A0047EB66 /* VWWUserDefaults.m */; };
 		C6B481AB17FE34330047EB66 /* VWWCreateEventForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A817FE34330047EB66 /* VWWCreateEventForm.m */; };
 		C6B481AC17FE34330047EB66 /* VWWGetEventsForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481AA17FE34330047EB66 /* VWWGetEventsForm.m */; };
-		C6B481B217FE35CD0047EB66 /* VWWCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481AF17FE35CD0047EB66 /* VWWCredential.m */; };
-		C6B481B317FE35CD0047EB66 /* VWWKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B117FE35CD0047EB66 /* VWWKeychain.m */; };
 		C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B617FE36370047EB66 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C6B481B917FE3BDE0047EB66 /* Links in Resources */ = {isa = PBXBuildFile; fileRef = C6B481B817FE3BDE0047EB66 /* Links */; };
 		C6B481BB17FE3C140047EB66 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C6B481BA17FE3C140047EB66 /* Settings.bundle */; };
@@ -88,6 +86,8 @@
 		C6B481C517FE48AC0047EB66 /* VWWSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481C417FE48AC0047EB66 /* VWWSearchViewController.m */; };
 		C6B481C817FE492E0047EB66 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481C717FE492E0047EB66 /* MBProgressHUD.m */; };
 		C6B481CB17FE4C750047EB66 /* VWWError.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481CA17FE4C750047EB66 /* VWWError.m */; };
+		C6F470B117FF3AEE00630BCB /* VWWCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481AF17FE35CD0047EB66 /* VWWCredential.m */; };
+		C6F470B217FF3AEE00630BCB /* VWWKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481B117FE35CD0047EB66 /* VWWKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -841,6 +841,7 @@
 				C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
 				C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */,
+				C6F470B117FF3AEE00630BCB /* VWWCredential.m in Sources */,
 				C6B481CB17FE4C750047EB66 /* VWWError.m in Sources */,
 				C6B4815A17FE2A0B0047EB66 /* MKNetworkEngine.m in Sources */,
 				C6B4819A17FE2F200047EB66 /* VWWUser.m in Sources */,
@@ -855,8 +856,8 @@
 				C6B4819217FE2EF30047EB66 /* VWWHTTPForm.m in Sources */,
 				C6B4815417FE2A0B0047EB66 /* NSData+MKBase64.m in Sources */,
 				C6B4816317FE2A0B0047EB66 /* SDWebImageDownloaderOperation.m in Sources */,
-				C6B481B317FE35CD0047EB66 /* VWWKeychain.m in Sources */,
 				C6537E3B17FE8DCA00A56A7C /* VWWEventDetailsViewController.m in Sources */,
+				C6F470B217FF3AEE00630BCB /* VWWKeychain.m in Sources */,
 				C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */,
 				C6B4815F17FE2A0B0047EB66 /* SDImageCache.m in Sources */,
 				C6B4819D17FE2F580047EB66 /* VWWModel.m in Sources */,
@@ -887,7 +888,6 @@
 				C6B4816817FE2A0B0047EB66 /* UIImage+MultiFormat.m in Sources */,
 				C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */,
 				C6B4816117FE2A0B0047EB66 /* SDWebImageDecoder.m in Sources */,
-				C6B481B217FE35CD0047EB66 /* VWWCredential.m in Sources */,
 				C6B4816D17FE2ADC0047EB66 /* UIColor+VWW.m in Sources */,
 				C6B4817C17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m in Sources */,
 				C6B4817617FE2B620047EB66 /* VWWRESTConfig.m in Sources */,

@@ -87,7 +87,7 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
                                                search.searchParemeters = @{@"city" : form.city,
                                                                            @"keywords" : form.keywords};
                                             
-                                               search.events = events;
+                                               search.results = events;
                                                [self.session.searches addObject:search];
                                                
                                                

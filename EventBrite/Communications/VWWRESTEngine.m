@@ -211,10 +211,10 @@ static VWWRESTEngine *instance;
 }
 
 -(void)examineHTTPError:(MKNetworkOperation*)completedOperation{
-    NSLog(@"**************** SERVER ERROR %d from curl command: %@", completedOperation.HTTPStatusCode, completedOperation.curlCommandLineString);
+    NSLog(@"**************** SERVER ERROR %ld from curl command: %@", completedOperation.HTTPStatusCode, completedOperation.curlCommandLineString);
     if([VWWUserDefaults debugMode] == YES){
         NSString *alertText = [NSString stringWithFormat:@"JSON:\n%@\nCURL:\n%@", (NSString*)completedOperation.responseJSON, completedOperation.curlCommandLineString];
-        [VWWUtility errorAlert:alertText title:[NSString stringWithFormat:@"Server code:%d", completedOperation.HTTPStatusCode]];
+        [VWWUtility errorAlert:alertText title:[NSString stringWithFormat:@"Server code:%ld", completedOperation.HTTPStatusCode]];
     }
 
 }

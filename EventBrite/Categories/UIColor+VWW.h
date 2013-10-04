@@ -11,5 +11,7 @@
 
 @interface UIColor (VWW)
 +(UIColor*)vwwGreenColor;
++(UIColor*)vwwLightBlueColor;
++(UIColor*)vwwDarkBlueColor;
 +(UIColor*)randomColor;
 @end

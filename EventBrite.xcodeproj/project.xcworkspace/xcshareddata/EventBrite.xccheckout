@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2C278604-3AFC-4307-B0D0-F68ECEFD335C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EventBrite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AB40E6CA-4EEF-4F92-A2F2-7EE3913EDCAB</key>
+		<string>ssh://github.com/zakkhoyt/EventBrite.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EventBrite.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AB40E6CA-4EEF-4F92-A2F2-7EE3913EDCAB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/zakkhoyt/EventBrite.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AB40E6CA-4EEF-4F92-A2F2-7EE3913EDCAB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AB40E6CA-4EEF-4F92-A2F2-7EE3913EDCAB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EventBrite</string>
+		</dict>
+	</array>
+</dict>
+</plist>

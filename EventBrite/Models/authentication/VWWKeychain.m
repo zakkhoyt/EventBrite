@@ -16,7 +16,9 @@
 + (VWWKeychain *)sharedKeychain {
     static VWWKeychain *sharedKeychain;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{ sharedKeychain = [self new]; });
+    dispatch_once(&onceToken, ^{
+        sharedKeychain = [self new];
+    });
     return sharedKeychain;
 }
 
