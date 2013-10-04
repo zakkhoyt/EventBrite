@@ -53,7 +53,7 @@
     form.keywords = @"";
     form.city = @"boise";
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form
-                                           completionBlock:^(NSArray *events) {
+                                           completionBlock:^(VWWEvents *events) {
                                                completion(nil);
                                            } errorBlock:^(NSError *error) {
                                                completion(error);

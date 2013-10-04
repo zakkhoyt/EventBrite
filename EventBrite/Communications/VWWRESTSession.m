@@ -17,6 +17,7 @@ static VWWRESTSession *instance;
 @property (nonatomic, strong) VWWRESTEngine *rest;
 @property (nonatomic, strong) MKNetworkOperation *operation;
 @property (nonatomic) dispatch_queue_t queue;
+
 @end
 
 @implementation VWWRESTSession
@@ -41,10 +42,12 @@ static VWWRESTSession *instance;
 #pragma mark Private methods
 -(void)initializeClass{
     
-    _queue = dispatch_queue_create("com.vaporwareworlf.session", NULL);
-    dispatch_async(_queue, ^{
-
-    });
+//    _queue = dispatch_queue_create("com.vaporwareworlf.session", NULL);
+//    dispatch_async(_queue, ^{
+//        
+//    });
+    
+    _searches = [@[]mutableCopy];
 }
 
 

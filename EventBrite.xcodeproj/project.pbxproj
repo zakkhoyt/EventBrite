@@ -16,14 +16,20 @@
 		C6537E1A17FE7BAB00A56A7C /* VWWEventOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E1917FE7BAB00A56A7C /* VWWEventOrganizer.m */; };
 		C6537E1E17FE7BDF00A56A7C /* VWWEventVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */; };
 		C6537E2417FE80FD00A56A7C /* VWWEventTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */; };
+		C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */; };
+		C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */; };
+		C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */; };
+		C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2F17FE8AB500A56A7C /* VWWResultsMapViewController.m */; };
+		C6537E3317FE8AD100A56A7C /* VWWResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3217FE8AD100A56A7C /* VWWResultsTableViewController.m */; };
+		C6537E3B17FE8DCA00A56A7C /* VWWEventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */; };
+		C6537E3F17FE8E8900A56A7C /* VWWResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */; };
+		C6537E4217FE905900A56A7C /* VWWEventsSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E4117FE905900A56A7C /* VWWEventsSearch.m */; };
 		C6B480CD17FE26D20047EB66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CC17FE26D20047EB66 /* Foundation.framework */; };
 		C6B480CF17FE26D20047EB66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CE17FE26D20047EB66 /* CoreGraphics.framework */; };
 		C6B480D117FE26D20047EB66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480D017FE26D20047EB66 /* UIKit.framework */; };
 		C6B480D717FE26D20047EB66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6B480D517FE26D20047EB66 /* InfoPlist.strings */; };
 		C6B480D917FE26D20047EB66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B480D817FE26D20047EB66 /* main.m */; };
 		C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B480DC17FE26D20047EB66 /* VWWAppDelegate.m */; };
-		C6B480E017FE26D20047EB66 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B480DE17FE26D20047EB66 /* Main_iPhone.storyboard */; };
-		C6B480E317FE26D20047EB66 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B480E117FE26D20047EB66 /* Main_iPad.storyboard */; };
 		C6B480E817FE26D20047EB66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B480E717FE26D20047EB66 /* Images.xcassets */; };
 		C6B480EF17FE26D20047EB66 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480EE17FE26D20047EB66 /* XCTest.framework */; };
 		C6B480F017FE26D20047EB66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CC17FE26D20047EB66 /* Foundation.framework */; };
@@ -109,6 +115,20 @@
 		C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventVenue.m; sourceTree = "<group>"; };
 		C6537E2217FE80FD00A56A7C /* VWWEventTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventTicket.h; sourceTree = "<group>"; };
 		C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventTicket.m; sourceTree = "<group>"; };
+		C6537E2617FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
+		C6537E2817FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWTabBarController.h; sourceTree = "<group>"; };
+		C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWTabBarController.m; sourceTree = "<group>"; };
+		C6537E2E17FE8AB500A56A7C /* VWWResultsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWResultsMapViewController.h; sourceTree = "<group>"; };
+		C6537E2F17FE8AB500A56A7C /* VWWResultsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWResultsMapViewController.m; sourceTree = "<group>"; };
+		C6537E3117FE8AD100A56A7C /* VWWResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWResultsTableViewController.h; sourceTree = "<group>"; };
+		C6537E3217FE8AD100A56A7C /* VWWResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWResultsTableViewController.m; sourceTree = "<group>"; };
+		C6537E3917FE8DCA00A56A7C /* VWWEventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventDetailsViewController.h; sourceTree = "<group>"; };
+		C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventDetailsViewController.m; sourceTree = "<group>"; };
+		C6537E3D17FE8E8900A56A7C /* VWWResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWResultsTableViewCell.h; sourceTree = "<group>"; };
+		C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWResultsTableViewCell.m; sourceTree = "<group>"; };
+		C6537E4017FE905900A56A7C /* VWWEventsSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventsSearch.h; sourceTree = "<group>"; };
+		C6537E4117FE905900A56A7C /* VWWEventsSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventsSearch.m; sourceTree = "<group>"; };
 		C6B480C917FE26D20047EB66 /* EventBrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B480CC17FE26D20047EB66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6B480CE17FE26D20047EB66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,8 +139,6 @@
 		C6B480DA17FE26D20047EB66 /* EventBrite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventBrite-Prefix.pch"; sourceTree = "<group>"; };
 		C6B480DB17FE26D20047EB66 /* VWWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWWAppDelegate.h; sourceTree = "<group>"; };
 		C6B480DC17FE26D20047EB66 /* VWWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWWAppDelegate.m; sourceTree = "<group>"; };
-		C6B480DF17FE26D20047EB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		C6B480E217FE26D20047EB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		C6B480E717FE26D20047EB66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C6B480ED17FE26D20047EB66 /* EventBriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B480EE17FE26D20047EB66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -259,23 +277,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C6537E1317FE75DD00A56A7C /* Events */ = {
+		C6537E1317FE75DD00A56A7C /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				C6537E1417FE786800A56A7C /* VWWEvents.h */,
-				C6537E1517FE786800A56A7C /* VWWEvents.m */,
-				C6537E1017FE75D900A56A7C /* VWWEventsSummary.h */,
-				C6537E1117FE75D900A56A7C /* VWWEventsSummary.m */,
-				C6B4819517FE2F200047EB66 /* VWWEvent.h */,
-				C6B4819617FE2F200047EB66 /* VWWEvent.m */,
-				C6537E1817FE7BAB00A56A7C /* VWWEventOrganizer.h */,
-				C6537E1917FE7BAB00A56A7C /* VWWEventOrganizer.m */,
-				C6537E1C17FE7BDF00A56A7C /* VWWEventVenue.h */,
-				C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */,
-				C6537E2217FE80FD00A56A7C /* VWWEventTicket.h */,
-				C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */,
+				C6537E4017FE905900A56A7C /* VWWEventsSearch.h */,
+				C6537E4117FE905900A56A7C /* VWWEventsSearch.m */,
+				C6537E4517FE91C700A56A7C /* Events */,
 			);
-			name = Events;
+			name = Search;
 			sourceTree = "<group>";
 		};
 		C6537E1717FE78DD00A56A7C /* Error */ = {
@@ -285,6 +294,96 @@
 				C6B481CA17FE4C750047EB66 /* VWWError.m */,
 			);
 			name = Error;
+			sourceTree = "<group>";
+		};
+		C6537E3417FE8ADB00A56A7C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C6B481C317FE48AC0047EB66 /* VWWSearchViewController.h */,
+				C6B481C417FE48AC0047EB66 /* VWWSearchViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		C6537E3517FE8AED00A56A7C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E2E17FE8AB500A56A7C /* VWWResultsMapViewController.h */,
+				C6537E2F17FE8AB500A56A7C /* VWWResultsMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		C6537E3617FE8AF700A56A7C /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E3C17FE8E7700A56A7C /* Cell */,
+				C6537E3117FE8AD100A56A7C /* VWWResultsTableViewController.h */,
+				C6537E3217FE8AD100A56A7C /* VWWResultsTableViewController.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		C6537E3717FE8B0300A56A7C /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E3617FE8AF700A56A7C /* Table */,
+				C6537E3517FE8AED00A56A7C /* Map */,
+			);
+			name = Results;
+			sourceTree = "<group>";
+		};
+		C6537E3817FE8DB900A56A7C /* EventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E3917FE8DCA00A56A7C /* VWWEventDetailsViewController.h */,
+				C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */,
+			);
+			name = EventDetails;
+			sourceTree = "<group>";
+		};
+		C6537E3C17FE8E7700A56A7C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E3D17FE8E8900A56A7C /* VWWResultsTableViewCell.h */,
+				C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		C6537E4317FE918D00A56A7C /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				C6B4819517FE2F200047EB66 /* VWWEvent.h */,
+				C6B4819617FE2F200047EB66 /* VWWEvent.m */,
+				C6537E1817FE7BAB00A56A7C /* VWWEventOrganizer.h */,
+				C6537E1917FE7BAB00A56A7C /* VWWEventOrganizer.m */,
+				C6537E1C17FE7BDF00A56A7C /* VWWEventVenue.h */,
+				C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */,
+				C6537E2217FE80FD00A56A7C /* VWWEventTicket.h */,
+				C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		C6537E4417FE91B500A56A7C /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E1017FE75D900A56A7C /* VWWEventsSummary.h */,
+				C6537E1117FE75D900A56A7C /* VWWEventsSummary.m */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
+		C6537E4517FE91C700A56A7C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E1417FE786800A56A7C /* VWWEvents.h */,
+				C6537E1517FE786800A56A7C /* VWWEvents.m */,
+				C6537E4417FE91B500A56A7C /* Summary */,
+				C6537E4317FE918D00A56A7C /* Event */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 		C6B480C017FE26D20047EB66 = {
@@ -400,8 +499,11 @@
 		C6B4810F17FE27D10047EB66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6B481C317FE48AC0047EB66 /* VWWSearchViewController.h */,
-				C6B481C417FE48AC0047EB66 /* VWWSearchViewController.m */,
+				C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */,
+				C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */,
+				C6537E3417FE8ADB00A56A7C /* Search */,
+				C6537E3717FE8B0300A56A7C /* Results */,
+				C6537E3817FE8DB900A56A7C /* EventDetails */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -451,8 +553,8 @@
 		C6B4811417FE27D10047EB66 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				C6B480DE17FE26D20047EB66 /* Main_iPhone.storyboard */,
-				C6B480E117FE26D20047EB66 /* Main_iPad.storyboard */,
+				C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */,
+				C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -595,7 +697,7 @@
 			isa = PBXGroup;
 			children = (
 				C6537E1717FE78DD00A56A7C /* Error */,
-				C6537E1317FE75DD00A56A7C /* Events */,
+				C6537E1317FE75DD00A56A7C /* Search */,
 				C6B4819E17FE31520047EB66 /* VWWPagination.h */,
 				C6B4819F17FE31520047EB66 /* VWWPagination.m */,
 				C6B4819B17FE2F580047EB66 /* VWWModel.h */,
@@ -707,13 +809,13 @@
 				C6537E0F17FE752700A56A7C /* event_00 in Resources */,
 				C6B4810B17FE273D0047EB66 /* README in Resources */,
 				C6B481BD17FE3EEF0047EB66 /* CURL in Resources */,
-				C6B480E317FE26D20047EB66 /* Main_iPad.storyboard in Resources */,
+				C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */,
 				C6537E0D17FE50A800A56A7C /* event_03 in Resources */,
 				C6537E0B17FE509000A56A7C /* event_02 in Resources */,
 				C6537E0917FE507800A56A7C /* event_01 in Resources */,
 				C6B480E817FE26D20047EB66 /* Images.xcassets in Resources */,
-				C6B480E017FE26D20047EB66 /* Main_iPhone.storyboard in Resources */,
 				C6B481C217FE46F20047EB66 /* Assignment in Resources */,
+				C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */,
 				C6B480D717FE26D20047EB66 /* InfoPlist.strings in Resources */,
 				C6B481BB17FE3C140047EB66 /* Settings.bundle in Resources */,
 			);
@@ -736,6 +838,7 @@
 			files = (
 				C6B4815C17FE2A0B0047EB66 /* Reachability.m in Sources */,
 				C6537E1217FE75D900A56A7C /* VWWEventsSummary.m in Sources */,
+				C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
 				C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */,
 				C6B481CB17FE4C750047EB66 /* VWWError.m in Sources */,
@@ -745,6 +848,7 @@
 				C6B4815617FE2A0B0047EB66 /* NSDictionary+RequestEncoding.m in Sources */,
 				C6537E1617FE786800A56A7C /* VWWEvents.m in Sources */,
 				C6B481C817FE492E0047EB66 /* MBProgressHUD.m in Sources */,
+				C6537E4217FE905900A56A7C /* VWWEventsSearch.m in Sources */,
 				C6B4817817FE2B620047EB66 /* VWWRESTParser.m in Sources */,
 				C6B480D917FE26D20047EB66 /* main.m in Sources */,
 				C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */,
@@ -752,6 +856,7 @@
 				C6B4815417FE2A0B0047EB66 /* NSData+MKBase64.m in Sources */,
 				C6B4816317FE2A0B0047EB66 /* SDWebImageDownloaderOperation.m in Sources */,
 				C6B481B317FE35CD0047EB66 /* VWWKeychain.m in Sources */,
+				C6537E3B17FE8DCA00A56A7C /* VWWEventDetailsViewController.m in Sources */,
 				C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */,
 				C6B4815F17FE2A0B0047EB66 /* SDImageCache.m in Sources */,
 				C6B4819D17FE2F580047EB66 /* VWWModel.m in Sources */,
@@ -772,10 +877,13 @@
 				C6B481A017FE31520047EB66 /* VWWPagination.m in Sources */,
 				C6B4817917FE2B620047EB66 /* VWWRESTSession.m in Sources */,
 				C6B4816517FE2A0B0047EB66 /* SDWebImagePrefetcher.m in Sources */,
+				C6537E3317FE8AD100A56A7C /* VWWResultsTableViewController.m in Sources */,
 				C6B4816617FE2A0B0047EB66 /* UIButton+WebCache.m in Sources */,
 				C6537E1E17FE7BDF00A56A7C /* VWWEventVenue.m in Sources */,
+				C6537E3F17FE8E8900A56A7C /* VWWResultsTableViewCell.m in Sources */,
 				C6B481AC17FE34330047EB66 /* VWWGetEventsForm.m in Sources */,
 				C6B4816A17FE2A0B0047EB66 /* UIImageView+WebCache.m in Sources */,
+				C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */,
 				C6B4816817FE2A0B0047EB66 /* UIImage+MultiFormat.m in Sources */,
 				C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */,
 				C6B4816117FE2A0B0047EB66 /* SDWebImageDecoder.m in Sources */,
@@ -809,30 +917,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6537E2617FE8A2F00A56A7C /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6537E2817FE8A2F00A56A7C /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
 		C6B480D517FE26D20047EB66 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C6B480D617FE26D20047EB66 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C6B480DE17FE26D20047EB66 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6B480DF17FE26D20047EB66 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		C6B480E117FE26D20047EB66 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6B480E217FE26D20047EB66 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		C6B480F717FE26D20047EB66 /* InfoPlist.strings */ = {

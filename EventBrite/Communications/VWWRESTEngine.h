@@ -13,12 +13,14 @@
 #import "VWWHTTPForm.h"
 #import "VWWUser.h"
 #import "VWWEvent.h"
+#import "VWWEvents.h"
+
 
 // Form includes
 #import "VWWGetEventSearchForm.h"
 
 typedef void (^VWWRESTEngineEventBlock)(VWWEvent *event);
-typedef void (^VWWRESTEngineEventsBlock)(NSArray *events);
+typedef void (^VWWRESTEngineEventsBlock)(VWWEvents *events);
 typedef void (^VWWRESTEngineErrorBlock)(NSError *error);
 
 @interface VWWRESTEngine : MKNetworkEngine

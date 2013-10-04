@@ -295,7 +295,7 @@ static VWWRESTEngine *instance;
                      VWWError *error;
                      VWWEvents *events;
                      [VWWRESTParser parseJSON:responseJSON events:&events error:&error];
-                     completionBlock(nil);
+                     completionBlock(events);
                  }
                       errorBlock:^(NSError *error, id responseJSON){
                           errorBlock(error);

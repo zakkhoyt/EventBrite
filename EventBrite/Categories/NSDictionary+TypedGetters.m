@@ -69,4 +69,17 @@
     return [value isKindOfClass:[NSNumber class]] ? [value floatValue] : 0.0f;
 }
 
+
+-(UIColor*)colorForKey:(NSString*)key{
+    NSScanner* scanner = [NSScanner scannerWithString:key];
+    unsigned int hex = 0;
+    if ([scanner scanHexInt:&hex]) {
+        int r = (hex >> 16) & 0xFF;
+        int g = (hex >>  8) & 0xFF;
+        int b = (hex      ) & 0xFF;
+        return [UIColor colorWithRed:r/(float)0xFF green:g/(float)0xFF blue:b/(float)0xFF alpha:1.0];
+    }
+    return nil;
+}
+
 @end

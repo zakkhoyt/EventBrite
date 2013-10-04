@@ -19,4 +19,5 @@
 - (NSUInteger)uintForKey:(NSString *)key;
 - (float)floatForKey:(NSString *)key;
 - (NSNumber*)numberForKey:(NSString*)key;
+-(UIColor*)colorForKey:(NSString*)key;
 @end

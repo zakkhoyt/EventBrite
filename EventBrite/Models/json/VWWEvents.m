@@ -9,4 +9,11 @@
 #import "VWWEvents.h"
 
 @implementation VWWEvents
+-(id)init{
+    self = [super init];
+    if(self){
+        _events = [@[]mutableCopy];
+    }
+    return self;
+}
 @end

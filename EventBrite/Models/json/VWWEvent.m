@@ -41,14 +41,21 @@
             VWWEventTicket *ticket = [VWWEventTicket eventTicketWithDictionary:d];
             [_tickets addObject:ticket];
         }
-//        @property (nonatomic, strong) VWWEventOrganizer *organizer;
-//        @property (nonatomic, strong) VWWEventVenue *venue;
-//        @property (nonatomic, strong) NSArray *tickets;
-//        
-//        
-//        @property (nonatomic, strong) NSString *title;
-
         
+        _backgroundColor = [dictionary colorForKey:@"background_color"];
+        _boxBackgroundColor = [dictionary colorForKey:@"box_background_color"];
+        _boxBorderColor = [dictionary colorForKey:@"box_border_color"];
+        _boxHeaderBackgorundColor  = [dictionary colorForKey:@"box_header_background_color"];
+        _boxHeaderTextColor = [dictionary colorForKey:@"box_header_text_color"];
+        _boxTextColor = [dictionary colorForKey:@"box_text_color"];
+        
+        _ID = [dictionary numberForKey:@"id"];
+        _capacity = [dictionary numberForKey:@"capacity"];
+        _startDate = [dictionary dateForKey:@"start_date"];
+        _title = [dictionary stringForKey:@"title"];
+        _desciption = [dictionary stringForKey:@"description"];
+        _distance = [dictionary stringForKey:@"distance"];
+        _logo = [dictionary urlForKey:@"logo"];
         
     }
     return self;
