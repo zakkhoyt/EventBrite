@@ -292,8 +292,8 @@ static VWWRESTEngine *instance;
                   jsonDictionary:[form httpParametersDictionary]
                  completionBlock:^(id responseJSON){
                      NSLog(@"responseJSON: %@", responseJSON);
-                     NSError *error;
-                     NSArray *events;
+                     VWWError *error;
+                     VWWEvents *events;
                      [VWWRESTParser parseJSON:responseJSON events:&events error:&error];
                      completionBlock(nil);
                  }

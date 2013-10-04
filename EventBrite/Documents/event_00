@@ -1,0 +1,12 @@
+(lldb) po eventsDictionaries[0]
+{
+    summary =     {
+        filters =         {
+            city = boise;
+        };
+        "first_event" = 8334848757;
+        "last_event" = 8135113343;
+        "num_showing" = 10;
+        "total_items" = 108;
+    };
+}

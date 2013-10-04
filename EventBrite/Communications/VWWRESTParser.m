@@ -9,8 +9,9 @@
 #import "NSDictionary+TypedGetters.h"
 #import "VWWPagination.h"
 #import "VWWError.h"
+#import "VWWEvents.h"
 #import "VWWEvent.h"
-
+#import "VWWEventsSummary.h"
 
 @implementation VWWRESTParser
 
@@ -46,24 +47,30 @@
 //    *event = [VWWEvent eventWithDictionary:dictionary];
 //    return YES;
 //}
-+(BOOL)parseJSON:(id)json events:(NSArray**)events error:(VWWError**)error{
++(BOOL)parseJSON:(id)json events:(VWWEvents**)events error:(VWWError**)error{
     if(json == nil) return NO;
-    
-    
     
     if([json isKindOfClass:[NSDictionary class]] == NO){
         NSLog(@"** WARNING: %s Expected json dictionary", __func__);
+        return NO;
     }
-    NSDictionary *dictionary = (NSDictionary*)json;
-
-    [VWWRESTParser examineDictionary:dictionary forError:error];
     
-    NSMutableArray* mutableEvents = [@[]mutableCopy];
-    NSArray *eventsDictionaries = (NSArray*)dictionary[@"events"];
+
+    [VWWRESTParser examineDictionary:json forError:error];
+    
+    *events = [[VWWEvents alloc]init];
+    NSArray *eventsDictionaries = (NSArray*)json[@"events"];
     for(NSDictionary *d in eventsDictionaries) {
-        [mutableEvents addObject:[VWWEvent eventWithDictionary:d]];
+        if(d[@"summary"]){
+            VWWEventsSummary *summary = [VWWEventsSummary eventsSummaryWithDictionary:d[@"summary"]];
+            (*events).summary = summary;
+        }
+        else if(d[@"event"]){
+            VWWEvent *event = [VWWEvent eventWithDictionary:d[@"event"]];
+            [(*events).events addObject:event];
+        }
     }
-    *events = [NSArray arrayWithArray:mutableEvents];
+    
     
     return YES;
     

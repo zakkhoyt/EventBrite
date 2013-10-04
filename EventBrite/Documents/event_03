@@ -1,0 +1,105 @@
+(lldb) po eventsDictionaries[3]
+{
+    event =     {
+        "background_color" = f7f7f7;
+        "box_background_color" = ffffff;
+        "box_border_color" = dedede;
+        "box_header_background_color" = fafafa;
+        "box_header_text_color" = 404040;
+        "box_text_color" = 666666;
+        capacity = 0;
+        category = "performances,entertainment";
+        created = "2013-09-01 08:03:32";
+        description = "<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">Looking for thrills, chills and that sensation of something creeping up behind you? Want to jump out of your seat in terror - and laugh in the next moment? SCT has a \"Scream\" for you.</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">A horror-bly funny comedy by David DeBoy and directed by Greg Culet. Courtesy of Samuel French</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">Run Dates: Oct. 11, 12, 17, 18, 19, 20, 24, 25 and 26</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">Spencer has just inherited his father\U2019s film studio and thinks he knows better than his late father how to produce movies. The studio specializes in horror films and their biggest star is Alexander Moreau, a Karloff/Price/Carradine sort in whose mansion this comedy takes place. Spencer has come to inform Moreau that he is not renewing his contract. Moreau offers to demonstrate that he is still one scary guy. His proposition: if he can scare Spencer out of his wits, he gets a contract and creative control. Moreau pulls it off in wacky thriller style.</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">Rating: General Audiences</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">SHOW TIMES: Thurs 7:30p, Fri & Sat 8:00p, Sun matinee 2p</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">208 342-2000.</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">4802 W. Emerald, Boise, ID.</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana; color: #021eaa;\"><SPAN STYLE=\"letter-spacing: 0.0px; color: #000000;\">Visit our website at </SPAN><SPAN STYLE=\"text-decoration: underline; letter-spacing: 0.0px;\">www.stagecoachtheatre.com</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">Ticket Prices: $15.00 - All Performances Student, senior and military discounts are offered on Thursday and Sunday performances.</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">Become a fan of Stace Coach Theatre on Facebook. \U00a0</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana; color: #021eaa;\"><SPAN STYLE=\"letter-spacing: 0.0px; color: #000000;\">Join our newsletter at </SPAN><SPAN STYLE=\"text-decoration: underline; letter-spacing: 0.0px;\">www.stagecoachtheatre.com</SPAN></P>
+\n<P STYLE=\"margin: 0px 0px 10px; font-family: Verdana;\"><SPAN STYLE=\"letter-spacing: 0.0px;\">On Friday and Saturday nights theater lovers can purchase alcoholic beverages to enjoy throughout the production. Thanks to McCleary's Pub for bringing their services and bright faces to support the joy of live theatre.</SPAN></P>";
+        distance = "0.00M";
+        "end_date" = "2013-10-18 22:00:00";
+        id = 8123863695;
+        "link_color" = 0f90ba;
+        locale = "en_US";
+        logo = "http://ebmedia.eventbrite.com/s3-build/images/2398139/42471735500/2/logo.png";
+        "logo_ssl" = "https://ebmedia.eventbrite.com/s3-build/images/2398139/42471735500/2/logo.png";
+        modified = "2013-09-15 09:22:22";
+        "num_attendee_rows" = "<null>";
+        organizer =         {
+            description = "Stage Coach Theatre is a quality-driven performance organization dedicated to producing contemporary live theatre that reflects and celebrates the human spirit for, by and accessible to the community.
+\nStage Coach Theatre is entering its 33rd consecutive season of producing plays in the Treasure Valley. SCT produces eight productions per season, all with volunteers from the local community.
+\nSEASON 33 PLAYS AT STAGE COACH THEATRE
+\nWait Until Dark: A suspense mystery. Aug. 30, 31, Sept. 5, 6, 7, 8, 12, 13, 14
+\nIts a Scream!!: A horror-bly funny comedy. Oct. 11, 12, 17, 18, 19, 20, 24, 25, 26
+\nDashing through the Snow: A comedy. Nov. 29, 30, Dec. 5, 6,7, 8, 12, 13, 14
+\nParlor Games: A comedy. Jan 10. 11, 16, 17, 18, 19, 23, 24,25.
+\nRENT: The smash musical! Feb. 28, Mar. 1, 6, 7, 8, 13, 14, 15, 20, 21, 22
+\nWhos Afraid of Virginia Woolf? A Drama. Apr. 18, 19, 24, 25, 26, 27, May 1, 2, 3
+\nNight of January 16th: A murder mystery. May 30, 31, Jun. 5, 6, 7, 8, 12, 13, 14
+\nSpoon River Anthology: A comedy. July 11, 12, 17, 18, 19, 20, 24, 25, 26";
+            id = 2762190930;
+            "long_description" = "Stage Coach Theatre is a quality-driven performance organization dedicated to producing contemporary live theatre that reflects and celebrates the human spirit for, by and accessible to the community.
+\nStage Coach Theatre is entering its 33rd consecutive season of producing plays in the Treasure Valley. SCT produces eight productions per season, all with volunteers from the local community.
+\nSEASON 33 PLAYS AT STAGE COACH THEATRE
+\nWait Until Dark: A suspense mystery. Aug. 30, 31, Sept. 5, 6, 7, 8, 12, 13, 14
+\nIts a Scream!!: A horror-bly funny comedy. Oct. 11, 12, 17, 18, 19, 20, 24, 25, 26
+\nDashing through the Snow: A comedy. Nov. 29, 30, Dec. 5, 6,7, 8, 12, 13, 14
+\nParlor Games: A comedy. Jan 10. 11, 16, 17, 18, 19, 23, 24,25.
+\nRENT: The smash musical! Feb. 28, Mar. 1, 6, 7, 8, 13, 14, 15, 20, 21, 22
+\nWhos Afraid of Virginia Woolf? A Drama. Apr. 18, 19, 24, 25, 26, 27, May 1, 2, 3
+\nNight of January 16th: A murder mystery. May 30, 31, Jun. 5, 6, 7, 8, 12, 13, 14
+\nSpoon River Anthology: A comedy. July 11, 12, 17, 18, 19, 20, 24, 25, 26";
+            name = "Stage Coach Theatre";
+            url = "http://www.eventbrite.com/org/2762190930";
+        };
+        privacy = Public;
+        repeats = no;
+        "start_date" = "2013-10-18 20:00:00";
+        status = Live;
+        tags = "";
+        "text_color" = 404040;
+        tickets =         (
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "";
+                    "display_price" = "15.00";
+                    "end_date" = "2013-10-18 19:00:00";
+                    id = 20422355;
+                    max = "<null>";
+                    min = 1;
+                    name = "It's a Scream: A comedic play- Friday, October 18";
+                    price = "16.82";
+                    type = 0;
+                    visible = true;
+                };
+            }
+        );
+        timezone = "America/Phoenix";
+        "timezone_offset" = "GMT-0700";
+        title = "It's a Scream: A comedic play- Friday, October 18";
+        "title_text_color" = "";
+        url = "http://its-a-scream-fri-oct-18-SRCH.eventbrite.com";
+        venue =         {
+            "Lat-Long" = "43.612117 / -116.24106";
+            address = "4802 W Emerald St";
+            "address_2" = "";
+            city = Boise;
+            country = "United States";
+            "country_code" = US;
+            id = 4143219;
+            latitude = "43.612117";
+            longitude = "-116.24106";
+            name = "Stage Coach Theatre";
+            "postal_code" = 83706;
+            region = ID;
+        };
+    };
+}

@@ -27,6 +27,11 @@
     
 }
 
+- (NSNumber*)numberForKey:(NSString*)key{
+    id value = self[key];
+    return [value isKindOfClass:[NSNumber class]] ? value : nil;
+}
+
 - (NSURL *)urlForKey:(NSString *)key {
     id value = self[key];
     return [value isKindOfClass:[NSString class]] ? [NSURL URLWithString:value] : nil;

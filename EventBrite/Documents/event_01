@@ -1,0 +1,117 @@
+(lldb) po eventsDictionaries[1]
+{
+    event =     {
+        "background_color" = ffffff;
+        "box_background_color" = ffffff;
+        "box_border_color" = dedede;
+        "box_header_background_color" = 1c2b39;
+        "box_header_text_color" = fcb715;
+        "box_text_color" = 1c2b39;
+        capacity = 5000;
+        category = "fundraisers,endurance";
+        created = "2013-09-14 13:29:29";
+        description = "some html stuff here";
+        distance = "0.00M";
+        "end_date" = "2013-10-19 14:00:00";
+        id = 8334848757;
+        "link_color" = fcb715;
+        locale = "en_US";
+        logo = "http://ebmedia.eventbrite.com/s3-build/images/2539203/21228629434/1/logo.png";
+        "logo_ssl" = "https://ebmedia.eventbrite.com/s3-build/images/2539203/21228629434/1/logo.png";
+        modified = "2013-09-15 12:46:59";
+        "num_attendee_rows" = "<null>";
+        organizer =         {
+            description = "description here";
+            id = 4027364583;
+            "long_description" = "";
+            name = "Train Heroic";
+            url = "http://www.eventbrite.com/org/4027364583";
+        };
+        privacy = Public;
+        repeats = no;
+        "start_date" = "2013-10-19 12:00:00";
+        status = Live;
+        tags = "";
+        "text_color" = 1c2b39;
+        tickets =         (
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "WOD + Donation";
+                    "display_price" = "10.00";
+                    "end_date" = "2013-10-31 07:00:00";
+                    id = 20692525;
+                    max = 30;
+                    min = 1;
+                    name = "Luke Lifter";
+                    price = "11.54";
+                    type = 0;
+                    visible = true;
+                };
+            },
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "WOD + Donation + Heroic Helper gets you an AWESOME commemorative event t-shirt. Wear your support year round! Be a Heroic Helper.  ";
+                    "display_price" = "35.00";
+                    "end_date" = "2013-10-31 18:00:00";
+                    id = 20692527;
+                    max = 30;
+                    min = 1;
+                    name = "Heroic Helper";
+                    price = "37.92";
+                    "start_date" = "2013-08-30 10:10:00";
+                    type = 0;
+                    visible = true;
+                };
+            },
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "Feel free to give a little more";
+                    "end_date" = "2013-10-31 07:00:00";
+                    id = 20692529;
+                    max = 30;
+                    min = 1;
+                    name = "Extra Donation to Autism Tree";
+                    type = 1;
+                    visible = true;
+                };
+            },
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "This registers you in the Lift Up Luke workout. No t-shirt is received and no donation is made to the Autism Tree Project Foundation.  We do, however, appreciate your participation and hope you spread awareness of our event and cause.";
+                    "display_price" = "0.00";
+                    "end_date" = "2013-10-31 07:00:00";
+                    id = 20692531;
+                    max = 30;
+                    min = 1;
+                    name = "WOD Only - No Donation";
+                    price = "0.00";
+                    type = 0;
+                    visible = true;
+                };
+            }
+        );
+        timezone = "America/Denver";
+        "timezone_offset" = "GMT-0600";
+        title = "CrossFit Refinery: Lift Up Luke";
+        "title_text_color" = "";
+        url = "http://crossfitrefineryliftupluke-SRCH.eventbrite.com";
+        venue =         {
+            "Lat-Long" = "43.618384 / -116.215264";
+            address = "528 South Americana Boulevard";
+            "address_2" = "";
+            city = Boise;
+            country = "United States";
+            "country_code" = US;
+            id = 4243415;
+            latitude = "43.618384";
+            longitude = "-116.215264";
+            name = "CrossFit Refinery";
+            "postal_code" = 83702;
+            region = ID;
+        };
+    };
+}

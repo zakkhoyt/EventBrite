@@ -18,5 +18,5 @@
 - (NSInteger)intForKey:(NSString *)key;
 - (NSUInteger)uintForKey:(NSString *)key;
 - (float)floatForKey:(NSString *)key;
-
+- (NSNumber*)numberForKey:(NSString*)key;
 @end
