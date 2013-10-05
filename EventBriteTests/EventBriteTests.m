@@ -40,7 +40,7 @@
 //    form.city = @"asdfasdfa";
 //    form.keywords = @"fddgfh";
 
-    [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form completionBlock:^(VWWSearchResults *searchResults) {
+    [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form completionBlock:^(VWWEventsSearch *DONT_USE) {
         // Temp: write our data out
         NSError *cdError;
         VWWCoreData *coreData = [VWWCoreData sharedInstance];

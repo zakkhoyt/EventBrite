@@ -13,13 +13,14 @@
 #import "VWWHTTPForm.h"
 #import "VWWEvent.h"
 #import "VWWError.h"
-#import "VWWSearchResults.h"
+//#import "VWWSearchResults.h"
+#import "VWWEventsSearch.h"
 
 // Form includes
 #import "VWWGetEventSearchForm.h"
 
 typedef void (^VWWRESTEngineEventBlock)(VWWEvent *event);
-typedef void (^VWWRESTEngineSearchResultsBlock)(VWWSearchResults *searchResults);
+typedef void (^VWWRESTEngineEventsSearchBlock)(VWWEventsSearch *eventsSearch);
 typedef void (^VWWRESTEngineErrorBlock)(NSError *error);
 
 @interface VWWRESTEngine : MKNetworkEngine
@@ -32,7 +33,7 @@ typedef void (^VWWRESTEngineErrorBlock)(NSError *error);
 
 #pragma mark Events
 -(MKNetworkOperation*)getEventSearchWithForm:(VWWGetEventSearchForm*)form
-                             completionBlock:(VWWRESTEngineSearchResultsBlock)completionBlock
+                             completionBlock:(VWWRESTEngineEventsSearchBlock)completionBlock
                                   errorBlock:(VWWRESTEngineErrorBlock)errorBlock;
 
 @end

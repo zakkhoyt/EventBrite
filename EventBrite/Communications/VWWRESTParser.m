@@ -28,7 +28,7 @@
 }
 
 
-+(BOOL)parseJSON:(id)json form:(VWWGetEventSearchForm*)form searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error{
++(BOOL)parseJSON:(id)json form:(VWWGetEventSearchForm*)form eventsSearch:(VWWEventsSearch**)eventsSearch error:(VWWError**)error{
     if(json == nil) return NO;
     
     if([json isKindOfClass:[NSDictionary class]] == NO){
@@ -44,12 +44,13 @@
     NSManagedObjectContext *context = [coreData managedObjectContext];
     
     
-    VWWEventsSearch *search = [NSEntityDescription insertNewObjectForEntityForName:@"VWWEventsSearch"
+    *eventsSearch = [NSEntityDescription insertNewObjectForEntityForName:@"VWWEventsSearch"
                                                             inManagedObjectContext:context];
-    [search populateWithForm:form context:context];
-
+    [(*eventsSearch) populateWithForm:form context:context];
     
-    *searchResults = [NSEntityDescription
+    
+    
+    VWWSearchResults  *searchResults = [NSEntityDescription
                                  insertNewObjectForEntityForName:@"VWWSearchResults"
                                  inManagedObjectContext:context];
     
@@ -64,7 +65,7 @@
                                          inManagedObjectContext:context];
 
             [summary populateWithDictionary:summaryDictionary context:context];
-            (*searchResults).eventsSummary = summary;
+            (searchResults).eventsSummary = summary;
             continue;
         }
         
@@ -79,9 +80,9 @@
         }
     }
 
-    (*searchResults).events = eventsSet;
+    searchResults.events = eventsSet;
 
-    search.searchResults = (*searchResults);
+    (*eventsSearch).searchResults = (searchResults);
     
     
     

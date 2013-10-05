@@ -87,19 +87,13 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
     
     
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form
-                                           completionBlock:^(VWWSearchResults *searchResults){
+                                           completionBlock:^(VWWEventsSearch *eventsSearch) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                                
                                                
-//                                               VWWEventsSearch *search = [[VWWEventsSearch alloc]init];
-//                                               search.searchParemeters = @{@"city" : form.city,
-//                                                                           @"keywords" : form.keywords};
-                                            
-//                                               search.results = events;
-//                                               [self.session.searches addObject:searchResults.events];
+                                               [VWWSession sharedInstance].currentEventsSearch = eventsSearch;
                                                
-                                               
-                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:searchResults];
+                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:eventsSearch];
                                            } errorBlock:^(NSError *error) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                            }];

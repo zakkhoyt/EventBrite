@@ -235,20 +235,27 @@ static VWWRESTEngine *instance;
 #pragma mark Events
 
 -(MKNetworkOperation*)getEventSearchWithForm:(VWWGetEventSearchForm*)form
-                             completionBlock:(VWWRESTEngineSearchResultsBlock)completionBlock
+                             completionBlock:(VWWRESTEngineEventsSearchBlock)completionBlock
                                   errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
     @autoreleasepool {
     return [self httpGetEndpoint:self.service.serviceEventSearchURI
                   jsonDictionary:[form httpParametersDictionary]
                  completionBlock:^(id responseJSON){
                      VWWError *error;
-                     VWWSearchResults *searchResults;
+                     
+//                     VWWSearchResults *searchResults;
+//                     [VWWRESTParser parseJSON:responseJSON
+//                                         form:form
+//                                searchResults:&searchResults
+//                                        error:&error];
+                     
+                     VWWEventsSearch *eventsSearch;
                      [VWWRESTParser parseJSON:responseJSON
                                          form:form
-                                searchResults:&searchResults
+                                 eventsSearch:&eventsSearch
                                         error:&error];
                      
-                     completionBlock(searchResults);
+                     completionBlock(eventsSearch);
                  }
                       errorBlock:^(NSError *error, id responseJSON){
                           errorBlock(error);

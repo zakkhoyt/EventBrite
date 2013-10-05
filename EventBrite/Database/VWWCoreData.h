@@ -13,6 +13,8 @@
 #import "VWWEventTicket.h"
 #import "VWWEventVenue.h"
 #import "VWWEventsSearch.h"
+#import "VWWSearchResults.h"
+
 @interface VWWCoreData : NSObject
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;

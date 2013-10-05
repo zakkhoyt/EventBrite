@@ -17,7 +17,6 @@ static NSString *kSegueTableToDetails = @"segueTableToDetails";
 
 @interface VWWResultsTableViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) VWWSession *session;
 @property (nonatomic, strong) NSArray *events;
 @end
 
@@ -35,14 +34,13 @@ static NSString *kSegueTableToDetails = @"segueTableToDetails";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.session = [VWWSession sharedInstance];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
     
-    VWWEventsSearch *search = self.session.currentEventsSearch;
+    VWWEventsSearch *search = [VWWSession sharedInstance].currentEventsSearch;
     self.events = search.searchResults.events.allObjects;
 }
 

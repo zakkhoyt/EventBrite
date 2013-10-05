@@ -483,6 +483,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map_32" id="b9Y-R8-VYb"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="eF6-ZJ-UJZ" id="NXc-Qg-Q3k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uee-2r-lso" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

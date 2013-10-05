@@ -21,6 +21,7 @@
 		C634744618009B0F00CC96CC /* VWWEventVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = C634743C18009B0F00CC96CC /* VWWEventVenue.m */; };
 		C634744718009B0F00CC96CC /* VWWSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = C634743E18009B0F00CC96CC /* VWWSearchResults.m */; };
 		C634744A18009B5B00CC96CC /* VWWManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C634744918009B5B00CC96CC /* VWWManagedObject.m */; };
+		C634744C1800B59300CC96CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C634744B1800B59300CC96CC /* MapKit.framework */; };
 		C6537E0917FE507800A56A7C /* event_01 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0817FE507800A56A7C /* event_01 */; };
 		C6537E0B17FE509000A56A7C /* event_02 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0A17FE509000A56A7C /* event_02 */; };
 		C6537E0D17FE50A800A56A7C /* event_03 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0C17FE50A800A56A7C /* event_03 */; };
@@ -128,6 +129,7 @@
 		C634743E18009B0F00CC96CC /* VWWSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWSearchResults.m; sourceTree = "<group>"; };
 		C634744818009B5B00CC96CC /* VWWManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWManagedObject.h; sourceTree = "<group>"; };
 		C634744918009B5B00CC96CC /* VWWManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWManagedObject.m; sourceTree = "<group>"; };
+		C634744B1800B59300CC96CC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C6537E0817FE507800A56A7C /* event_01 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_01; sourceTree = "<group>"; };
 		C6537E0A17FE509000A56A7C /* event_02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_02; sourceTree = "<group>"; };
 		C6537E0C17FE50A800A56A7C /* event_03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_03; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C634744C1800B59300CC96CC /* MapKit.framework in Frameworks */,
 				C6B4811717FE28350047EB66 /* CoreData.framework in Frameworks */,
 				C6B480CF17FE26D20047EB66 /* CoreGraphics.framework in Frameworks */,
 				C6B480D117FE26D20047EB66 /* UIKit.framework in Frameworks */,
@@ -408,6 +411,7 @@
 		C6B480CB17FE26D20047EB66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C634744B1800B59300CC96CC /* MapKit.framework */,
 				C6B4811617FE28350047EB66 /* CoreData.framework */,
 				C6B480CC17FE26D20047EB66 /* Foundation.framework */,
 				C6B480CE17FE26D20047EB66 /* CoreGraphics.framework */,
