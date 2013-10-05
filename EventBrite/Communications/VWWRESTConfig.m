@@ -7,7 +7,6 @@
 //
 #import "VWWRESTConfig.h"
 
-//#import "SMAppDelegate.h"
 
 static VWWRESTConfig *instance;
 
@@ -31,7 +30,6 @@ static VWWRESTConfig *instance;
         [self readUserDefaults];
 
         _serviceDataFormat = @"json";
-//        _serviceEventsURI = @"events";
         _serviceEventSearchURI = @"event_search";
     }
     return self;

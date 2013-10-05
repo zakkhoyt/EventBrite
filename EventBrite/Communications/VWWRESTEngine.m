@@ -7,7 +7,7 @@
 //
 #import "VWWRESTEngine.h"
 #import "VWWRESTParser.h"
-#import "VWWKeychain.h"
+
 #import "VWWUtility.h"
 #import "VWWCoreData.h"
 #import "VWWEventsSummary.h"
@@ -58,22 +58,9 @@ static VWWRESTEngine *instance;
     return self;
 }
 
-//-(void)enableCaching:(BOOL)enable{
-//// This is causing issues where completion blocks are called twice. Yes that's what it is supposed to do, but
-//// is not always desired.
-//    [self useCache];
-//}
-//-(void)clearCachedData{
-//    [self clearCache];
-//}
 
 -(void)prepareHeaders:(MKNetworkOperation *)operation {
     // Read stored token from keychain system
-   VWWCredential *credential = [[VWWKeychain sharedKeychain] credentialForItemWithID:kVWWTokenKeychainItemID];
-    if ([credential.password length]) {
-        NSDictionary* headersDict = @{@"X-Auth-Token": credential.password};
-        [operation addHeaders:headersDict];
-    }
 
     [super prepareHeaders:operation];
     
@@ -246,44 +233,7 @@ static VWWRESTEngine *instance;
 
 
 #pragma mark Events
-//-(MKNetworkOperation*)createEventWithForm:(VWWCreateEventForm*)form
-//                          completionBlock:(VWWRESTEngineEventBlock)completionBlock
-//                               errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
-//    @autoreleasepool {
-//        
-//        return [self httpPostEndpoint:self.service.serviceEventsURI
-//                       jsonDictionary:[form httpParametersDictionary]
-//                      completionBlock:^(id responseJSON){
-//                         VWWEvent *event;
-//                          [VWWRESTParser parseJSON:responseJSON event:&event];
-//                          completionBlock(event);
-//                      }
-//                           errorBlock:^(NSError *error, id responseJSON){
-//                               errorBlock(error);
-//                           }];
-//    }
-//}
-//
-//
-//-(MKNetworkOperation*)getEventsWithForm:(VWWGetEventsForm*)form
-//                        completionBlock:(VWWRESTEngineEventsBlock)completionBlock
-//                             errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
-//    @autoreleasepool {
-//    
-//    return [self httpGetEndpoint:self.service.serviceEventsURI
-//                  jsonDictionary:[form httpParametersDictionary]
-//                 completionBlock:^(id responseJSON){
-//                     NSArray *events;
-//                    VWWPagination *page;
-//                     [VWWRESTParser parseJSON:responseJSON events:&events page:&page];
-//                     completionBlock(events);
-//                 }
-//                      errorBlock:^(NSError *error, id responseJSON){
-//                          errorBlock(error);
-//                      }];
-//    }
-//}
-//
+
 -(MKNetworkOperation*)getEventSearchWithForm:(VWWGetEventSearchForm*)form
                              completionBlock:(VWWRESTEngineSearchResultsBlock)completionBlock
                                   errorBlock:(VWWRESTEngineErrorBlock)errorBlock{

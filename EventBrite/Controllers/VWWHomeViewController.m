@@ -11,6 +11,7 @@
 #import "VWWHomeClearSearchesTableViewCell.h"
 #import "VWWHomePreviousSearchTableViewCell.h"
 #import "VWWCoreData.h"
+#import "VWWSession.h"
 
 typedef enum {
     VWWHomeTableViewSectionNewSearch = 0,
@@ -154,6 +155,7 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
         [self performSegueWithIdentifier:kSegueHomeToNewSearch sender:self];
     }
     else if(indexPath.section == VWWHomeTableViewSectionPreviousSearches){
+        [VWWSession sharedInstance].currentEventsSearch = self.eventsSearches[indexPath.row];
         [self performSegueWithIdentifier:kSegueHomeToResults sender:self];
     }
     else if(indexPath.section == VWWHomeTableViewSectionClearSearches){
@@ -164,9 +166,5 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
     
 }
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%s", __func__);
-    return indexPath;
-}
 
 @end

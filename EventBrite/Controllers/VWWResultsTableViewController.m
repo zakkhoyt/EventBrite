@@ -7,16 +7,18 @@
 //
 
 #import "VWWResultsTableViewController.h"
-#import "VWWRESTSession.h"
+#import "VWWSession.h"
 #import "VWWResultsTableViewCell.h"
-//#import "VWWEvents.h"
 #import "VWWEventDetailsViewController.h"
+#import "VWWEventsSearch.h"
+#import "VWWSearchResults.h"
 
 static NSString *kSegueTableToDetails = @"segueTableToDetails";
 
 @interface VWWResultsTableViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) VWWRESTSession *session;
+@property (nonatomic, strong) VWWSession *session;
+@property (nonatomic, strong) NSArray *events;
 @end
 
 @implementation VWWResultsTableViewController
@@ -33,12 +35,15 @@ static NSString *kSegueTableToDetails = @"segueTableToDetails";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.session = [VWWRESTSession sharedInstance];
+	self.session = [VWWSession sharedInstance];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
+    
+    VWWEventsSearch *search = self.session.currentEventsSearch;
+    self.events = search.searchResults.events.allObjects;
 }
 
 -(void)viewDidLayoutSubviews{
@@ -66,22 +71,13 @@ static NSString *kSegueTableToDetails = @"segueTableToDetails";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    VWWEventsSearch *search = self.session.searches[0];
-//    VWWEvents *results = search.results;
-//    return results.events.count;
-////    return self.session.searches.events.count;
-    return 0;
+    return self.events.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    VWWResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWResultsTableViewCell"];
-//    VWWEventsSearch *search = self.session.searches[0];
-//    VWWEvents *results = search.results;
-//    cell.event = results.events[indexPath.row];
-//    return cell;
-////    cell.event = events
-////    return cell;
-    return [[UITableViewCell alloc]init];
+    VWWResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWResultsTableViewCell"];
+    cell.event = self.events[indexPath.row];
+    return cell;
 }
 
 

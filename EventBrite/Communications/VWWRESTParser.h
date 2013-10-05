@@ -14,6 +14,5 @@
 @class VWWGetEventSearchForm;
 
 @interface VWWRESTParser : NSObject
-//+(BOOL)parseJSON:(id)json event:(VWWEvent**)event;
 +(BOOL)parseJSON:(id)json form:(VWWGetEventSearchForm*)form searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error;
 @end

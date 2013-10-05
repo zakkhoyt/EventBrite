@@ -23,21 +23,10 @@
 
 
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context{
-//    self.filters = dictionary[@"filters"];
     self.firstEvent = dictionary[@"first_event"];
     self.lastEvent = dictionary[@"last_event"];
     self.numShowing = dictionary[@"num_showing"];
     self.totalItems = dictionary[@"total_items"];
-    
-//    VWWEventSearchFilter *filter = [NSEntityDescription
-//                                 insertNewObjectForEntityForName:@"VWWEventSearchFilter"
-//                                 inManagedObjectContext:context];
-    
-//    self.searchFilters
-//    NSDictionary *filtersDictionary = dictionary[@"filters"];
-//    if(filtersDictionary){
-//        [filter populateWithDictionary:filtersDictionary context:context];
-//    }
 }
 
 -(NSString*)description{

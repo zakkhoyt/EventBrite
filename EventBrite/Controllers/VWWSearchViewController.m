@@ -9,7 +9,7 @@
 #import "VWWSearchViewController.h"
 #import "MBProgressHUD.h"
 #import "VWWRESTEngine.h"
-#import "VWWRESTSession.h"
+#import "VWWSession.h"
 #import "VWWCoreData.h"
 
 static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
@@ -23,7 +23,7 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 @property (weak, nonatomic) IBOutlet UITextField *countryTextField;
 
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
-@property (nonatomic, strong) VWWRESTSession *session;
+@property (nonatomic, strong) VWWSession *session;
 @end
 
 @implementation VWWSearchViewController
@@ -42,7 +42,7 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 {
     [super viewDidLoad];
 	
-    self.session = [VWWRESTSession sharedInstance];
+    self.session = [VWWSession sharedInstance];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -85,7 +85,6 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
     form.postalCode = self.postalCodeTextField.text;
     form.country = self.countryTextField.text;
     
-    [self.session.searches removeAllObjects];
     
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form
                                            completionBlock:^(VWWSearchResults *searchResults){

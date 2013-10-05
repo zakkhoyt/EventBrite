@@ -11,9 +11,7 @@
 
 // Model includes
 #import "VWWHTTPForm.h"
-//#import "VWWUser.h"
 #import "VWWEvent.h"
-//#import "VWWEvents.h"
 #import "VWWError.h"
 #import "VWWSearchResults.h"
 
