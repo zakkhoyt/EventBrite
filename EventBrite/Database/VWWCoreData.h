@@ -20,8 +20,8 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 +(VWWCoreData*)sharedInstance;
-- (void) deleteAllObjects: (NSString *) entityDescription;
+- (void)deleteAllObjects:(NSString *) entityDescription;
 - (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+- (void)getPreviousSearchesWithCompletion:(VWWArrayBlock)completion;
 
 @end

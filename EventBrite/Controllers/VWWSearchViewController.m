@@ -47,7 +47,7 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:NO];
     [self.navigationController setTitle:@"Testing"];
 //    [self.navigationItem setTitle:@"Testinger"];
 //    [self.navigationController.navigationItem setTitle:@"eeee"];

@@ -10,16 +10,21 @@
 #import "VWWHomeNewSearchTableViewCell.h"
 #import "VWWHomeClearSearchesTableViewCell.h"
 #import "VWWHomePreviousSearchTableViewCell.h"
+#import "VWWCoreData.h"
 
 typedef enum {
-  VWWHomeTableViewSectionNewSearch = 0,
+    VWWHomeTableViewSectionNewSearch = 0,
     VWWHomeTableViewSectionPreviousSearches = 1,
     VWWHomeTableViewSectionClearSearches = 2,
 } VWWHomeTableViewSection;
 
+static NSString *kSegueHomeToResults = @"segueHomeToResults";
+static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
 
 @interface VWWHomeViewController ()
-
+@property (nonatomic) BOOL hasLoaded;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray *eventsSearches;
 @end
 
 @implementation VWWHomeViewController
@@ -39,6 +44,48 @@ typedef enum {
 	// Do any additional setup after loading the view.
 }
 
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    
+    if(self.hasLoaded == NO){
+        self.hasLoaded = YES;
+     
+//        // TODO: query
+//        [[VWWCoreData sharedInstance] getPreviousSearchesWithCompletion:^(NSArray *previousSearches) {
+//            self.eventsSearches = previousSearches;
+//            [self.tableView reloadData];
+//        }];
+//        
+//        [self.tableView reloadData];
+    }
+    
+    [self.view layoutSubviews];
+}
+
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    // TODO: query
+    [[VWWCoreData sharedInstance] getPreviousSearchesWithCompletion:^(NSArray *previousSearches) {
+        NSLog(@"Found %d previous searches", previousSearches.count);
+        self.eventsSearches = previousSearches;
+//        [self.tableView reloadData];
+        NSIndexSet *sections = [NSIndexSet indexSetWithIndex:VWWHomeTableViewSectionPreviousSearches];
+        [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    
+//    [self.tableView reloadData];
+    
+
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -55,31 +102,53 @@ typedef enum {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if(section == 0){
+    if(section == VWWHomeTableViewSectionNewSearch){
         return 1;
     }
-    else if(section == 1){
-        return 0;
+    else if(section == VWWHomeTableViewSectionPreviousSearches){
+        return self.eventsSearches.count;
     }
-    else if(section == 2){
+    else if(section == VWWHomeTableViewSectionClearSearches){
         return 1;
     }
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(indexPath.section == 0){
+    if(indexPath.section == VWWHomeTableViewSectionNewSearch){
         VWWHomeNewSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWHomeNewSearchTableViewCell"];
         return cell;
     }
-    else if(indexPath.section == 1){
-        
+    else if(indexPath.section == VWWHomeTableViewSectionPreviousSearches){
+        VWWHomePreviousSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWHomePreviousSearchTableViewCell"];
+        cell.eventsSearch = self.eventsSearches[indexPath.row];
+        return cell;
     }
-    else if(indexPath.section == 2){
-
+    else if(indexPath.section == VWWHomeTableViewSectionClearSearches){
+        VWWHomeClearSearchesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWHomeClearSearchesTableViewCell"];
+        return cell;
     }
     
     return [[UITableViewCell alloc]init];
+}
+
+#pragma mark UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%s", __func__);
+    if(indexPath.section == VWWHomeTableViewSectionNewSearch){
+        [self performSegueWithIdentifier:kSegueHomeToNewSearch sender:self];
+    }
+    else if(indexPath.section == VWWHomeTableViewSectionPreviousSearches){
+    }
+    else if(indexPath.section == VWWHomeTableViewSectionClearSearches){
+
+    }
+    
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%s", __func__);
+    return indexPath;
 }
 
 @end

@@ -8,7 +8,9 @@
 #ifndef EventBrite_VWWBlocks_h
 #define EventBrite_VWWBlocks_h
 
-typedef void (^VWWEmptyBlock)(void);
+typedef void (^VWWArrayBlock)(NSArray *array);
 typedef void (^VWWBoolBlock)(BOOL success);
+typedef void (^VWWEmptyBlock)(void);
 typedef void (^VWWErrorBlock)(NSError *error);
+
 #endif

@@ -37,9 +37,10 @@
 #pragma mark Public methods{
 -(void)setEventsSearch:(VWWEventsSearch *)eventsSearch{
     _eventsSearch = eventsSearch;
-//    VWWSearchResults *results = _eventsSearch.searchResults;
-//    
-//    VWWEventsSummary *summary = _eventsSearch.searchResults.eventsSummary;
+    
+    self.keywordsLabel.text = eventsSearch.keywords ? eventsSearch.keywords : @"";
+    self.locationLabel.text = eventsSearch.city ? eventsSearch.city : @"";
+    self.resultsCountLabel.text = [NSString stringWithFormat:@"%@", eventsSearch.searchResults.eventsSummary.totalItems];
 }
 
 @end

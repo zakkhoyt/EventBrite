@@ -34,7 +34,8 @@
     self.about = dictionary[@"description"];
     self.type = dictionary[@"type"];
     self.min = dictionary[@"min"];
-    self.max = dictionary[@"max"];
+//    self.max = dictionary[@"max"];
+    self.max = [dictionary numberForKey:@"max"];
     self.currency = dictionary[@"currency"];
     self.price = dictionary[@"price"];
     self.displayPrice = dictionary[@"display_price"];
