@@ -9,7 +9,7 @@
 #import "VWWResultsTableViewController.h"
 #import "VWWRESTSession.h"
 #import "VWWResultsTableViewCell.h"
-#import "VWWEvents.h"
+//#import "VWWEvents.h"
 #import "VWWEventDetailsViewController.h"
 
 static NSString *kSegueTableToDetails = @"segueTableToDetails";
@@ -66,20 +66,22 @@ static NSString *kSegueTableToDetails = @"segueTableToDetails";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    VWWEventsSearch *search = self.session.searches[0];
-    VWWEvents *results = search.results;
-    return results.events.count;
-//    return self.session.searches.events.count;
+//    VWWEventsSearch *search = self.session.searches[0];
+//    VWWEvents *results = search.results;
+//    return results.events.count;
+////    return self.session.searches.events.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    VWWResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWResultsTableViewCell"];
-    VWWEventsSearch *search = self.session.searches[0];
-    VWWEvents *results = search.results;
-    cell.event = results.events[indexPath.row];
-    return cell;
-//    cell.event = events
+//    VWWResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWResultsTableViewCell"];
+//    VWWEventsSearch *search = self.session.searches[0];
+//    VWWEvents *results = search.results;
+//    cell.event = results.events[indexPath.row];
 //    return cell;
+////    cell.event = events
+////    return cell;
+    return [[UITableViewCell alloc]init];
 }
 
 

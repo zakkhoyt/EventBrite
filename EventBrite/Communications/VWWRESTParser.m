@@ -7,11 +7,13 @@
 //
 #import "VWWRESTParser.h"
 #import "NSDictionary+TypedGetters.h"
-#import "VWWPagination.h"
+//#import "VWWPagination.h"
 #import "VWWError.h"
-#import "VWWEvents.h"
+//#import "VWWEvents.h"
 #import "VWWEvent.h"
 #import "VWWEventsSummary.h"
+#import "VWWCoreData.h"
+#import "VWWSearchResults.h"
 
 @implementation VWWRESTParser
 
@@ -47,7 +49,7 @@
 //    *event = [VWWEvent eventWithDictionary:dictionary];
 //    return YES;
 //}
-+(BOOL)parseJSON:(id)json events:(VWWEvents**)events error:(VWWError**)error{
++(BOOL)parseJSON:(id)json searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error{
     if(json == nil) return NO;
     
     if([json isKindOfClass:[NSDictionary class]] == NO){
@@ -58,19 +60,80 @@
 
     [VWWRESTParser examineDictionary:json forError:error];
     
-    *events = [[VWWEvents alloc]init];
+    
+    VWWCoreData *coreData = [VWWCoreData sharedInstance];
+    NSManagedObjectContext *context = [coreData managedObjectContext];
+    
+    
+    *searchResults = [NSEntityDescription
+                                 insertNewObjectForEntityForName:@"VWWSearchResults"
+                                 inManagedObjectContext:context];
+    
+    
+    
+//    searchResults{
+//        VWWEventsSummary : {
+//            firstEvent
+//            lastEvent
+//            numShowing
+//            totalItems
+//            VWWEventsSearchFilter{
+//                key
+//                value
+//            }
+//        }
+//        events[
+//               event{
+//                   about
+//                   colors...
+//                   VWWEventOrganizer
+//                   VWWEventVenue
+//                   tickets[
+//                        VWWEventTicket
+//                   ]
+//               }
+//        ]
+//        }
+//        
+//    }
+    
+
+    NSMutableSet *eventsSet = [[NSMutableSet alloc]init];
     NSArray *eventsDictionaries = (NSArray*)json[@"events"];
     for(NSDictionary *d in eventsDictionaries) {
-        if(d[@"summary"]){
-            VWWEventsSummary *summary = [VWWEventsSummary eventsSummaryWithDictionary:d[@"summary"]];
-            (*events).summary = summary;
+        NSDictionary *summaryDictionary = d[@"summary"];
+        if(summaryDictionary){
+            VWWEventsSummary *summary = [NSEntityDescription
+                                         insertNewObjectForEntityForName:@"VWWEventsSummary"
+                                         inManagedObjectContext:context];
+
+            [summary populateWithDictionary:summaryDictionary context:context];
+            (*searchResults).eventsSummary = summary;
+            continue;
         }
-        else if(d[@"event"]){
-            VWWEvent *event = [VWWEvent eventWithDictionary:d[@"event"]];
-            [(*events).events addObject:event];
+        
+        NSDictionary *eventDictionary = d[@"event"];
+        if(eventDictionary){
+            VWWEvent *event = [NSEntityDescription
+                                         insertNewObjectForEntityForName:@"VWWEvent"
+                                         inManagedObjectContext:context];
+
+            [event populateWithDictionary:eventDictionary context:context];
+            [eventsSet addObject:event];
         }
     }
+
+    (*searchResults).events = eventsSet;
     
+    // Commit to CoreData
+    NSError *cdError;
+    if (![context save:&cdError]) {
+        NSLog(@"Whoops, couldn't save: %@", [cdError localizedDescription]);
+    }
+
+    
+    
+
     
     return YES;
     

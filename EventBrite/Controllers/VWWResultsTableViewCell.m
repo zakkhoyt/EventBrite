@@ -39,10 +39,10 @@
 #pragma mark Public methods
 -(void)setEvent:(VWWEvent *)event{
     _event = event;
-    
-    self.eventTitleLabel.text = _event.title;
-    self.distanceLabel.text = _event.distance;
-    [self.logoImageView setImageWithURL:_event.logo];
-    
+//    
+//    self.eventTitleLabel.text = _event.title;
+//    self.distanceLabel.text = _event.distance;
+//    [self.logoImageView setImageWithURL:_event.logo];
+
 }
 @end

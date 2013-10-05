@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 #import "VWWRESTEngine.h"
 #import "VWWRESTSession.h"
+#import "VWWCoreData.h"
 
 static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 
@@ -69,6 +70,9 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 
 
 #pragma mark IBActions
+- (IBAction)deleteAllRecords:(id)sender {
+    [[VWWCoreData sharedInstance]deleteAllObjects:@"VWWSearchResults"];
+}
 
 - (IBAction)searchButtonTouchUpInside:(id)sender {
     [self.view endEditing:YES];
@@ -87,19 +91,19 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
     [self.session.searches removeAllObjects];
     
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form
-                                           completionBlock:^(VWWEvents *events, VWWError *error) {
+                                           completionBlock:^(VWWSearchResults *searchResults){
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                                
                                                
-                                               VWWEventsSearch *search = [[VWWEventsSearch alloc]init];
-                                               search.searchParemeters = @{@"city" : form.city,
-                                                                           @"keywords" : form.keywords};
+//                                               VWWEventsSearch *search = [[VWWEventsSearch alloc]init];
+//                                               search.searchParemeters = @{@"city" : form.city,
+//                                                                           @"keywords" : form.keywords};
                                             
-                                               search.results = events;
-                                               [self.session.searches addObject:search];
+//                                               search.results = events;
+//                                               [self.session.searches addObject:searchResults.events];
                                                
                                                
-                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:self];
+//                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:self];
                                            } errorBlock:^(NSError *error) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                            }];

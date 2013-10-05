@@ -10,7 +10,9 @@
 @class VWWEvent;
 @class VWWPagination;
 @class VWWError;
+@class VWWSearchResults;
+
 @interface VWWRESTParser : NSObject
 //+(BOOL)parseJSON:(id)json event:(VWWEvent**)event;
-+(BOOL)parseJSON:(id)json events:(VWWEvents**)events error:(VWWError**)error;
++(BOOL)parseJSON:(id)json searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error;
 @end

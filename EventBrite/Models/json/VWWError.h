@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Zakk Hoyt. All rights reserved.
 //
 
-#import "VWWModel.h"
+#import <Foundation/Foundation.h>
 
-@interface VWWError : VWWModel
+@interface VWWError : NSObject
 +(id)errorWithDictionary:(NSDictionary *)dictionary;
 
 

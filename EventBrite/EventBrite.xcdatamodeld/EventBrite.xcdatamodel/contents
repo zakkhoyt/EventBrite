@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F37" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="VWWEvent" syncable="YES">
+    <entity name="VWWEvent" representedClassName="VWWEvent" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="backgroundColor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="boxBackgroundColor" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,19 +19,19 @@
         <relationship name="eventVenue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VWWEventVenue" inverseName="event" inverseEntity="VWWEventVenue" syncable="YES"/>
         <relationship name="searchResults" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWSearchResults" inverseName="events" inverseEntity="VWWSearchResults" syncable="YES"/>
     </entity>
-    <entity name="VWWEventOrganizer" syncable="YES">
+    <entity name="VWWEventOrganizer" representedClassName="VWWEventOrganizer" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uuid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEvent" inverseName="eventOrganizer" inverseEntity="VWWEvent" syncable="YES"/>
     </entity>
-    <entity name="VWWEventSearchFilter" syncable="YES">
+    <entity name="VWWEventSearchFilter" representedClassName="VWWEventSearchFilter" syncable="YES">
         <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="eventsSummary" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEventsSummary" inverseName="searchFilters" inverseEntity="VWWEventsSummary" syncable="YES"/>
     </entity>
-    <entity name="VWWEventsSearch" syncable="YES">
+    <entity name="VWWEventsSearch" representedClassName="VWWEventsSearch" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
@@ -40,7 +40,7 @@
         <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="searchResults" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWSearchResults" inverseName="eventsSearch" inverseEntity="VWWSearchResults" syncable="YES"/>
     </entity>
-    <entity name="VWWEventsSummary" syncable="YES">
+    <entity name="VWWEventsSummary" representedClassName="VWWEventsSummary" syncable="YES">
         <attribute name="firstEvent" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="lastEvent" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="numShowing" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -48,11 +48,11 @@
         <relationship name="searchFilters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VWWEventSearchFilter" inverseName="eventsSummary" inverseEntity="VWWEventSearchFilter" syncable="YES"/>
         <relationship name="searchResults" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWSearchResults" inverseName="eventsSummary" inverseEntity="VWWSearchResults" syncable="YES"/>
     </entity>
-    <entity name="VWWEventTicket" syncable="YES">
+    <entity name="VWWEventTicket" representedClassName="VWWEventTicket" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="displayPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="endDate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="max" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="min" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -65,7 +65,7 @@
         <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEvent" inverseName="eventTickets" inverseEntity="VWWEvent" syncable="YES"/>
     </entity>
-    <entity name="VWWEventVenue" syncable="YES">
+    <entity name="VWWEventVenue" representedClassName="VWWEventVenue" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
@@ -80,7 +80,7 @@
         <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEvent" inverseName="eventVenue" inverseEntity="VWWEvent" syncable="YES"/>
     </entity>
-    <entity name="VWWSearchResults" syncable="YES">
+    <entity name="VWWSearchResults" representedClassName="VWWSearchResults" syncable="YES">
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VWWEvent" inverseName="searchResults" inverseEntity="VWWEvent" syncable="YES"/>
         <relationship name="eventsSearch" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEventsSearch" inverseName="searchResults" inverseEntity="VWWEventsSearch" syncable="YES"/>
         <relationship name="eventsSummary" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEventsSummary" inverseName="searchResults" inverseEntity="VWWEventsSummary" syncable="YES"/>

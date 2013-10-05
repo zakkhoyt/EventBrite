@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6054F8117FF655E00357620 /* VWWEventsSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F7717FF61B500357620 /* VWWEventsSummary.m */; };
+		C6054F8A17FF71DA00357620 /* VWWSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F8917FF71DA00357620 /* VWWSearchResults.m */; };
+		C6054F9817FF881800357620 /* VWWEventOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F8F17FF881800357620 /* VWWEventOrganizer.m */; };
+		C6054F9917FF881800357620 /* VWWEventSearchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F9117FF881800357620 /* VWWEventSearchFilter.m */; };
+		C6054F9A17FF881800357620 /* VWWEventsSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F9317FF881800357620 /* VWWEventsSearch.m */; };
+		C6054F9B17FF881800357620 /* VWWEventTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F9517FF881800357620 /* VWWEventTicket.m */; };
+		C6054F9C17FF881800357620 /* VWWEventVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F9717FF881800357620 /* VWWEventVenue.m */; };
+		C6054F9F17FF8E7E00357620 /* VWWManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054F9E17FF8E7E00357620 /* VWWManagedObject.m */; };
+		C6054FA217FF910700357620 /* VWWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6054FA117FF910700357620 /* VWWEvent.m */; };
 		C6537E0917FE507800A56A7C /* event_01 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0817FE507800A56A7C /* event_01 */; };
 		C6537E0B17FE509000A56A7C /* event_02 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0A17FE509000A56A7C /* event_02 */; };
 		C6537E0D17FE50A800A56A7C /* event_03 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0C17FE50A800A56A7C /* event_03 */; };
 		C6537E0F17FE752700A56A7C /* event_00 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0E17FE752700A56A7C /* event_00 */; };
-		C6537E1217FE75D900A56A7C /* VWWEventsSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E1117FE75D900A56A7C /* VWWEventsSummary.m */; };
-		C6537E1617FE786800A56A7C /* VWWEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E1517FE786800A56A7C /* VWWEvents.m */; };
-		C6537E1A17FE7BAB00A56A7C /* VWWEventOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E1917FE7BAB00A56A7C /* VWWEventOrganizer.m */; };
-		C6537E1E17FE7BDF00A56A7C /* VWWEventVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */; };
-		C6537E2417FE80FD00A56A7C /* VWWEventTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */; };
 		C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */; };
 		C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */; };
 		C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */; };
@@ -23,7 +27,6 @@
 		C6537E3317FE8AD100A56A7C /* VWWResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3217FE8AD100A56A7C /* VWWResultsTableViewController.m */; };
 		C6537E3B17FE8DCA00A56A7C /* VWWEventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */; };
 		C6537E3F17FE8E8900A56A7C /* VWWResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */; };
-		C6537E4217FE905900A56A7C /* VWWEventsSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E4117FE905900A56A7C /* VWWEventsSearch.m */; };
 		C694FE0A17FF47CA003E729E /* VWWCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = C694FE0917FF47CA003E729E /* VWWCoreData.m */; };
 		C6B480CD17FE26D20047EB66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CC17FE26D20047EB66 /* Foundation.framework */; };
 		C6B480CF17FE26D20047EB66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B480CE17FE26D20047EB66 /* CoreGraphics.framework */; };
@@ -70,10 +73,6 @@
 		C6B4817C17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4817B17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m */; };
 		C6B4818017FE2C540047EB66 /* VWWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4817F17FE2C540047EB66 /* VWWUtility.m */; };
 		C6B4819217FE2EF30047EB66 /* VWWHTTPForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4818C17FE2EF30047EB66 /* VWWHTTPForm.m */; };
-		C6B4819917FE2F200047EB66 /* VWWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819617FE2F200047EB66 /* VWWEvent.m */; };
-		C6B4819A17FE2F200047EB66 /* VWWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819817FE2F200047EB66 /* VWWUser.m */; };
-		C6B4819D17FE2F580047EB66 /* VWWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819C17FE2F580047EB66 /* VWWModel.m */; };
-		C6B481A017FE31520047EB66 /* VWWPagination.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B4819F17FE31520047EB66 /* VWWPagination.m */; };
 		C6B481A317FE31DD0047EB66 /* VWWPageForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A217FE31DD0047EB66 /* VWWPageForm.m */; };
 		C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A517FE324A0047EB66 /* VWWUserDefaults.m */; };
 		C6B481AB17FE34330047EB66 /* VWWCreateEventForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B481A817FE34330047EB66 /* VWWCreateEventForm.m */; };
@@ -102,20 +101,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6054F7617FF61B500357620 /* VWWEventsSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEventsSummary.h; path = cd/VWWEventsSummary.h; sourceTree = "<group>"; };
+		C6054F7717FF61B500357620 /* VWWEventsSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEventsSummary.m; path = cd/VWWEventsSummary.m; sourceTree = "<group>"; };
+		C6054F8817FF71DA00357620 /* VWWSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWSearchResults.h; path = cd/VWWSearchResults.h; sourceTree = "<group>"; };
+		C6054F8917FF71DA00357620 /* VWWSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWSearchResults.m; path = cd/VWWSearchResults.m; sourceTree = "<group>"; };
+		C6054F8E17FF881800357620 /* VWWEventOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEventOrganizer.h; path = cd/VWWEventOrganizer.h; sourceTree = "<group>"; };
+		C6054F8F17FF881800357620 /* VWWEventOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEventOrganizer.m; path = cd/VWWEventOrganizer.m; sourceTree = "<group>"; };
+		C6054F9017FF881800357620 /* VWWEventSearchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEventSearchFilter.h; path = cd/VWWEventSearchFilter.h; sourceTree = "<group>"; };
+		C6054F9117FF881800357620 /* VWWEventSearchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEventSearchFilter.m; path = cd/VWWEventSearchFilter.m; sourceTree = "<group>"; };
+		C6054F9217FF881800357620 /* VWWEventsSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEventsSearch.h; path = cd/VWWEventsSearch.h; sourceTree = "<group>"; };
+		C6054F9317FF881800357620 /* VWWEventsSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEventsSearch.m; path = cd/VWWEventsSearch.m; sourceTree = "<group>"; };
+		C6054F9417FF881800357620 /* VWWEventTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEventTicket.h; path = cd/VWWEventTicket.h; sourceTree = "<group>"; };
+		C6054F9517FF881800357620 /* VWWEventTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEventTicket.m; path = cd/VWWEventTicket.m; sourceTree = "<group>"; };
+		C6054F9617FF881800357620 /* VWWEventVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEventVenue.h; path = cd/VWWEventVenue.h; sourceTree = "<group>"; };
+		C6054F9717FF881800357620 /* VWWEventVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEventVenue.m; path = cd/VWWEventVenue.m; sourceTree = "<group>"; };
+		C6054F9D17FF8E7E00357620 /* VWWManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWManagedObject.h; sourceTree = "<group>"; };
+		C6054F9E17FF8E7E00357620 /* VWWManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWManagedObject.m; sourceTree = "<group>"; };
+		C6054FA017FF910700357620 /* VWWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VWWEvent.h; path = cd/VWWEvent.h; sourceTree = "<group>"; };
+		C6054FA117FF910700357620 /* VWWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VWWEvent.m; path = cd/VWWEvent.m; sourceTree = "<group>"; };
 		C6537E0817FE507800A56A7C /* event_01 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_01; sourceTree = "<group>"; };
 		C6537E0A17FE509000A56A7C /* event_02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_02; sourceTree = "<group>"; };
 		C6537E0C17FE50A800A56A7C /* event_03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_03; sourceTree = "<group>"; };
 		C6537E0E17FE752700A56A7C /* event_00 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_00; sourceTree = "<group>"; };
-		C6537E1017FE75D900A56A7C /* VWWEventsSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventsSummary.h; sourceTree = "<group>"; };
-		C6537E1117FE75D900A56A7C /* VWWEventsSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventsSummary.m; sourceTree = "<group>"; };
-		C6537E1417FE786800A56A7C /* VWWEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEvents.h; sourceTree = "<group>"; };
-		C6537E1517FE786800A56A7C /* VWWEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEvents.m; sourceTree = "<group>"; };
-		C6537E1817FE7BAB00A56A7C /* VWWEventOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventOrganizer.h; sourceTree = "<group>"; };
-		C6537E1917FE7BAB00A56A7C /* VWWEventOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventOrganizer.m; sourceTree = "<group>"; };
-		C6537E1C17FE7BDF00A56A7C /* VWWEventVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventVenue.h; sourceTree = "<group>"; };
-		C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventVenue.m; sourceTree = "<group>"; };
-		C6537E2217FE80FD00A56A7C /* VWWEventTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventTicket.h; sourceTree = "<group>"; };
-		C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventTicket.m; sourceTree = "<group>"; };
 		C6537E2617FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
 		C6537E2817FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWTabBarController.h; sourceTree = "<group>"; };
@@ -128,8 +135,6 @@
 		C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventDetailsViewController.m; sourceTree = "<group>"; };
 		C6537E3D17FE8E8900A56A7C /* VWWResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWResultsTableViewCell.h; sourceTree = "<group>"; };
 		C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWResultsTableViewCell.m; sourceTree = "<group>"; };
-		C6537E4017FE905900A56A7C /* VWWEventsSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventsSearch.h; sourceTree = "<group>"; };
-		C6537E4117FE905900A56A7C /* VWWEventsSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventsSearch.m; sourceTree = "<group>"; };
 		C694FE0817FF47CA003E729E /* VWWCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWCoreData.h; sourceTree = "<group>"; };
 		C694FE0917FF47CA003E729E /* VWWCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWCoreData.m; sourceTree = "<group>"; };
 		C6B480C917FE26D20047EB66 /* EventBrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,14 +224,6 @@
 		C6B4818B17FE2EF30047EB66 /* VWWHTTPForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWHTTPForm.h; sourceTree = "<group>"; };
 		C6B4818C17FE2EF30047EB66 /* VWWHTTPForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWHTTPForm.m; sourceTree = "<group>"; };
 		C6B4818D17FE2EF30047EB66 /* VWWHTTPFormProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWHTTPFormProtocol.h; sourceTree = "<group>"; };
-		C6B4819517FE2F200047EB66 /* VWWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEvent.h; sourceTree = "<group>"; };
-		C6B4819617FE2F200047EB66 /* VWWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEvent.m; sourceTree = "<group>"; };
-		C6B4819717FE2F200047EB66 /* VWWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUser.h; sourceTree = "<group>"; };
-		C6B4819817FE2F200047EB66 /* VWWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWUser.m; sourceTree = "<group>"; };
-		C6B4819B17FE2F580047EB66 /* VWWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWModel.h; sourceTree = "<group>"; };
-		C6B4819C17FE2F580047EB66 /* VWWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWModel.m; sourceTree = "<group>"; };
-		C6B4819E17FE31520047EB66 /* VWWPagination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWPagination.h; sourceTree = "<group>"; };
-		C6B4819F17FE31520047EB66 /* VWWPagination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWPagination.m; sourceTree = "<group>"; };
 		C6B481A117FE31DD0047EB66 /* VWWPageForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWPageForm.h; sourceTree = "<group>"; };
 		C6B481A217FE31DD0047EB66 /* VWWPageForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWPageForm.m; sourceTree = "<group>"; };
 		C6B481A417FE324A0047EB66 /* VWWUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUserDefaults.h; sourceTree = "<group>"; };
@@ -280,14 +277,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C6537E1317FE75DD00A56A7C /* Search */ = {
+		C6054F6017FF619C00357620 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				C6537E4017FE905900A56A7C /* VWWEventsSearch.h */,
-				C6537E4117FE905900A56A7C /* VWWEventsSearch.m */,
-				C6537E4517FE91C700A56A7C /* Events */,
+				C6054F9D17FF8E7E00357620 /* VWWManagedObject.h */,
+				C6054F9E17FF8E7E00357620 /* VWWManagedObject.m */,
+				C6054F8E17FF881800357620 /* VWWEventOrganizer.h */,
+				C6054F8F17FF881800357620 /* VWWEventOrganizer.m */,
+				C6054F9017FF881800357620 /* VWWEventSearchFilter.h */,
+				C6054F9117FF881800357620 /* VWWEventSearchFilter.m */,
+				C6054F9217FF881800357620 /* VWWEventsSearch.h */,
+				C6054F9317FF881800357620 /* VWWEventsSearch.m */,
+				C6054F9417FF881800357620 /* VWWEventTicket.h */,
+				C6054F9517FF881800357620 /* VWWEventTicket.m */,
+				C6054F9617FF881800357620 /* VWWEventVenue.h */,
+				C6054F9717FF881800357620 /* VWWEventVenue.m */,
+				C6054FA017FF910700357620 /* VWWEvent.h */,
+				C6054FA117FF910700357620 /* VWWEvent.m */,
+				C6054F7617FF61B500357620 /* VWWEventsSummary.h */,
+				C6054F7717FF61B500357620 /* VWWEventsSummary.m */,
 			);
-			name = Search;
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		C6537E1717FE78DD00A56A7C /* Error */ = {
@@ -352,41 +362,6 @@
 				C6537E3E17FE8E8900A56A7C /* VWWResultsTableViewCell.m */,
 			);
 			name = Cell;
-			sourceTree = "<group>";
-		};
-		C6537E4317FE918D00A56A7C /* Event */ = {
-			isa = PBXGroup;
-			children = (
-				C6B4819517FE2F200047EB66 /* VWWEvent.h */,
-				C6B4819617FE2F200047EB66 /* VWWEvent.m */,
-				C6537E1817FE7BAB00A56A7C /* VWWEventOrganizer.h */,
-				C6537E1917FE7BAB00A56A7C /* VWWEventOrganizer.m */,
-				C6537E1C17FE7BDF00A56A7C /* VWWEventVenue.h */,
-				C6537E1D17FE7BDF00A56A7C /* VWWEventVenue.m */,
-				C6537E2217FE80FD00A56A7C /* VWWEventTicket.h */,
-				C6537E2317FE80FD00A56A7C /* VWWEventTicket.m */,
-			);
-			name = Event;
-			sourceTree = "<group>";
-		};
-		C6537E4417FE91B500A56A7C /* Summary */ = {
-			isa = PBXGroup;
-			children = (
-				C6537E1017FE75D900A56A7C /* VWWEventsSummary.h */,
-				C6537E1117FE75D900A56A7C /* VWWEventsSummary.m */,
-			);
-			name = Summary;
-			sourceTree = "<group>";
-		};
-		C6537E4517FE91C700A56A7C /* Events */ = {
-			isa = PBXGroup;
-			children = (
-				C6537E1417FE786800A56A7C /* VWWEvents.h */,
-				C6537E1517FE786800A56A7C /* VWWEvents.m */,
-				C6537E4417FE91B500A56A7C /* Summary */,
-				C6537E4317FE918D00A56A7C /* Event */,
-			);
-			name = Events;
 			sourceTree = "<group>";
 		};
 		C6B480C017FE26D20047EB66 = {
@@ -528,9 +503,12 @@
 		C6B4811117FE27D10047EB66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C6054F6017FF619C00357620 /* New Group */,
 				C6B481AD17FE35CD0047EB66 /* authentication */,
 				C6B4819417FE2F200047EB66 /* json */,
 				C6B4818617FE2EF30047EB66 /* forms */,
+				C6054F8817FF71DA00357620 /* VWWSearchResults.h */,
+				C6054F8917FF71DA00357620 /* VWWSearchResults.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -702,13 +680,6 @@
 			isa = PBXGroup;
 			children = (
 				C6537E1717FE78DD00A56A7C /* Error */,
-				C6537E1317FE75DD00A56A7C /* Search */,
-				C6B4819E17FE31520047EB66 /* VWWPagination.h */,
-				C6B4819F17FE31520047EB66 /* VWWPagination.m */,
-				C6B4819B17FE2F580047EB66 /* VWWModel.h */,
-				C6B4819C17FE2F580047EB66 /* VWWModel.m */,
-				C6B4819717FE2F200047EB66 /* VWWUser.h */,
-				C6B4819817FE2F200047EB66 /* VWWUser.m */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -842,7 +813,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B4815C17FE2A0B0047EB66 /* Reachability.m in Sources */,
-				C6537E1217FE75D900A56A7C /* VWWEventsSummary.m in Sources */,
 				C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */,
 				C694FE0A17FF47CA003E729E /* VWWCoreData.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
@@ -850,12 +820,9 @@
 				C6F470B117FF3AEE00630BCB /* VWWCredential.m in Sources */,
 				C6B481CB17FE4C750047EB66 /* VWWError.m in Sources */,
 				C6B4815A17FE2A0B0047EB66 /* MKNetworkEngine.m in Sources */,
-				C6B4819A17FE2F200047EB66 /* VWWUser.m in Sources */,
 				C6B481C517FE48AC0047EB66 /* VWWSearchViewController.m in Sources */,
 				C6B4815617FE2A0B0047EB66 /* NSDictionary+RequestEncoding.m in Sources */,
-				C6537E1617FE786800A56A7C /* VWWEvents.m in Sources */,
 				C6B481C817FE492E0047EB66 /* MBProgressHUD.m in Sources */,
-				C6537E4217FE905900A56A7C /* VWWEventsSearch.m in Sources */,
 				C6B4817817FE2B620047EB66 /* VWWRESTParser.m in Sources */,
 				C6B480D917FE26D20047EB66 /* main.m in Sources */,
 				C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */,
@@ -866,39 +833,42 @@
 				C6F470B217FF3AEE00630BCB /* VWWKeychain.m in Sources */,
 				C6B480DD17FE26D20047EB66 /* VWWAppDelegate.m in Sources */,
 				C6B4815F17FE2A0B0047EB66 /* SDImageCache.m in Sources */,
-				C6B4819D17FE2F580047EB66 /* VWWModel.m in Sources */,
-				C6B4819917FE2F200047EB66 /* VWWEvent.m in Sources */,
 				C6B4815B17FE2A0B0047EB66 /* MKNetworkOperation.m in Sources */,
 				C6B4815817FE2A0B0047EB66 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				C6B4816017FE2A0B0047EB66 /* SDWebImageCompat.m in Sources */,
-				C6537E1A17FE7BAB00A56A7C /* VWWEventOrganizer.m in Sources */,
 				C6B481AB17FE34330047EB66 /* VWWCreateEventForm.m in Sources */,
 				C6B4815E17FE2A0B0047EB66 /* NSData+GIF.m in Sources */,
 				C6B4811B17FE288B0047EB66 /* EventBrite.xcdatamodeld in Sources */,
+				C6054F8A17FF71DA00357620 /* VWWSearchResults.m in Sources */,
 				C6B4816417FE2A0B0047EB66 /* SDWebImageManager.m in Sources */,
 				C6B4816217FE2A0B0047EB66 /* SDWebImageDownloader.m in Sources */,
 				C6B4818017FE2C540047EB66 /* VWWUtility.m in Sources */,
 				C6B4815D17FE2A0B0047EB66 /* MKAnnotationView+WebCache.m in Sources */,
+				C6054F9C17FF881800357620 /* VWWEventVenue.m in Sources */,
+				C6054F9F17FF8E7E00357620 /* VWWManagedObject.m in Sources */,
 				C6B4816717FE2A0B0047EB66 /* UIImage+GIF.m in Sources */,
 				C6B4815717FE2A0B0047EB66 /* NSString+MKNetworkKitAdditions.m in Sources */,
-				C6B481A017FE31520047EB66 /* VWWPagination.m in Sources */,
+				C6054F9917FF881800357620 /* VWWEventSearchFilter.m in Sources */,
 				C6B4817917FE2B620047EB66 /* VWWRESTSession.m in Sources */,
 				C6B4816517FE2A0B0047EB66 /* SDWebImagePrefetcher.m in Sources */,
 				C6537E3317FE8AD100A56A7C /* VWWResultsTableViewController.m in Sources */,
 				C6B4816617FE2A0B0047EB66 /* UIButton+WebCache.m in Sources */,
-				C6537E1E17FE7BDF00A56A7C /* VWWEventVenue.m in Sources */,
 				C6537E3F17FE8E8900A56A7C /* VWWResultsTableViewCell.m in Sources */,
 				C6B481AC17FE34330047EB66 /* VWWGetEventsForm.m in Sources */,
 				C6B4816A17FE2A0B0047EB66 /* UIImageView+WebCache.m in Sources */,
 				C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */,
 				C6B4816817FE2A0B0047EB66 /* UIImage+MultiFormat.m in Sources */,
+				C6054FA217FF910700357620 /* VWWEvent.m in Sources */,
 				C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */,
+				C6054F9B17FF881800357620 /* VWWEventTicket.m in Sources */,
 				C6B4816117FE2A0B0047EB66 /* SDWebImageDecoder.m in Sources */,
+				C6054F8117FF655E00357620 /* VWWEventsSummary.m in Sources */,
 				C6B4816D17FE2ADC0047EB66 /* UIColor+VWW.m in Sources */,
 				C6B4817C17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m in Sources */,
 				C6B4817617FE2B620047EB66 /* VWWRESTConfig.m in Sources */,
-				C6537E2417FE80FD00A56A7C /* VWWEventTicket.m in Sources */,
+				C6054F9A17FF881800357620 /* VWWEventsSearch.m in Sources */,
 				C6B481A317FE31DD0047EB66 /* VWWPageForm.m in Sources */,
+				C6054F9817FF881800357620 /* VWWEventOrganizer.m in Sources */,
 				C6B4815517FE2A0B0047EB66 /* NSDate+RFC1123.m in Sources */,
 				C6B4817717FE2B620047EB66 /* VWWRESTEngine.m in Sources */,
 			);

@@ -7,7 +7,7 @@
 //
 
 #import "VWWError.h"
-
+#import "NSDictionary+TypedGetters.h"
 @implementation VWWError
 - (id)initWithDictionary:(NSDictionary *)dictionary{
     if (dictionary == nil) {

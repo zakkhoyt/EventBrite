@@ -9,8 +9,8 @@
 #import "VWWRESTParser.h"
 #import "VWWKeychain.h"
 #import "VWWUtility.h"
-
-
+#import "VWWCoreData.h"
+#import "VWWEventsSummary.h"
 
 #define VWW_LOG_CURL_COMMANDS 1
 
@@ -285,7 +285,7 @@ static VWWRESTEngine *instance;
 //}
 //
 -(MKNetworkOperation*)getEventSearchWithForm:(VWWGetEventSearchForm*)form
-                             completionBlock:(VWWRESTEngineEventsBlock)completionBlock
+                             completionBlock:(VWWRESTEngineSearchResultsBlock)completionBlock
                                   errorBlock:(VWWRESTEngineErrorBlock)errorBlock{
     @autoreleasepool {
     return [self httpGetEndpoint:self.service.serviceEventSearchURI
@@ -293,9 +293,22 @@ static VWWRESTEngine *instance;
                  completionBlock:^(id responseJSON){
                      NSLog(@"responseJSON: %@", responseJSON);
                      VWWError *error;
-                     VWWEvents *events;
-                     [VWWRESTParser parseJSON:responseJSON events:&events error:&error];
-                     completionBlock(events, error);
+                     VWWSearchResults *searchResults;
+                     [VWWRESTParser parseJSON:responseJSON searchResults:&searchResults error:&error];
+                     
+                     
+                     
+                     
+                     
+
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     completionBlock(searchResults);
                  }
                       errorBlock:^(NSError *error, id responseJSON){
                           errorBlock(error);

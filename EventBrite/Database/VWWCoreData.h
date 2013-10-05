@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "VWWEventsSummary.h"
+#import "VWWEventOrganizer.h"
+
 @interface VWWCoreData : NSObject
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-
++(VWWCoreData*)sharedInstance;
+- (void) deleteAllObjects: (NSString *) entityDescription;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
