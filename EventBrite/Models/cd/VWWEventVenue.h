@@ -14,7 +14,7 @@
 
 @interface VWWEventVenue : VWWManagedObject
 
-@property (nonatomic, retain) NSString * uuid;
+@property (nonatomic, retain) NSNumber * uuid;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSString * address2;
@@ -27,5 +27,5 @@
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSString * latLong;
 @property (nonatomic, retain) VWWEvent * event;
-
+-(NSString*)description;
 @end

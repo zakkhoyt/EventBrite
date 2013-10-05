@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "VWWManagedObject.h"
+
 @class VWWEventOrganizer, VWWEventTicket, VWWEventVenue, VWWSearchResults;
 
 @interface VWWEvent : VWWManagedObject

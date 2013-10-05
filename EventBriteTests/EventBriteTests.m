@@ -48,7 +48,10 @@
                                        entityForName:@"VWWSearchResults" inManagedObjectContext:context];
         [fetchRequest setEntity:entity];
         NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&cdError];
+
         
+        
+        NSLog(@"-------------------------------------------- search results ---------------------------------");
         for(VWWSearchResults *searchResults in fetchedObjects){
             
             // Check for and print summary
@@ -59,25 +62,36 @@
             XCTAssertNotNil(summary.lastEvent, @"%s", __FUNCTION__);
             XCTAssertNotNil(summary.numShowing, @"%s", __FUNCTION__);
             
-            NSLog(@"summary--------------------------------");
-            NSLog(@"summar.totalItem: %@", summary.totalItems);
-            NSLog(@"Summary.firstEvent: %@", summary.firstEvent);
-            NSLog(@"Summary.lastEvent: %@", summary.lastEvent);
-            NSLog(@"Summary.numShowing: %@", summary.numShowing);
+            NSLog(@"********************************************** summary **************************************");
+            NSLog(@"summary: %@", summary.description);
             
             // Check for and print events
             
             NSSet *events = searchResults.events;
             NSLog(@"Found %d events for this search", events.count);
             for(VWWEvent *event in events){
-                XCTAssertNotEqual(event, 0, @"Event is nil");
+                XCTAssertNotNil(event, @"Event is nil");
+                NSLog(@"********************************************** event **************************************");
                 NSLog(@"event: %@", event.description);
             
                 VWWEventOrganizer *organizer = event.eventOrganizer;
-                XCTAssertNotEqual(organizer, 0, @"Event has no organizer");
+                XCTAssertNotNil(organizer, @"Event has no organizer");
+                NSLog(@"********************************************** organizer **************************************");
                 NSLog(@"orgainizer: %@", organizer.description);
                 
+                VWWEventVenue *venue = event.eventVenue;
+                XCTAssertNotNil(venue, @"Event has no venue");
+                NSLog(@"********************************************** venue **************************************");
+                NSLog(@"venue: %@", venue.description);
                 
+                NSSet *tickets = event.eventTickets;
+                XCTAssertNotNil(tickets, @"Event has no tickets");
+                
+                for(VWWEventTicket *ticket in tickets){
+                    XCTAssertNotNil(tickets, @"Ticket is nil");
+                    NSLog(@"********************************************** ticket **************************************");
+                    NSLog(@"ticket: %@", ticket.description);
+                }
                 
             }
         }

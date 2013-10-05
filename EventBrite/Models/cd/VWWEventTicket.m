@@ -29,9 +29,9 @@
 @dynamic event;
 
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context{
-    self.uuid = dictionary[@"uuid"];
+    self.uuid = dictionary[@"id"];
     self.name = dictionary[@"name"];
-    self.about = dictionary[@"about"];
+    self.about = dictionary[@"description"];
     self.type = dictionary[@"type"];
     self.min = dictionary[@"min"];
     self.max = dictionary[@"max"];

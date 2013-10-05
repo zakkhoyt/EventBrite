@@ -35,17 +35,14 @@
 
 
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context{
+    // Event details
     self.title = dictionary[@"title"];
-    
-    
-    
     self.backgroundColor = dictionary[@"background_color"];
     self.boxBackgroundColor = dictionary[@"box_background_color"];
     self.boxBorderColor = dictionary[@"box_border_color"];
     self.boxHeaderBackgroundColor  = dictionary[@"box_header_background_color"];
     self.boxHeaderTextColor = dictionary[@"box_header_text_color"];
     self.boxTextColor = dictionary[@"box_text_color"];
-    
     self.uuid = dictionary[@"id"];
     self.capacity = dictionary[@"capacity"];
     self.startDate = [dictionary dateForKey:@"start_date"];
@@ -53,35 +50,41 @@
     self.about = dictionary[@"description"];
     self.distance = dictionary[@"distance"];
     self.logo = dictionary[@"logo"];
+
+    // Organizer
+    NSDictionary *organizerDictionary = dictionary[@"organizer"];
+    if(organizerDictionary){
+        VWWEventOrganizer *organizer = [NSEntityDescription insertNewObjectForEntityForName:@"VWWEventOrganizer"
+                                                                     inManagedObjectContext:context];
+
+        [organizer populateWithDictionary:organizerDictionary context:context];
+        self.eventOrganizer = organizer;
+    }
+
+    // Venue
+    NSDictionary *venueDictionary = dictionary[@"venue"];
+    if(venueDictionary){
+        VWWEventVenue *venue = [NSEntityDescription insertNewObjectForEntityForName:@"VWWEventVenue"
+                                                             inManagedObjectContext:context];
+        [venue populateWithDictionary:venueDictionary context:context];
+        self.eventVenue = venue;
+    }
     
-    
-    //NSDictionary *organizerDictionary = [dictionary objectForKey:@"organizer"];
-    VWWEventOrganizer *organizer = [NSEntityDescription
-                                    insertNewObjectForEntityForName:@"VWWEventOrganizer"
-                                    inManagedObjectContext:context];
-    
-    [organizer populateWithDictionary:dictionary context:context];
-    self.eventOrganizer = organizer;
-    
-    
-    
-    
-    
-    
-    //
-    //    NSDictionary *venueDictionary = [dictionary objectForKey:@"venue"];
-    //    self.venue = [VWWEventVenue eventVenueWithDictionary:venueDictionary];
-    //
-    //    _tickets = [@[]mutableCopy];
-    //    NSArray *ticketsArray = [dictionary objectForKey:@"tickets"];
-    //    for(NSDictionary *ticketDictionary in ticketsArray){
-    //        NSDictionary *d = ticketDictionary[@"ticket"];
-    //        VWWEventTicket *ticket = [VWWEventTicket eventTicketWithDictionary:d];
-    //        [self.tickets addObject:ticket];
-    //    }
-    
-    
-    
+    // Ticket types
+    NSArray *ticketsArray = dictionary[@"tickets"];
+    if(ticketsArray){
+        NSMutableSet *eventTickets = [[NSMutableSet alloc]init];
+        for(NSDictionary *ticketDictionary in ticketsArray){
+            NSDictionary *ticketDetailsDictionary = ticketDictionary[@"ticket"];
+            if(ticketDetailsDictionary){
+                VWWEventTicket *ticket = [NSEntityDescription insertNewObjectForEntityForName:@"VWWEventTicket"
+                                                                       inManagedObjectContext:context];
+                [ticket populateWithDictionary:ticketDetailsDictionary context:context];
+                [eventTickets addObject:ticket];
+            }
+        }
+        self.eventTickets = eventTickets;
+    }
 }
 
 -(NSString*)description{

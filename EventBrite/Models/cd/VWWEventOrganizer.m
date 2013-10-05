@@ -18,7 +18,7 @@
 @dynamic about;
 @dynamic event;
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context{
-    self.uuid = dictionary[@"uuid"];
+    self.uuid = dictionary[@"id"];
     self.name = dictionary[@"name"];
     self.about = dictionary[@"description"];
     self.url = dictionary[@"url"];

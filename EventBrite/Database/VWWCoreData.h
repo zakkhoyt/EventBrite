@@ -10,6 +10,8 @@
 #import <CoreData/CoreData.h>
 #import "VWWEventsSummary.h"
 #import "VWWEventOrganizer.h"
+#import "VWWEventTicket.h"
+#import "VWWEventVenue.h"
 
 @interface VWWCoreData : NSObject
 

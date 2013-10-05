@@ -20,8 +20,8 @@
 @property (nonatomic, retain) NSNumber * type;
 @property (nonatomic, retain) NSNumber * max;
 @property (nonatomic, retain) NSNumber * min;
-@property (nonatomic, retain) NSNumber * displayPrice;
-@property (nonatomic, retain) NSNumber * price;
+@property (nonatomic, retain) NSString * displayPrice;
+@property (nonatomic, retain) NSString * price;
 @property (nonatomic, retain) NSDate * startDate;
 @property (nonatomic, retain) NSNumber * quantityAvailable;
 @property (nonatomic, retain) NSDate * endDate;

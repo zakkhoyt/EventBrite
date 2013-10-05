@@ -291,23 +291,9 @@ static VWWRESTEngine *instance;
     return [self httpGetEndpoint:self.service.serviceEventSearchURI
                   jsonDictionary:[form httpParametersDictionary]
                  completionBlock:^(id responseJSON){
-                     NSLog(@"responseJSON: %@", responseJSON);
                      VWWError *error;
                      VWWSearchResults *searchResults;
                      [VWWRESTParser parseJSON:responseJSON searchResults:&searchResults error:&error];
-                     
-                     
-                     
-                     
-                     
-
-                     
-                     
-                     
-                     
-                     
-                     
-                     
                      completionBlock(searchResults);
                  }
                       errorBlock:^(NSError *error, id responseJSON){
