@@ -7,13 +7,7 @@
 //
 
 #import <CoreData/CoreData.h>
-//#import "NSDictionary+TypedGetters.h"
-//#import "VWWEventOrganizer.h"
-//#import "VWWEventSearchFilter.h"
-//#import "VWWEventsSearch.h"
-//#import "VWWEventTicket.h"
-//#import "VWWEvent.h"
-//#import "VWWEventsSummary.h"
+
 
 @interface VWWManagedObject : NSManagedObject
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context;

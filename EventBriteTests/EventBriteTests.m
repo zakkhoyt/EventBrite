@@ -37,6 +37,9 @@
     VWWGetEventSearchForm *form = [[VWWGetEventSearchForm alloc]init];
     form.city = @"San Francisco";
     form.keywords = @"iPhone";
+//    form.city = @"asdfasdfa";
+//    form.keywords = @"fddgfh";
+
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form completionBlock:^(VWWSearchResults *searchResults) {
         // Temp: write our data out
         NSError *cdError;
@@ -66,8 +69,6 @@
             VWWSearchResults *searchResults = eventsSearch.searchResults;
             NSLog(@"********************************************** search results **************************************");
             NSLog(@"searchResults: %@", searchResults.description);
-            
-            
             
             
             // Check for and print summary

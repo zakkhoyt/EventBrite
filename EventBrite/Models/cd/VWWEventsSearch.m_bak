@@ -2,13 +2,12 @@
 //  VWWEventsSearch.m
 //  EventBrite
 //
-//  Created by Zakk Hoyt on 10/5/13.
+//  Created by Zakk Hoyt on 10/4/13.
 //  Copyright (c) 2013 Zakk Hoyt. All rights reserved.
 //
 
 #import "VWWEventsSearch.h"
-#import "VWWSearchResults.h"
-#import "VWWGetEventSearchForm.h"
+
 
 @implementation VWWEventsSearch
 
