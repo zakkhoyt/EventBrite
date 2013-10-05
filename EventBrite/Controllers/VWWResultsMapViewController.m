@@ -15,9 +15,11 @@
 #import "VWWSearchResults.h"
 #import "VWWEvent.h"
 #import "VWWEventVenue.h"
+#import "VWWEventAnnotation.h"
+#import "VWWEventAnnotationView.h"
+#import "VWWUtility.h"
 
-
-@interface VWWResultsMapViewController ()
+@interface VWWResultsMapViewController () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) NSArray *events;
 @property (nonatomic) BOOL hasLoaded;
@@ -37,7 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	self.mapView.showsUserLocation = YES;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -62,7 +64,8 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self addAnnotataionsForEvents];
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    [self addAnnotationsForEvents];
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,16 +77,19 @@
 #pragma mark Private methods
 
 -(void)addAnnotationsForEvents{
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        for (VWWEvent *event in self.events){
-            MKAnnotationView *annotation = [[MKAnnotationView alloc] init];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
+    for(NSInteger index = 0; index < self.events.count; index++){
+        VWWEvent *event = self.events[index];
+            VWWEventAnnotation *annotation = [[VWWEventAnnotation alloc] init];
+            annotation.event = event;
             VWWEventVenue *venue = event.eventVenue;
             annotation.coordinate = CLLocationCoordinate2DMake(venue.latitude.floatValue, venue.longitude.floatValue);
-//            dispatch_async(dispatch_get_main_queue(), ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
                 [self.mapView addAnnotation:annotation];
-//            });
+            });
         }
-//    });
+    });
 }
 
 -(MKCoordinateRegion)calculateRegionFromEvents{
@@ -150,4 +156,32 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance (userLocation.location.coordinate, 50, 50);
     [self.mapView setRegion:region animated:NO];
 }
+
+#pragma mark MKMapViewDelegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    NSLog(@"annotation: %@", [annotation class]);
+    if([annotation isKindOfClass:[MKUserLocation class]]) return nil;
+    
+    
+    VWWEventAnnotationView *annotationView = [[VWWEventAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Event"];
+    annotationView.canShowCallout = YES;
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:[UIImage imageNamed:@"map_29"] forState:UIControlStateNormal];
+    
+    annotationView.rightCalloutAccessoryView = button;
+    annotationView.leftCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    return annotationView;
+}
+
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+//    MyLocation *location = (MyLocation*)view.annotation;
+    
+//    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+//    [location.mapItem openInMapsWithLaunchOptions:launchOptions];
+    [VWWUtility errorAlert:@"callout" title:@"pressed"];
+}
+
+
 @end

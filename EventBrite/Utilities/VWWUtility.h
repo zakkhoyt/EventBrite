@@ -19,6 +19,7 @@
 - (NSDate *)internetFormattedDateFromString:(NSString *)dateString;
 +(NSDate *)convertFromUTCToLocal:(NSDate*)utcDate;
 +(NSDate *)convertFromLocalToUTC:(NSDate*)localDate;
++(NSString*)relativeTimeFromDate:(NSDate*)date;
 @end
 
 @interface VWWUtility (alerts)

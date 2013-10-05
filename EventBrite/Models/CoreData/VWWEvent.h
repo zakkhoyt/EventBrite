@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "VWWManagedObject.h"
+#import <MapKit/MapKit.h>
 
 @class VWWEventOrganizer, VWWEventTicket, VWWEventVenue, VWWSearchResults;
 
 @interface VWWEvent : VWWManagedObject
-
 @property (nonatomic, retain) NSNumber * capacity;
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * about;
@@ -31,6 +31,9 @@
 @property (nonatomic, retain) VWWEventVenue *eventVenue;
 @property (nonatomic, retain) VWWSearchResults *searchResults;
 @property (nonatomic, retain) NSSet *eventTickets;
+
+
+
 @end
 
 @interface VWWEvent (CoreDataGeneratedAccessors)

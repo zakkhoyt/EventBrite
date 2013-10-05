@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventBrite/Controllers/VWWResultsMapViewController.m"
-            timestampString = "402697197.679909"
+            timestampString = "402701579.305092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-calculateRegionFromEvents"
             landmarkType = "5">
          </BreakpointContent>
@@ -116,11 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventBrite/Controllers/VWWResultsMapViewController.m"
-            timestampString = "402698100.83644"
+            timestampString = "402701579.305092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "-calculateRegionFromEvents"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,6 +170,22 @@
             startingLineNumber = "62"
             endingLineNumber = "62"
             landmarkName = "-testParsing"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventBrite/Controllers/VWWResultsMapViewController.m"
+            timestampString = "402702094.058271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "-mapView:viewForAnnotation:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

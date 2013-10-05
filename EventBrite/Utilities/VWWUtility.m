@@ -61,6 +61,28 @@
     NSInteger seconds = -[timeZone secondsFromGMTForDate: localDate];
     return [NSDate dateWithTimeInterval: seconds sinceDate: localDate];
 }
+
++(NSString*)relativeTimeFromDate:(NSDate*)date{
+    //NSDate *now = [NSDate dateWithLocalTime];
+    NSDate *now = date;
+    NSTimeInterval seconds = [now timeIntervalSinceDate:date];
+    NSTimeInterval minutes = seconds / 60.0f;
+    NSTimeInterval hours = minutes / 60.0f;
+    NSTimeInterval days = minutes / 24.0f;
+    
+    if(minutes < 1.0 && hours < 1.0 && seconds > 0){
+        return @"just now";
+    }
+    else if(minutes < 60){
+        return [NSString stringWithFormat:@"%ld minutes ago", (NSInteger)minutes];
+    }
+    else if(hours < 24){
+        return [NSString stringWithFormat:@"%ld hours ago", (NSInteger)hours];
+    }
+    else{
+        return [NSString stringWithFormat:@"%ld days ago", (NSInteger)days];
+    }
+}
 @end
 
 @implementation VWWUtility (alerts)

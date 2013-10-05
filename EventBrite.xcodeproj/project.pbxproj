@@ -22,6 +22,8 @@
 		C634744718009B0F00CC96CC /* VWWSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = C634743E18009B0F00CC96CC /* VWWSearchResults.m */; };
 		C634744A18009B5B00CC96CC /* VWWManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C634744918009B5B00CC96CC /* VWWManagedObject.m */; };
 		C634744C1800B59300CC96CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C634744B1800B59300CC96CC /* MapKit.framework */; };
+		C63474531800B9AD00CC96CC /* VWWEventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474521800B9AD00CC96CC /* VWWEventAnnotation.m */; };
+		C63474561800BA3500CC96CC /* VWWEventAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474551800BA3500CC96CC /* VWWEventAnnotationView.m */; };
 		C6537E0917FE507800A56A7C /* event_01 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0817FE507800A56A7C /* event_01 */; };
 		C6537E0B17FE509000A56A7C /* event_02 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0A17FE509000A56A7C /* event_02 */; };
 		C6537E0D17FE50A800A56A7C /* event_03 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0C17FE50A800A56A7C /* event_03 */; };
@@ -130,6 +132,10 @@
 		C634744818009B5B00CC96CC /* VWWManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWManagedObject.h; sourceTree = "<group>"; };
 		C634744918009B5B00CC96CC /* VWWManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWManagedObject.m; sourceTree = "<group>"; };
 		C634744B1800B59300CC96CC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C63474511800B9AD00CC96CC /* VWWEventAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventAnnotation.h; sourceTree = "<group>"; };
+		C63474521800B9AD00CC96CC /* VWWEventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventAnnotation.m; sourceTree = "<group>"; };
+		C63474541800BA3500CC96CC /* VWWEventAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventAnnotationView.h; sourceTree = "<group>"; };
+		C63474551800BA3500CC96CC /* VWWEventAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventAnnotationView.m; sourceTree = "<group>"; };
 		C6537E0817FE507800A56A7C /* event_01 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_01; sourceTree = "<group>"; };
 		C6537E0A17FE509000A56A7C /* event_02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_02; sourceTree = "<group>"; };
 		C6537E0C17FE50A800A56A7C /* event_03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_03; sourceTree = "<group>"; };
@@ -334,6 +340,17 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		C63474501800B99500CC96CC /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				C63474511800B9AD00CC96CC /* VWWEventAnnotation.h */,
+				C63474521800B9AD00CC96CC /* VWWEventAnnotation.m */,
+				C63474541800BA3500CC96CC /* VWWEventAnnotationView.h */,
+				C63474551800BA3500CC96CC /* VWWEventAnnotationView.m */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
 		C6537E3417FE8ADB00A56A7C /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +363,7 @@
 		C6537E3517FE8AED00A56A7C /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				C63474501800B99500CC96CC /* Annotations */,
 				C6537E2E17FE8AB500A56A7C /* VWWResultsMapViewController.h */,
 				C6537E2F17FE8AB500A56A7C /* VWWResultsMapViewController.m */,
 			);
@@ -806,6 +824,7 @@
 				C6054FAB17FFA18F00357620 /* VWWHomeNewSearchTableViewCell.m in Sources */,
 				C6B4815C17FE2A0B0047EB66 /* Reachability.m in Sources */,
 				C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */,
+				C63474561800BA3500CC96CC /* VWWEventAnnotationView.m in Sources */,
 				C694FE0A17FF47CA003E729E /* VWWCoreData.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
 				C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */,
@@ -814,6 +833,7 @@
 				C6B481C517FE48AC0047EB66 /* VWWSearchViewController.m in Sources */,
 				C6B4815617FE2A0B0047EB66 /* NSDictionary+RequestEncoding.m in Sources */,
 				C6B481C817FE492E0047EB66 /* MBProgressHUD.m in Sources */,
+				C63474531800B9AD00CC96CC /* VWWEventAnnotation.m in Sources */,
 				C6B4817817FE2B620047EB66 /* VWWRESTParser.m in Sources */,
 				C6B480D917FE26D20047EB66 /* main.m in Sources */,
 				C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */,
