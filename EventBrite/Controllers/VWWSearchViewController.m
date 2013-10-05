@@ -70,9 +70,6 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 
 
 #pragma mark IBActions
-- (IBAction)deleteAllRecords:(id)sender {
-    [[VWWCoreData sharedInstance]deleteAllObjects:@"VWWSearchResults"];
-}
 
 - (IBAction)searchButtonTouchUpInside:(id)sender {
     [self.view endEditing:YES];
@@ -103,7 +100,7 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 //                                               [self.session.searches addObject:searchResults.events];
                                                
                                                
-//                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:self];
+                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:searchResults];
                                            } errorBlock:^(NSError *error) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                            }];

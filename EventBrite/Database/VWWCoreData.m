@@ -39,22 +39,31 @@
 }
 
 
-- (void) deleteAllObjects: (NSString *) entityDescription  {
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:_managedObjectContext];
-    [fetchRequest setEntity:entity];
+- (void)deleteAllObjects{
+//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:_managedObjectContext];
+//    [fetchRequest setEntity:entity];
+//    
+//    NSError *error;
+//    NSArray *items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+//    
+//    for (NSManagedObject *managedObject in items) {
+//    	[_managedObjectContext deleteObject:managedObject];
+//    	NSLog(@"%@ object deleted",entityDescription);
+//    }
+//    if (![_managedObjectContext save:&error]) {
+//    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
+//    }
     
-    NSError *error;
-    NSArray *items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
     
-    for (NSManagedObject *managedObject in items) {
-    	[_managedObjectContext deleteObject:managedObject];
-    	NSLog(@"%@ object deleted",entityDescription);
+    NSArray *stores = [_persistentStoreCoordinator persistentStores];
+    
+    for(NSPersistentStore *store in stores) {
+        [_persistentStoreCoordinator removePersistentStore:store error:nil];
+        [[NSFileManager defaultManager] removeItemAtPath:store.URL.path error:nil];
     }
-    if (![_managedObjectContext save:&error]) {
-    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
-    }
     
+    _persistentStoreCoordinator = nil;
 }
 
 
@@ -89,7 +98,7 @@
         [fetchRequest setEntity:entity];
         NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&cdError];
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             completion(fetchedObjects);
         });
         

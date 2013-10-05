@@ -48,6 +48,17 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];
+    [[VWWCoreData sharedInstance] getPreviousSearchesWithCompletion:^(NSArray *previousSearches) {
+        NSLog(@"Found %d previous searches", previousSearches.count);
+        self.eventsSearches = previousSearches;
+        //        [self.tableView reloadData];
+        //        [self.tableView setNeedsDisplay];
+        NSIndexSet *sections = [NSIndexSet indexSetWithIndex:VWWHomeTableViewSectionPreviousSearches];
+        [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    
+    [self.tableView reloadData];
+
 }
 
 
@@ -57,10 +68,13 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
     if(self.hasLoaded == NO){
         self.hasLoaded = YES;
      
-//        // TODO: query
 //        [[VWWCoreData sharedInstance] getPreviousSearchesWithCompletion:^(NSArray *previousSearches) {
+//            NSLog(@"Found %d previous searches", previousSearches.count);
 //            self.eventsSearches = previousSearches;
-//            [self.tableView reloadData];
+//            //        [self.tableView reloadData];
+//            //        [self.tableView setNeedsDisplay];
+//            NSIndexSet *sections = [NSIndexSet indexSetWithIndex:VWWHomeTableViewSectionPreviousSearches];
+//            [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
 //        }];
 //        
 //        [self.tableView reloadData];
@@ -73,14 +87,15 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     // TODO: query
-    [[VWWCoreData sharedInstance] getPreviousSearchesWithCompletion:^(NSArray *previousSearches) {
-        NSLog(@"Found %d previous searches", previousSearches.count);
-        self.eventsSearches = previousSearches;
-//        [self.tableView reloadData];
-        NSIndexSet *sections = [NSIndexSet indexSetWithIndex:VWWHomeTableViewSectionPreviousSearches];
-        [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
-    }];
-    
+//    [[VWWCoreData sharedInstance] getPreviousSearchesWithCompletion:^(NSArray *previousSearches) {
+//        NSLog(@"Found %d previous searches", previousSearches.count);
+//        self.eventsSearches = previousSearches;
+////        [self.tableView reloadData];
+////        [self.tableView setNeedsDisplay];
+//        NSIndexSet *sections = [NSIndexSet indexSetWithIndex:VWWHomeTableViewSectionPreviousSearches];
+//        [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
+//    }];
+//    
 //    [self.tableView reloadData];
     
 
@@ -139,9 +154,12 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
         [self performSegueWithIdentifier:kSegueHomeToNewSearch sender:self];
     }
     else if(indexPath.section == VWWHomeTableViewSectionPreviousSearches){
+        [self performSegueWithIdentifier:kSegueHomeToResults sender:self];
     }
     else if(indexPath.section == VWWHomeTableViewSectionClearSearches){
-
+        [[VWWCoreData sharedInstance]deleteAllObjects];
+        self.eventsSearches = @[];
+        [self.tableView reloadData];
     }
     
 }

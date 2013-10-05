@@ -19,8 +19,9 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+
 +(VWWCoreData*)sharedInstance;
-- (void)deleteAllObjects:(NSString *) entityDescription;
+- (void)deleteAllObjects;
 - (void)saveContext;
 - (void)getPreviousSearchesWithCompletion:(VWWArrayBlock)completion;
 
