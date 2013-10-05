@@ -129,12 +129,9 @@
     NSError *cdError;
     if (![context save:&cdError]) {
         NSLog(@"Whoops, couldn't save: %@", [cdError localizedDescription]);
+        NSAssert(nil, @"Could not save managed context");
     }
 
-    
-    
-
-    
     return YES;
     
 }
