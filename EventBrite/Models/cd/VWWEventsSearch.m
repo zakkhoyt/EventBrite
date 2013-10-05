@@ -19,10 +19,32 @@
 @dynamic region;
 @dynamic searchResults;
 
+-(void)populateWithForm:(VWWGetEventSearchForm*)form context:(NSManagedObjectContext*)context{
+    self.address = form.address;
+    self.city = form.city;
+    self.country = form.country;
+    self.keywords = form.keywords;
+    self.postalCode = form.postalCode;
+    self.region = form.region;
+}
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context{
+    return;
 }
 -(NSString*)description{
-    return [NSString stringWithFormat:@""];
+    return [NSString stringWithFormat:@"address: %@"
+            @"city: %@"
+            @"country: %@"
+            @"keywords: %@"
+            @"postalCode: %@"
+            @"region: %@"
+            @"searchResults: %@",
+            self.address,
+            self.city,
+            self.country,
+            self.keywords,
+            self.postalCode,
+            self.region,
+            self.searchResults];
 }
 
 @end

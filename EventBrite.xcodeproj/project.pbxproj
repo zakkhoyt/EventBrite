@@ -296,6 +296,8 @@
 				C6054F9E17FF8E7E00357620 /* VWWManagedObject.m */,
 				C6054F8E17FF881800357620 /* VWWEventOrganizer.h */,
 				C6054F8F17FF881800357620 /* VWWEventOrganizer.m */,
+				C6054F8817FF71DA00357620 /* VWWSearchResults.h */,
+				C6054F8917FF71DA00357620 /* VWWSearchResults.m */,
 				C6054F9017FF881800357620 /* VWWEventSearchFilter.h */,
 				C6054F9117FF881800357620 /* VWWEventSearchFilter.m */,
 				C6054F9217FF881800357620 /* VWWEventsSearch.h */,
@@ -551,8 +553,6 @@
 				C6B481AD17FE35CD0047EB66 /* authentication */,
 				C6B4819417FE2F200047EB66 /* json */,
 				C6B4818617FE2EF30047EB66 /* forms */,
-				C6054F8817FF71DA00357620 /* VWWSearchResults.h */,
-				C6054F8917FF71DA00357620 /* VWWSearchResults.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";

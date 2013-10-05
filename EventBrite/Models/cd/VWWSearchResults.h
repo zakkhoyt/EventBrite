@@ -20,6 +20,7 @@
 
 @interface VWWSearchResults (CoreDataGeneratedAccessors)
 
+
 - (void)addEventsObject:(VWWEvent *)value;
 - (void)removeEventsObject:(VWWEvent *)value;
 - (void)addEvents:(NSSet *)values;

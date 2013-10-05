@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "VWWManagedObject.h"
-
+#import "VWWGetEventSearchForm.h"
 
 @interface VWWEventsSearch : VWWManagedObject
 
@@ -20,5 +20,5 @@
 @property (nonatomic, retain) NSString * postalCode;
 @property (nonatomic, retain) NSString * region;
 @property (nonatomic, retain) NSManagedObject *searchResults;
-
+-(void)populateWithForm:(VWWGetEventSearchForm*)form context:(NSManagedObjectContext*)context;
 @end

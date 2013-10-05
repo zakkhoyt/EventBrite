@@ -11,8 +11,9 @@
 @class VWWPagination;
 @class VWWError;
 @class VWWSearchResults;
+@class VWWGetEventSearchForm;
 
 @interface VWWRESTParser : NSObject
 //+(BOOL)parseJSON:(id)json event:(VWWEvent**)event;
-+(BOOL)parseJSON:(id)json searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error;
++(BOOL)parseJSON:(id)json form:(VWWGetEventSearchForm*)form searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error;
 @end

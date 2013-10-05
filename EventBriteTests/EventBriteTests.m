@@ -44,15 +44,31 @@
         NSManagedObjectContext *context = [coreData managedObjectContext];
         
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-        NSEntityDescription *entity = [NSEntityDescription
-                                       entityForName:@"VWWSearchResults" inManagedObjectContext:context];
+//        NSEntityDescription *entity = [NSEntityDescription
+//                                       entityForName:@"VWWSearchResults" inManagedObjectContext:context];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"VWWEventsSearch" inManagedObjectContext:context];
+        
+        
         [fetchRequest setEntity:entity];
         NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&cdError];
 
         
         
-        NSLog(@"-------------------------------------------- search results ---------------------------------");
-        for(VWWSearchResults *searchResults in fetchedObjects){
+        NSLog(@"-------------------------------------------- event search ---------------------------------");
+//        for(VWWSearchResults *searchResults in fetchedObjects){
+        for(VWWEventsSearch *eventsSearch in fetchedObjects){
+            
+            XCTAssertNotNil(eventsSearch, @"Search is nil");
+            NSLog(@"********************************************** search parameters **************************************");
+            NSLog(@"eventsSearch: %@", eventsSearch.description);
+            
+            
+            VWWSearchResults *searchResults = eventsSearch.searchResults;
+            NSLog(@"********************************************** search results **************************************");
+            NSLog(@"searchResults: %@", searchResults.description);
+            
+            
+            
             
             // Check for and print summary
             VWWEventsSummary *summary = searchResults.eventsSummary;

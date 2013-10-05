@@ -14,7 +14,8 @@
 #import "VWWEventsSummary.h"
 #import "VWWCoreData.h"
 #import "VWWSearchResults.h"
-
+#import "VWWGetEventSearchForm.h"
+#import "VWWEventsSearch.h"
 @implementation VWWRESTParser
 
 
@@ -49,7 +50,7 @@
 //    *event = [VWWEvent eventWithDictionary:dictionary];
 //    return YES;
 //}
-+(BOOL)parseJSON:(id)json searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error{
++(BOOL)parseJSON:(id)json form:(VWWGetEventSearchForm*)form searchResults:(VWWSearchResults**)searchResults error:(VWWError**)error{
     if(json == nil) return NO;
     
     if([json isKindOfClass:[NSDictionary class]] == NO){
@@ -65,37 +66,14 @@
     NSManagedObjectContext *context = [coreData managedObjectContext];
     
     
+    VWWEventsSearch *search = [NSEntityDescription insertNewObjectForEntityForName:@"VWWEventsSearch"
+                                                            inManagedObjectContext:context];
+    [search populateWithForm:form context:context];
+
+    
     *searchResults = [NSEntityDescription
                                  insertNewObjectForEntityForName:@"VWWSearchResults"
                                  inManagedObjectContext:context];
-    
-    
-    
-//    searchResults{
-//        VWWEventsSummary : {
-//            firstEvent
-//            lastEvent
-//            numShowing
-//            totalItems
-//            VWWEventsSearchFilter{
-//                key
-//                value
-//            }
-//        }
-//        events[
-//               event{
-//                   about
-//                   colors...
-//                   VWWEventOrganizer
-//                   VWWEventVenue
-//                   tickets[
-//                        VWWEventTicket
-//                   ]
-//               }
-//        ]
-//        }
-//        
-//    }
     
 
     NSMutableSet *eventsSet = [[NSMutableSet alloc]init];
@@ -124,6 +102,10 @@
     }
 
     (*searchResults).events = eventsSet;
+
+    search.searchResults = (*searchResults);
+    
+    
     
     // Commit to CoreData
     NSError *cdError;

@@ -293,7 +293,11 @@ static VWWRESTEngine *instance;
                  completionBlock:^(id responseJSON){
                      VWWError *error;
                      VWWSearchResults *searchResults;
-                     [VWWRESTParser parseJSON:responseJSON searchResults:&searchResults error:&error];
+                     [VWWRESTParser parseJSON:responseJSON
+                                         form:form
+                                searchResults:&searchResults
+                                        error:&error];
+                     
                      completionBlock(searchResults);
                  }
                       errorBlock:^(NSError *error, id responseJSON){
