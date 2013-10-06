@@ -39,9 +39,9 @@
     _eventsSearch = eventsSearch;
     
     self.keywordsLabel.text = eventsSearch.keywords ?
-        [NSString stringWithFormat:@"Keywords: %@", eventsSearch.keywords] : @"";
+        [NSString stringWithFormat:@"Keywords: %@", eventsSearch.keywords] : @"Keywords:";
     self.locationLabel.text = eventsSearch.city ?
-        [NSString stringWithFormat:@"Location: %@", eventsSearch.city] : @"";
+        [NSString stringWithFormat:@"Location: %@", eventsSearch.city] : @"Location:";
     self.resultsCountLabel.text = [NSString stringWithFormat:@"%@ events", eventsSearch.searchResults.eventsSummary.totalItems];
 }
 

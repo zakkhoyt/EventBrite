@@ -13,7 +13,7 @@
 #import "VWWSearchResults.h"
 #import "NSDictionary+TypedGetters.h"
 #import "SDWebImageManager.h"
-
+#import "UIImage+Resize.h"
 
 @implementation VWWEvent
 
@@ -34,7 +34,7 @@
 @dynamic eventVenue;
 @dynamic searchResults;
 @dynamic eventTickets;
-
+@synthesize logoImage;
 
 -(void)populateWithDictionary:(NSDictionary *)dictionary context:(NSManagedObjectContext*)context{
     // Event details
@@ -47,7 +47,7 @@
     self.boxTextColor = dictionary[@"box_text_color"];
     self.uuid = dictionary[@"id"];
     self.capacity = dictionary[@"capacity"];
-    self.startDate = [dictionary dateForKey:@"start_date"];
+    self.startDate = dictionary[@"start_date"];
     self.title = dictionary[@"title"];
     self.about = dictionary[@"description"];
     self.distance = dictionary[@"distance"];
@@ -87,6 +87,19 @@
         }
         self.eventTickets = eventTickets;
     }
+    
+    
+    // Now prefetch and resize logo Image
+    NSURL *logoURL = [NSURL URLWithString:self.logo];
+    [[SDWebImageManager sharedManager] downloadWithURL:logoURL
+                                               options:SDWebImageRetryFailed
+                                              progress:^(NSUInteger receivedSize, long long expectedSize) {
+                                              } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
+                                                  CGFloat height = 32 * image.size.height / (float)image.size.width;
+                                                  UIImage *resizedImage = [UIImage resizeImage:image toSize:CGSizeMake(32, height)];
+                                                  self.logoImage = resizedImage;
+                                              }];
+
 }
 
 -(NSString*)description{

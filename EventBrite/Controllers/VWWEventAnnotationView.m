@@ -11,6 +11,7 @@
 #import "UIImageView+WebCache.h"
 #import "VWWEvent.h"
 #import "VWWEventAnnotation.h"
+#import "UIImage+Resize.h"
 
 @implementation VWWEventAnnotationView
 
@@ -18,10 +19,27 @@
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
         
-//        VWWEventAnnotation *eventAnnotation = (VWWEventAnnotation*)self.annotation;
-//        VWWEvent *event = eventAnnotation.event;
+        VWWEventAnnotation *eventAnnotation = (VWWEventAnnotation*)self.annotation;
+        VWWEvent *event = eventAnnotation.event;
+
         
-        self.image = [UIImage imageNamed:@"vww_32.png"];
+        //    __weak VWWEventDetailsViewController *weakSelf = self;
+//        NSURL *logoURL = [NSURL URLWithString:event.logo];
+//        [[SDWebImageManager sharedManager] downloadWithURL:logoURL
+//                                                   options:SDWebImageRetryFailed
+//                                                  progress:^(NSUInteger receivedSize, long long expectedSize) {
+//                                                  } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
+//                                                      CGFloat height = 32 * image.size.height / (float)image.size.width;
+//                                                      UIImage *resizedImage = [UIImage resizeImage:image toSize:CGSizeMake(32, height)];
+//                                                      self.image = resizedImage;
+//                                                  }];
+
+        if(event.logoImage){
+            self.image = event.logoImage;
+        }
+        else{
+            self.image = [UIImage imageNamed:@"vww_32.png"];
+        }
 //        self.userInteractionEnabled = YES;
         
 //        [self addGestureRecognizers];

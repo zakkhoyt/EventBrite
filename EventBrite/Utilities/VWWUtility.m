@@ -87,6 +87,28 @@
         return [NSString stringWithFormat:@"%d days ago", (NSInteger)days];
     }
 }
+
++(NSString*)stringFromDate:(NSDate*)date{
+//    if([date isToday]) return @"Today";
+//    else if([date isTomorrow]) return @"Tomorrow";
+//    else if([date isYesterday]) return @"Yesterday";
+    
+    //    NSString *dateFormatString = @"EEEE dd MMMM, YYYY";
+    NSString *dateFormatString = @"EEEE MMMM dd, YYYY";
+    
+    NSDateFormatter* dateUTC = [[NSDateFormatter alloc] init];
+    [dateUTC setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+    [dateUTC setDateFormat:dateFormatString];
+    
+    NSDateFormatter* dateLocal = [[NSDateFormatter alloc] init];
+    [dateLocal setTimeZone:[NSTimeZone localTimeZone]];
+    [dateLocal setDateFormat:dateFormatString];
+    
+    NSString* dateString = [dateLocal stringFromDate:date];
+    if(dateString == nil) dateString = @"";
+    return dateString;
+}
+
 @end
 
 @implementation VWWUtility (alerts)

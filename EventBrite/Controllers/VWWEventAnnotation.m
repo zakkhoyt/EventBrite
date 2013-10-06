@@ -15,7 +15,7 @@
     _event = event;
     self.title = event.title;
     if(event.startDate){
-        self.subtitle = [VWWUtility relativeTimeFromDate:event.startDate];
+        self.subtitle = event.startDate;
     }
 }
 @end

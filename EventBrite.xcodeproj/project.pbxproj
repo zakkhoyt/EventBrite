@@ -29,6 +29,7 @@
 		C63474601800C86300CC96CC /* VWWEventTicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634745F1800C86300CC96CC /* VWWEventTicketsViewController.m */; };
 		C63474631800CDEF00CC96CC /* VWWEventAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */; };
 		C63474681801014100CC96CC /* VWWEventTicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474671801014100CC96CC /* VWWEventTicketTableViewCell.m */; };
+		C634746F180126A400CC96CC /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C634746E180126A400CC96CC /* UIImage+Resize.m */; };
 		C6537E0917FE507800A56A7C /* event_01 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0817FE507800A56A7C /* event_01 */; };
 		C6537E0B17FE509000A56A7C /* event_02 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0A17FE509000A56A7C /* event_02 */; };
 		C6537E0D17FE50A800A56A7C /* event_03 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0C17FE50A800A56A7C /* event_03 */; };
@@ -151,6 +152,8 @@
 		C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventAboutViewController.m; sourceTree = "<group>"; };
 		C63474661801014100CC96CC /* VWWEventTicketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventTicketTableViewCell.h; sourceTree = "<group>"; };
 		C63474671801014100CC96CC /* VWWEventTicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventTicketTableViewCell.m; sourceTree = "<group>"; };
+		C634746D180126A400CC96CC /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		C634746E180126A400CC96CC /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		C6537E0817FE507800A56A7C /* event_01 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_01; sourceTree = "<group>"; };
 		C6537E0A17FE509000A56A7C /* event_02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_02; sourceTree = "<group>"; };
 		C6537E0C17FE50A800A56A7C /* event_03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_03; sourceTree = "<group>"; };
@@ -557,6 +560,8 @@
 				C6B4817B17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m */,
 				C6B4816B17FE2ADC0047EB66 /* UIColor+VWW.h */,
 				C6B4816C17FE2ADC0047EB66 /* UIColor+VWW.m */,
+				C634746D180126A400CC96CC /* UIImage+Resize.h */,
+				C634746E180126A400CC96CC /* UIImage+Resize.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -919,6 +924,7 @@
 				C6B4816217FE2A0B0047EB66 /* SDWebImageDownloader.m in Sources */,
 				C6B4818017FE2C540047EB66 /* VWWUtility.m in Sources */,
 				C6B4815D17FE2A0B0047EB66 /* MKAnnotationView+WebCache.m in Sources */,
+				C634746F180126A400CC96CC /* UIImage+Resize.m in Sources */,
 				C6B4816717FE2A0B0047EB66 /* UIImage+GIF.m in Sources */,
 				C6B4815717FE2A0B0047EB66 /* NSString+MKNetworkKitAdditions.m in Sources */,
 				C6B4817917FE2B620047EB66 /* VWWSession.m in Sources */,

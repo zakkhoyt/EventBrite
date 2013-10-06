@@ -9,11 +9,12 @@
 #import "VWWResultsTableViewCell.h"
 #import "VWWEvent.h"
 #import "UIImageView+WebCache.h"
-
+#import "VWWUtility.h"
 
 @interface VWWResultsTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *eventTitleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 @end
@@ -41,7 +42,13 @@
     _event = event;
     
     self.eventTitleLabel.text = _event.title;
-    self.distanceLabel.text = _event.distance;
+    
+    if(self.event.startDate){
+        self.startDateLabel.text = self.event.startDate;
+    }
+    else{
+        self.startDateLabel.text = @"";
+    }
     
     NSURL *logoURL = [NSURL URLWithString:_event.logo];
     [self.logoImageView setImageWithURL:logoURL];

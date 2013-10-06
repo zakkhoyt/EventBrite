@@ -21,6 +21,7 @@
 +(NSDate *)convertFromUTCToLocal:(NSDate*)utcDate;
 +(NSDate *)convertFromLocalToUTC:(NSDate*)localDate;
 +(NSString*)relativeTimeFromDate:(NSDate*)date;
++(NSString*)stringFromDate:(NSDate*)date;
 @end
 
 @interface VWWUtility (alerts)
@@ -30,4 +31,5 @@
 @interface VWWUtility (strings)
 + (BOOL)isValidEmail:(NSString *)email;
 @end
+
 

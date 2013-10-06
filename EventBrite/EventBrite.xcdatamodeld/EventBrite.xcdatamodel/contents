@@ -11,7 +11,7 @@
         <attribute name="capacity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="distance" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uuid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="eventOrganizer" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEventOrganizer" inverseName="event" inverseEntity="VWWEventOrganizer" syncable="YES"/>

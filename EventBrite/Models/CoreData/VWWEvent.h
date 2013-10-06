@@ -22,7 +22,7 @@
 @property (nonatomic, retain) NSString * backgroundColor;
 @property (nonatomic, retain) NSString * boxBackgroundColor;
 @property (nonatomic, retain) NSString * boxBorderColor;
-@property (nonatomic, retain) NSDate * startDate;
+@property (nonatomic, retain) NSString * startDate;
 @property (nonatomic, retain) NSNumber * uuid;
 @property (nonatomic, retain) NSString * boxHeaderBackgroundColor;
 @property (nonatomic, retain) NSString * boxHeaderTextColor;
@@ -32,7 +32,7 @@
 @property (nonatomic, retain) VWWSearchResults *searchResults;
 @property (nonatomic, retain) NSSet *eventTickets;
 
-
+@property (nonatomic, strong) UIImage *logoImage;
 
 @end
 
