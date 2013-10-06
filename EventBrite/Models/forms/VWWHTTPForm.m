@@ -72,7 +72,7 @@ const NSInteger kItemsPerPageMax = 999999;
 }
 
 - (NSMutableDictionary*)paramDictionary{
-    NSMutableDictionary *dictionary = [@{@"app_key" : VWW_EVENT_BRITE_KEY}mutableCopy];
+    NSMutableDictionary *dictionary = [@{@"app_key" : VWW_EVENT_BRITE_KEY} mutableCopy];
     return dictionary;
 }
 

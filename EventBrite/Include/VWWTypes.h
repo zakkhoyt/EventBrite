@@ -16,9 +16,9 @@ __attribute__ ((unused)) static NSString *kVWWCountryKey = @"country";
 
 
 
-__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeAbout = @"about";
-__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeVenue = @"venue";
-__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeTickets = @"tickets";
-__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeOrganizer = @"organizer";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeAbout = @"About";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeVenue = @"Venue";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeTickets = @"Tickets";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeOrganizer = @"Organizer";
 
 #endif

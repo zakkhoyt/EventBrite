@@ -369,14 +369,14 @@
 			name = "Tab group";
 			sourceTree = "<group>";
 		};
-		C63474641801011C00CC96CC /* tickets */ = {
+		C63474641801011C00CC96CC /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
 				C63474651801012500CC96CC /* Cells */,
 				C634745E1800C86300CC96CC /* VWWEventTicketsViewController.h */,
 				C634745F1800C86300CC96CC /* VWWEventTicketsViewController.m */,
 			);
-			name = tickets;
+			name = Tickets;
 			sourceTree = "<group>";
 		};
 		C63474651801012500CC96CC /* Cells */ = {
@@ -386,6 +386,33 @@
 				C63474671801014100CC96CC /* VWWEventTicketTableViewCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		C6347469180116CF00CC96CC /* Organizer */ = {
+			isa = PBXGroup;
+			children = (
+				C63474581800C83900CC96CC /* VWWEventOrganizerViewController.h */,
+				C63474591800C83900CC96CC /* VWWEventOrganizerViewController.m */,
+			);
+			name = Organizer;
+			sourceTree = "<group>";
+		};
+		C634746B180116E200CC96CC /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				C634745B1800C85100CC96CC /* VWWEventVenueViewController.h */,
+				C634745C1800C85100CC96CC /* VWWEventVenueViewController.m */,
+			);
+			name = Venue;
+			sourceTree = "<group>";
+		};
+		C634746C180116F600CC96CC /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C63474611800CDEF00CC96CC /* VWWEventAboutViewController.h */,
+				C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		C6537E3417FE8ADB00A56A7C /* Search */ = {
@@ -420,15 +447,12 @@
 		C6537E3817FE8DB900A56A7C /* EventDetails */ = {
 			isa = PBXGroup;
 			children = (
-				C63474641801011C00CC96CC /* tickets */,
 				C6537E3917FE8DCA00A56A7C /* VWWEventDetailsViewController.h */,
 				C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */,
-				C63474581800C83900CC96CC /* VWWEventOrganizerViewController.h */,
-				C63474591800C83900CC96CC /* VWWEventOrganizerViewController.m */,
-				C634745B1800C85100CC96CC /* VWWEventVenueViewController.h */,
-				C634745C1800C85100CC96CC /* VWWEventVenueViewController.m */,
-				C63474611800CDEF00CC96CC /* VWWEventAboutViewController.h */,
-				C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */,
+				C634746C180116F600CC96CC /* About */,
+				C634746B180116E200CC96CC /* Venue */,
+				C6347469180116CF00CC96CC /* Organizer */,
+				C63474641801011C00CC96CC /* Tickets */,
 			);
 			name = EventDetails;
 			sourceTree = "<group>";

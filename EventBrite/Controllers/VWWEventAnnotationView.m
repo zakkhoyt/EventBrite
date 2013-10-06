@@ -22,10 +22,32 @@
 //        VWWEvent *event = eventAnnotation.event;
         
         self.image = [UIImage imageNamed:@"vww_32.png"];
+//        self.userInteractionEnabled = YES;
+        
+//        [self addGestureRecognizers];
     }
     
     return self;
 }
 
+//-(void)addGestureRecognizers{
+//    // Gesture recognizer
+//    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureHandler:)];
+//    [singleTapGestureRecognizer setNumberOfTapsRequired:1];
+//    [self. addGestureRecognizer:singleTapGestureRecognizer];
+//    
+////    UITapGestureRecognizer *doubleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapGestureHandler:)];
+////    [doubleTapGestureRecognizer setNumberOfTapsRequired:2];
+////    [self.scrollView addGestureRecognizer:doubleTapGestureRecognizer];
+////    
+////    [singleTapGestureRecognizer requireGestureRecognizerToFail:doubleTapGestureRecognizer];
+//}
+//
+//
+//
+//-(void)singleTapGestureHandler:(UIGestureRecognizer*)gestureRecognizer{
+//    //[self.delegate fullLibraryDataViewControllerSingleTap:self];
+//    NSLog(@"asdfasd");
+//}
 
 @end

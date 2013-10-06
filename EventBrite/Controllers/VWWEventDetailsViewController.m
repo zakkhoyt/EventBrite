@@ -131,6 +131,16 @@ static NSString *kSegueDetailsToAbout = @"segueDetailsToAbout";
     cell.textLabel.textColor = [UIColor colorFromHexString:self.event.boxTextColor];
     return cell;
 }
+// These two methods will help remove the extra table view cells
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    // This will create a "invisible" footer
+    return 0.01f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new];
+}
 
 
 #pragma mark IBActions

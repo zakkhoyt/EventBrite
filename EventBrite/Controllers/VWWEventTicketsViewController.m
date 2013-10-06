@@ -10,7 +10,7 @@
 #import "VWWEvent.h"
 #import "VWWEventTicket.h"
 #import "VWWEventTicketTableViewCell.h"
-
+#import "UIColor+VWW.h"
 
 @interface VWWEventTicketsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
@@ -37,15 +37,15 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-//    NSArray *tickets = self.event.eventTickets.allObjects;
-//    NSMutableString *ticketsString = [[NSMutableString alloc]initWithString:@""];
-//    for(VWWEventTicket *ticket in tickets){
-//        [ticketsString appendFormat:@"%@\n", ticket.description];
-//    }
-//    self.infoLabel.text = ticketsString;
-    
-    
+    self.tableView.backgroundColor = [UIColor colorFromHexString:self.event.boxBackgroundColor];
+    self.view.backgroundColor = [UIColor colorFromHexString:self.event.boxBackgroundColor];
+    self.tableView.separatorColor = [UIColor colorFromHexString:self.event.boxTextColor];
+    self.view.backgroundColor = [UIColor colorFromHexString:self.event.boxBackgroundColor];
 }
+//-(void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//
+//}
 
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +68,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     VWWEventTicketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWEventTicketTableViewCell"];
     cell.ticket = self.tickets[indexPath.row];
+    cell.event = self.event;
     return cell;
 }
+
+// These two methods will help remove the extra table view cells
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    // This will create a "invisible" footer
+    return 0.01f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new];
+}
+
 @end

@@ -78,12 +78,12 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
     hud.labelText = @"Searching events...";
     
     VWWGetEventSearchForm *form = [[VWWGetEventSearchForm alloc]init];
-    form.city = self.cityTextField.text;
-    form.keywords = self.keywordTextField.text;
-    form.address = self.addressTextField.text;
-    form.region = self.regionTextField.text;
-    form.postalCode = self.postalCodeTextField.text;
-    form.country = self.countryTextField.text;
+    if(self.cityTextField.text.length) form.city = self.cityTextField.text;
+    if(self.keywordTextField.text.length) form.keywords = self.keywordTextField.text;
+    if(self.addressTextField.text.length) form.address = self.addressTextField.text;
+    if(self.regionTextField.text.length) form.region = self.regionTextField.text;
+    if(self.postalCodeTextField.text.length) form.postalCode = self.postalCodeTextField.text;
+    if(self.countryTextField.text.length) form.country = self.countryTextField.text;
     
     
     [[VWWRESTEngine sharedInstance] getEventSearchWithForm:form

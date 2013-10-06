@@ -8,7 +8,7 @@
 
 #import "VWWEventOrganizerViewController.h"
 #import "VWWEvent.h"
-
+#import "VWWEventOrganizer.h"
 @interface VWWEventOrganizerViewController ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
@@ -32,7 +32,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.webView loadHTMLString:self.event.about baseURL:nil];
+    [self.webView loadHTMLString:self.event.eventOrganizer.about baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning

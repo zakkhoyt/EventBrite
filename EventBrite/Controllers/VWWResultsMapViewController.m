@@ -18,6 +18,9 @@
 #import "VWWEventAnnotation.h"
 #import "VWWEventAnnotationView.h"
 #import "VWWUtility.h"
+#import "VWWEventDetailsViewController.h"
+
+static NSString *kSegueMapToDetails = @"segueMapToDetails";
 
 @interface VWWResultsMapViewController () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -72,6 +75,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:kSegueMapToDetails]){
+        VWWEventDetailsViewController *vc = segue.destinationViewController;
+        vc.event = sender;
+    }
 }
 
 #pragma mark Private methods
@@ -166,22 +176,25 @@
     
     VWWEventAnnotationView *annotationView = [[VWWEventAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Event"];
     annotationView.canShowCallout = YES;
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundImage:[UIImage imageNamed:@"map_29"] forState:UIControlStateNormal];
     
-    annotationView.rightCalloutAccessoryView = button;
-    annotationView.leftCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];;
+//    annotationView.leftCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    annotationView.userInteractionEnabled = YES;
+
     return annotationView;
 }
-
+//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+//    NSLog(@"%s", __func__);
+//}
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-//    MyLocation *location = (MyLocation*)view.annotation;
-    NSLog(@"%s", __func__);
+
+    VWWEventAnnotationView *annotationView = (VWWEventAnnotationView*)view;
+    VWWEventAnnotation *annotation = annotationView.annotation;
     
-//    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-//    [location.mapItem openInMapsWithLaunchOptions:launchOptions];
-    [VWWUtility errorAlert:@"callout" title:@"pressed"];
+    VWWEvent* event = annotation.event;
+    [self performSegueWithIdentifier:kSegueMapToDetails sender:event];
+    
 }
 
 

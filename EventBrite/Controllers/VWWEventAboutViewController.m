@@ -35,6 +35,7 @@
     [super viewWillAppear:animated];
 
     [self.webView loadHTMLString:self.event.about baseURL:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 @class VWWEventTicket;
+@class VWWEvent;
 
 @interface VWWEventTicketTableViewCell : UITableViewCell
 @property (nonatomic, strong) VWWEventTicket *ticket;
+@property (nonatomic, strong) VWWEvent *event;
 @end

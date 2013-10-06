@@ -9,10 +9,10 @@
 #import "VWWHTTPForm.h"
 
 @interface VWWGetEventSearchForm : VWWHTTPForm
-@property (copy, nonatomic) NSString *keywords;
-@property (copy, nonatomic) NSString *city;
-@property (copy, nonatomic) NSString *address;
-@property (copy, nonatomic) NSString *region;
-@property (copy, nonatomic) NSString *postalCode;
-@property (copy, nonatomic) NSString *country;
+@property (strong, nonatomic) NSString *keywords;
+@property (strong, nonatomic) NSString *city;
+@property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) NSString *region;
+@property (strong, nonatomic) NSString *postalCode;
+@property (strong, nonatomic) NSString *country;
 @end

@@ -38,9 +38,11 @@
 -(void)setEventsSearch:(VWWEventsSearch *)eventsSearch{
     _eventsSearch = eventsSearch;
     
-    self.keywordsLabel.text = eventsSearch.keywords ? eventsSearch.keywords : @"";
-    self.locationLabel.text = eventsSearch.city ? eventsSearch.city : @"";
-    self.resultsCountLabel.text = [NSString stringWithFormat:@"%@", eventsSearch.searchResults.eventsSummary.totalItems];
+    self.keywordsLabel.text = eventsSearch.keywords ?
+        [NSString stringWithFormat:@"Keywords: %@", eventsSearch.keywords] : @"";
+    self.locationLabel.text = eventsSearch.city ?
+        [NSString stringWithFormat:@"Location: %@", eventsSearch.city] : @"";
+    self.resultsCountLabel.text = [NSString stringWithFormat:@"%@ events", eventsSearch.searchResults.eventsSummary.totalItems];
 }
 
 @end
