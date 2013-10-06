@@ -1,20 +1,19 @@
 //
-//  VWWEventAboutViewController.m
+//  VWWAboutViewController.m
 //  EventBrite
 //
 //  Created by Zakk Hoyt on 10/5/13.
 //  Copyright (c) 2013 Zakk Hoyt. All rights reserved.
 //
 
-#import "VWWEventAboutViewController.h"
-#import "VWWEvent.h"
+#import "VWWAboutViewController.h"
 
-@interface VWWEventAboutViewController ()
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@interface VWWAboutViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *aboutTextView;
 
 @end
 
-@implementation VWWEventAboutViewController
+@implementation VWWAboutViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,11 +32,9 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-
-    [self.webView loadHTMLString:self.event.about baseURL:nil];
-//    self.webView.scalesPageToFit = YES;
+    [self.navigationController setNavigationBarHidden:NO];
+//    self.aboutTextView.text =
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -45,3 +42,4 @@
 }
 
 @end
+

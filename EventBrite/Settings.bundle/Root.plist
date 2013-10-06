@@ -16,7 +16,7 @@
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
-			<string>server_address</string>
+			<string>server</string>
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
@@ -26,19 +26,13 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<true/>
+			<false/>
 			<key>Key</key>
 			<string>server_secure</string>
 			<key>Title</key>
 			<string>Use secure protocol</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
-		</dict>
-		<dict>
-			<key>Title</key>
-			<string>Debug</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

@@ -114,11 +114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventBrite/Models/CoreData/VWWEvent.m"
-            timestampString = "402720786.025137"
+            timestampString = "402777629.428642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-populateWithDictionary:context:"
             landmarkType = "5">
             <Locations>
@@ -176,11 +176,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventBrite/Models/CoreData/VWWEvent.m"
-            timestampString = "402724395.927411"
+            timestampString = "402777629.428642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "-populateWithDictionary:context:"
             landmarkType = "5">
          </BreakpointContent>
@@ -302,11 +302,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventBrite/Models/CoreData/VWWEvent.m"
-            timestampString = "402726297.401911"
+            timestampString = "402777629.428642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-populateWithDictionary:context:"
             landmarkType = "5">
          </BreakpointContent>
@@ -382,11 +382,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventBrite/Models/CoreData/VWWEvent.m"
-            timestampString = "402729193.220442"
+            timestampString = "402777629.428642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "-populateWithDictionary:context:"
             landmarkType = "5">
          </BreakpointContent>
@@ -404,6 +404,22 @@
             startingLineNumber = "88"
             endingLineNumber = "88"
             landmarkName = "+parseJSON:form:eventsSearch:error:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventBrite/Models/CoreData/VWWEvent.m"
+            timestampString = "402777648.37811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-populateWithDictionary:context:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

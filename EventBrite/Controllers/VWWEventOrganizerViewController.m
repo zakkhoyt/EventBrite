@@ -29,10 +29,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-}
+}   
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.webView loadHTMLString:self.event.eventOrganizer.about baseURL:nil];
+//    self.webView.scalesPageToFit = YES;
 }
 
 - (void)didReceiveMemoryWarning

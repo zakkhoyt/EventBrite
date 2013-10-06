@@ -30,6 +30,7 @@
 @dynamic boxHeaderBackgroundColor;
 @dynamic boxHeaderTextColor;
 @dynamic boxTextColor;
+@dynamic url;
 @dynamic eventOrganizer;
 @dynamic eventVenue;
 @dynamic searchResults;
@@ -52,6 +53,7 @@
     self.about = dictionary[@"description"];
     self.distance = dictionary[@"distance"];
     self.logo = dictionary[@"logo"];
+    self.url = dictionary[@"url"];
 
     // Organizer
     NSDictionary *organizerDictionary = dictionary[@"organizer"];
@@ -115,7 +117,8 @@
             @"title: %@"
             @"about: %@"
             @"distance: %@"
-            @"logo: %@",
+            @"logo: %@"
+            @"url: %@",
             self.backgroundColor,
             self.boxBackgroundColor,
             self.boxBorderColor,
@@ -128,7 +131,8 @@
             self.title,
             self.about,
             self.distance,
-            self.logo];
+            self.logo,
+            self.url];
 }
 
 @end
@@ -144,14 +148,23 @@
 -(void)shareEvent:(VWWEvent*)event viewControoller:(UIViewController*)viewController completion:(VWWEmptyBlock)completion{
     void (^shareEvent)(UIImage *image) = ^(UIImage *image){
         
-        CLLocation *location = [[CLLocation alloc]initWithLatitude:event.eventVenue.latitude.floatValue longitude:event.eventVenue.longitude.floatValue];
+        NSMutableArray *items = [@[event.title]mutableCopy];
+        // Add image
+        if(image)
+            [items addObject:image];
         
-        NSString *shareString = [NSString stringWithFormat:@"Check out what I found using EventBrite. %@ %fx%f",
-                                 event.title,
-                                 event.eventVenue.latitude.floatValue,
-                                 event.eventVenue.longitude.floatValue];
-        NSMutableArray *items = [@[shareString, location]mutableCopy];
-        if(image) [items addObject:image];
+        // Add event url
+        NSURL *eventURL = [NSURL URLWithString:self.url];
+        if(eventURL)
+            [items addObject:eventURL];
+
+//        // Add location URL, which will shell to apple maps
+//        NSString *locationString = [[NSString alloc]initWithFormat:@"http://maps.apple.com/maps?q=%f,%f", event.eventVenue.latitude.floatValue, event.eventVenue.longitude.floatValue];
+//        NSURL *locationURL = [NSURL URLWithString:locationString];
+//        if(locationURL)
+//            [items addObject:locationURL];
+        
+        
         NSMutableArray *activities = [@[]mutableCopy];
         UIActivityViewController *activityViewController = [[UIActivityViewController alloc]initWithActivityItems:items
                                                                                             applicationActivities:activities];
@@ -163,7 +176,7 @@
         [viewController presentViewController:activityViewController animated:YES completion:nil];
     };
     
-    //    __weak VWWEventDetailsViewController *weakSelf = self;
+    
     NSURL *logoURL = [NSURL URLWithString:event.logo];
     [[SDWebImageManager sharedManager] downloadWithURL:logoURL
                                                options:SDWebImageRetryFailed

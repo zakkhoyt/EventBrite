@@ -27,6 +27,7 @@
 @property (nonatomic, retain) NSString * boxHeaderBackgroundColor;
 @property (nonatomic, retain) NSString * boxHeaderTextColor;
 @property (nonatomic, retain) NSString * boxTextColor;
+@property (nonatomic, retain) NSString * url;
 @property (nonatomic, retain) VWWEventOrganizer *eventOrganizer;
 @property (nonatomic, retain) VWWEventVenue *eventVenue;
 @property (nonatomic, retain) VWWSearchResults *searchResults;

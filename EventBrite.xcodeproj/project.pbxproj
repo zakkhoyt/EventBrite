@@ -31,10 +31,8 @@
 		C63474681801014100CC96CC /* VWWEventTicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474671801014100CC96CC /* VWWEventTicketTableViewCell.m */; };
 		C634746F180126A400CC96CC /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = C634746E180126A400CC96CC /* UIImage+Resize.m */; };
 		C6347665180134A300CC96CC /* VWWPushCrossfadeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C6347664180134A300CC96CC /* VWWPushCrossfadeSegue.m */; };
-		C6537E0917FE507800A56A7C /* event_01 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0817FE507800A56A7C /* event_01 */; };
-		C6537E0B17FE509000A56A7C /* event_02 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0A17FE509000A56A7C /* event_02 */; };
-		C6537E0D17FE50A800A56A7C /* event_03 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0C17FE50A800A56A7C /* event_03 */; };
-		C6537E0F17FE752700A56A7C /* event_00 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0E17FE752700A56A7C /* event_00 */; };
+		C634766918013CC700CC96CC /* VWWHomeAboutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C634766818013CC700CC96CC /* VWWHomeAboutTableViewCell.m */; };
+		C634766D18013DE100CC96CC /* VWWAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634766C18013DE100CC96CC /* VWWAboutViewController.m */; };
 		C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */; };
 		C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */; };
 		C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */; };
@@ -157,10 +155,10 @@
 		C634746E180126A400CC96CC /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		C6347663180134A300CC96CC /* VWWPushCrossfadeSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWPushCrossfadeSegue.h; sourceTree = "<group>"; };
 		C6347664180134A300CC96CC /* VWWPushCrossfadeSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWPushCrossfadeSegue.m; sourceTree = "<group>"; };
-		C6537E0817FE507800A56A7C /* event_01 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_01; sourceTree = "<group>"; };
-		C6537E0A17FE509000A56A7C /* event_02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_02; sourceTree = "<group>"; };
-		C6537E0C17FE50A800A56A7C /* event_03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_03; sourceTree = "<group>"; };
-		C6537E0E17FE752700A56A7C /* event_00 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_00; sourceTree = "<group>"; };
+		C634766718013CC700CC96CC /* VWWHomeAboutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWHomeAboutTableViewCell.h; sourceTree = "<group>"; };
+		C634766818013CC700CC96CC /* VWWHomeAboutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWHomeAboutTableViewCell.m; sourceTree = "<group>"; };
+		C634766B18013DE100CC96CC /* VWWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWAboutViewController.h; sourceTree = "<group>"; };
+		C634766C18013DE100CC96CC /* VWWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWAboutViewController.m; sourceTree = "<group>"; };
 		C6537E2617FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
 		C6537E2817FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWTabBarController.h; sourceTree = "<group>"; };
@@ -323,6 +321,8 @@
 				C6054FAD17FFA1A400357620 /* VWWHomeClearSearchesTableViewCell.m */,
 				C6054FAF17FFA1C300357620 /* VWWHomePreviousSearchTableViewCell.h */,
 				C6054FB017FFA1C300357620 /* VWWHomePreviousSearchTableViewCell.m */,
+				C634766718013CC700CC96CC /* VWWHomeAboutTableViewCell.h */,
+				C634766818013CC700CC96CC /* VWWHomeAboutTableViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -438,6 +438,15 @@
 				C6347664180134A300CC96CC /* VWWPushCrossfadeSegue.m */,
 			);
 			name = Segues;
+			sourceTree = "<group>";
+		};
+		C634766A18013DC400CC96CC /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C634766B18013DE100CC96CC /* VWWAboutViewController.h */,
+				C634766C18013DE100CC96CC /* VWWAboutViewController.m */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		C6537E3417FE8ADB00A56A7C /* Search */ = {
@@ -606,6 +615,7 @@
 		C6B4810F17FE27D10047EB66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C634766A18013DC400CC96CC /* About */,
 				C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */,
 				C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */,
 				C6054FA417FFA14F00357620 /* Home */,
@@ -621,10 +631,6 @@
 				C6B481B817FE3BDE0047EB66 /* Links */,
 				C6B481BC17FE3EEF0047EB66 /* CURL */,
 				C6B481C117FE46F20047EB66 /* Assignment */,
-				C6537E0E17FE752700A56A7C /* event_00 */,
-				C6537E0817FE507800A56A7C /* event_01 */,
-				C6537E0A17FE509000A56A7C /* event_02 */,
-				C6537E0C17FE50A800A56A7C /* event_03 */,
 			);
 			path = Documents;
 			sourceTree = "<group>";
@@ -866,13 +872,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B481B917FE3BDE0047EB66 /* Links in Resources */,
-				C6537E0F17FE752700A56A7C /* event_00 in Resources */,
 				C6B4810B17FE273D0047EB66 /* README in Resources */,
 				C6B481BD17FE3EEF0047EB66 /* CURL in Resources */,
 				C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */,
-				C6537E0D17FE50A800A56A7C /* event_03 in Resources */,
-				C6537E0B17FE509000A56A7C /* event_02 in Resources */,
-				C6537E0917FE507800A56A7C /* event_01 in Resources */,
 				C6B480E817FE26D20047EB66 /* Images.xcassets in Resources */,
 				C6B481C217FE46F20047EB66 /* Assignment in Resources */,
 				C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */,
@@ -913,6 +915,8 @@
 				C63474531800B9AD00CC96CC /* VWWEventAnnotation.m in Sources */,
 				C6B4817817FE2B620047EB66 /* VWWRESTParser.m in Sources */,
 				C6B480D917FE26D20047EB66 /* main.m in Sources */,
+				C634766D18013DE100CC96CC /* VWWAboutViewController.m in Sources */,
+				C634766918013CC700CC96CC /* VWWHomeAboutTableViewCell.m in Sources */,
 				C6B481B717FE36370047EB66 /* KeychainItemWrapper.m in Sources */,
 				C6054FA717FFA16900357620 /* VWWHomeViewController.m in Sources */,
 				C6B4819217FE2EF30047EB66 /* VWWHTTPForm.m in Sources */,

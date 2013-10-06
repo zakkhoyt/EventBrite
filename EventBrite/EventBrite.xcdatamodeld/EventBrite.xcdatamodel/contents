@@ -13,6 +13,7 @@
         <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uuid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="eventOrganizer" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEventOrganizer" inverseName="event" inverseEntity="VWWEventOrganizer" syncable="YES"/>
         <relationship name="eventTickets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VWWEventTicket" inverseName="event" inverseEntity="VWWEventTicket" syncable="YES"/>
@@ -86,7 +87,7 @@
         <relationship name="eventsSummary" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VWWEventsSummary" inverseName="searchResults" inverseEntity="VWWEventsSummary" syncable="YES"/>
     </entity>
     <elements>
-        <element name="VWWEvent" positionX="304" positionY="449" width="128" height="298"/>
+        <element name="VWWEvent" positionX="304" positionY="449" width="128" height="313"/>
         <element name="VWWEventOrganizer" positionX="808" positionY="63" width="128" height="118"/>
         <element name="VWWEventSearchFilter" positionX="279" positionY="110" width="128" height="88"/>
         <element name="VWWEventsSearch" positionX="-576" positionY="450" width="128" height="148"/>

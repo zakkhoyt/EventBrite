@@ -49,6 +49,7 @@ Assignment requrieents:
 
 ----------------------------------------------------------------------------------------------------
 Technical decisions:
+* I decided to go with MKNetworkKit for the REST communiction. I am quite comfortable using this framework, but what I really like about it is that it generates curl commands for each call you make. I log these to the console which are very hand to see what you are actually sending, plus you can copy/paste it to terminal. Very handy for debugging. 
 
 * UITableView vs UICollectionView:
     * I decided to use all UITableViews in this application. I really like what you can do with UICollection views as far as customizing behavior and looks, but this data really lends itself to a table format. 
@@ -67,6 +68,8 @@ Tradeoffs:
         * As is I'm storing them as NSStrings, and displaying the as they are delivered.
     * Colors are another. Since you can store strings in the database, that's what I did and added a category to UIColor which parses the string an creates colors from RGB components.
     
+* In the json returned, each event has a summary section, which in turn has filters. Although they are defined in the scheme i decided not to store them because it is duplicate data if you include the search parameters (which I do). 
+
 
 
 
@@ -86,7 +89,8 @@ What's left to do:
 
 * Refreshing past searches.
     * I haven't implementd this, but covered plans of how I might do that above. 
-    
+
+* If compiled for 64bit, you will receive warnings but they are all associated with NSLog formatting. 
     
 ----------------------------------------------------------------------------------------------------
 Features that might be nice to implement given more time

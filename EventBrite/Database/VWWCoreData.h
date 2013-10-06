@@ -23,7 +23,7 @@
 
 
 +(VWWCoreData*)sharedInstance;
-- (void)deleteAllObjects;
+- (void)deleteAllObjectsWithCompletion:(VWWEmptyBlock)completion;
 - (void)saveContext;
 - (void)getPreviousSearchesWithCompletion:(VWWArrayBlock)completion;
 

@@ -1,27 +1,25 @@
 
 
-
+// Example curl command
 curl -X GET "https://www.eventbrite.com/json/event_search?app_key=XWBZSYUMMSGVQPP5TJ&keywords=boise"
 
 
 
-
-
-
-
-
-
-
-// no results:
-
-    error =     {
-        "error_message" = "No events found matching the following criteria. [keywords=iphone, city=boise ,  ]";
-        "error_type" = "Not Found";
-    };
-    events =     (
-    );
     
     
     
     
     
+This is an interview homework assignment for and iOS Developer postion at Event Brite.
+
+Written by Zakk Hoyt, 2013
+Email: zakkhoyt.employment@gmail.com
+Phone: 415-202-3907
+Resume: http://goo.gl/TA4lU7
+
+
+Source code available at:
+https://github.com/zakkhoyt/EventBrite
+
+
+

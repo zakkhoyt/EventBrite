@@ -10,17 +10,21 @@
 #import "VWWHomeNewSearchTableViewCell.h"
 #import "VWWHomeClearSearchesTableViewCell.h"
 #import "VWWHomePreviousSearchTableViewCell.h"
+#import "VWWHomeAboutTableViewCell.h"
 #import "VWWCoreData.h"
 #import "VWWSession.h"
+#import "MBProgressHUD.h"
 
 typedef enum {
     VWWHomeTableViewSectionNewSearch = 0,
     VWWHomeTableViewSectionPreviousSearches = 1,
     VWWHomeTableViewSectionClearSearches = 2,
+    VWWHomeTableViewSectionAbout = 3,
 } VWWHomeTableViewSection;
 
 static NSString *kSegueHomeToResults = @"segueHomeToResults";
 static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
+static NSString *kSegueHomeToAbout = @"segueHomeToAbout";
 
 @interface VWWHomeViewController ()
 @property (nonatomic) BOOL hasLoaded;
@@ -114,7 +118,7 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
 #pragma mark UITableViewDataSource
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -125,6 +129,9 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
         return self.eventsSearches.count;
     }
     else if(section == VWWHomeTableViewSectionClearSearches){
+        return 1;
+    }
+    else if(section == VWWHomeTableViewSectionAbout){
         return 1;
     }
     return 0;
@@ -144,6 +151,11 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
         VWWHomeClearSearchesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWHomeClearSearchesTableViewCell"];
         return cell;
     }
+    else if(indexPath.section == VWWHomeTableViewSectionAbout){
+        VWWHomeAboutTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VWWHomeAboutTableViewCell"];
+        return cell;
+        
+    }
     
     return [[UITableViewCell alloc]init];
 }
@@ -159,11 +171,32 @@ static NSString *kSegueHomeToNewSearch = @"segueHomeToNewSearch";
         [self performSegueWithIdentifier:kSegueHomeToResults sender:self];
     }
     else if(indexPath.section == VWWHomeTableViewSectionClearSearches){
-        [[VWWCoreData sharedInstance]deleteAllObjects];
-        self.eventsSearches = @[];
-        [self.tableView reloadData];
+        [[[UIAlertView alloc]initWithTitle:@"Delete searches" message:@"Are you sure?"
+                                  delegate:self
+                         cancelButtonTitle:@"No" otherButtonTitles:@"Yep", nil]show];
+        
+        
     }
     
+    else if(indexPath.section == VWWHomeTableViewSectionAbout){
+        [self performSegueWithIdentifier:kSegueHomeToAbout sender:self];
+    }
+    
+}
+
+#pragma   mark UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 1){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.50];
+        hud.labelText = @"Deleting searches...";
+
+        [[VWWCoreData sharedInstance]deleteAllObjectsWithCompletion:^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            self.eventsSearches = @[];
+            [self.tableView reloadData];
+        }];
+    }
 }
 
 
