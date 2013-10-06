@@ -48,8 +48,12 @@
 
 
 @interface VWWEvent (events)
--(void)shareEvent:(VWWEvent*)event
-   viewControoller:(UIViewController*)viewController
+-(void)shareEventWithViewController:(UIViewController*)viewController
         completion:(VWWEmptyBlock)completion;
--(void)directionsToEvent:(VWWEvent*)event;
+
+-(void)shareEventLocationWithViewController:(UIViewController*)viewController
+       completion:(VWWEmptyBlock)completion;
+
+
+-(void)directionsToEvent;
 @end

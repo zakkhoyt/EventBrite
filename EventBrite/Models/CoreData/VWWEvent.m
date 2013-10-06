@@ -145,10 +145,10 @@
 
 @implementation VWWEvent (events)
 
--(void)shareEvent:(VWWEvent*)event viewControoller:(UIViewController*)viewController completion:(VWWEmptyBlock)completion{
+-(void)shareEventWithViewController:(UIViewController*)viewController completion:(VWWEmptyBlock)completion{
     void (^shareEvent)(UIImage *image) = ^(UIImage *image){
         
-        NSMutableArray *items = [@[event.title]mutableCopy];
+        NSMutableArray *items = [@[self.title]mutableCopy];
         // Add image
         if(image)
             [items addObject:image];
@@ -158,11 +158,41 @@
         if(eventURL)
             [items addObject:eventURL];
 
-//        // Add location URL, which will shell to apple maps
-//        NSString *locationString = [[NSString alloc]initWithFormat:@"http://maps.apple.com/maps?q=%f,%f", event.eventVenue.latitude.floatValue, event.eventVenue.longitude.floatValue];
-//        NSURL *locationURL = [NSURL URLWithString:locationString];
-//        if(locationURL)
-//            [items addObject:locationURL];
+        
+        NSMutableArray *activities = [@[]mutableCopy];
+        UIActivityViewController *activityViewController = [[UIActivityViewController alloc]initWithActivityItems:items
+                                                                                            applicationActivities:activities];
+        
+        activityViewController.completionHandler = ^(NSString *activityType, BOOL completed){
+            completion();
+        };
+        
+        [viewController presentViewController:activityViewController animated:YES completion:nil];
+    };
+    
+    
+    NSURL *logoURL = [NSURL URLWithString:self.logo];
+    [[SDWebImageManager sharedManager] downloadWithURL:logoURL
+                                               options:SDWebImageRetryFailed
+                                              progress:^(NSUInteger receivedSize, long long expectedSize) {
+                                              } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
+                                                  shareEvent(image);
+                                              }];
+}
+
+-(void)shareEventLocationWithViewController:(UIViewController*)viewController completion:(VWWEmptyBlock)completion{
+    void (^shareEvent)(UIImage *image) = ^(UIImage *image){
+        
+        NSMutableArray *items = [@[self.title]mutableCopy];
+        // Add image
+        if(image)
+            [items addObject:image];
+        
+        // Add location URL, which will shell to apple maps
+        NSString *locationString = [[NSString alloc]initWithFormat:@"http://maps.apple.com/maps?q=%f,%f", self.eventVenue.latitude.floatValue, self.eventVenue.longitude.floatValue];
+        NSURL *locationURL = [NSURL URLWithString:locationString];
+        if(locationURL)
+            [items addObject:locationURL];
         
         
         NSMutableArray *activities = [@[]mutableCopy];
@@ -177,7 +207,7 @@
     };
     
     
-    NSURL *logoURL = [NSURL URLWithString:event.logo];
+    NSURL *logoURL = [NSURL URLWithString:self.logo];
     [[SDWebImageManager sharedManager] downloadWithURL:logoURL
                                                options:SDWebImageRetryFailed
                                               progress:^(NSUInteger receivedSize, long long expectedSize) {
@@ -186,11 +216,15 @@
                                               }];
 }
 
--(void)directionsToEvent:(VWWEvent*)event{
-    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(event.eventVenue.latitude.floatValue, event.eventVenue.longitude.floatValue);
+
+
+
+
+-(void)directionsToEvent{
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(self.eventVenue.latitude.floatValue, self.eventVenue.longitude.floatValue);
     MKPlacemark* place = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil];
     MKMapItem* destination = [[MKMapItem alloc] initWithPlacemark: place];
-    destination.name = event.title;
+    destination.name = self.title;
     NSArray* items = [[NSArray alloc] initWithObjects: destination, nil];
     NSDictionary* options = [[NSDictionary alloc] initWithObjectsAndKeys:
                              MKLaunchOptionsDirectionsModeDriving,

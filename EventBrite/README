@@ -64,14 +64,10 @@ Technical decisions:
 ----------------------------------------------------------------------------------------------------
 Tradeoffs:
 * I didn't see a standard JSON model definition in your site's documentataion regarding formats of json entries. 
-    * One example is start_date. I would expect this to be returned in a set parsable format and then easily creat NSDate objects with them. 
-        * As is I'm storing them as NSStrings, and displaying the as they are delivered.
-    * Colors are another. Since you can store strings in the database, that's what I did and added a category to UIColor which parses the string an creates colors from RGB components.
+    * One example is start_date. I did not write a parser to convert his to an NSDate object, but time allowing I could have used NSDateFormatter to create NSDate objects which should be able to be stored directly in CoreData and NSUserDefaults. I decided to just go with the string that's provided considering it is a pretty readable format.
+    * Colors are another. Since you can store strings in the database (and not UIColors), that's what I did and added a category to UIColor which parses the string an creates colors from RGB components.
     
 * In the json returned, each event has a summary section, which in turn has filters. Although they are defined in the scheme i decided not to store them because it is duplicate data if you include the search parameters (which I do). 
-
-
-
 
 
 ----------------------------------------------------------------------------------------------------

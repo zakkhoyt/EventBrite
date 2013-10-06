@@ -33,6 +33,8 @@ static NSString *kSegueDetailsToAbout = @"segueDetailsToAbout";
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (nonatomic, strong) NSMutableDictionary *tableData;
 @property (nonatomic, strong) NSMutableArray *tableDataKeys;
+
+@property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
 @end
 
 @implementation VWWEventDetailsViewController
@@ -72,7 +74,7 @@ static NSString *kSegueDetailsToAbout = @"segueDetailsToAbout";
         [self.tableDataKeys addObject:kEventDetailsTableViewTypeTickets];
     }
     
-    
+
 }
 
 
@@ -85,6 +87,14 @@ static NSString *kSegueDetailsToAbout = @"segueDetailsToAbout";
     if(self.event.logo){
         NSURL *logoURL = [NSURL URLWithString:self.event.logo];
         [self.logoImageView setImageWithURL:logoURL];
+    }
+
+    self.startDateLabel.textColor = [UIColor colorFromHexString:self.event.boxTextColor];
+    if(self.event.startDate.length){
+        self.startDateLabel.text = [NSString stringWithFormat:@"When: %@", self.event.startDate];
+    }
+    else{
+        self.startDateLabel.text = @"";
     }
     
 }
@@ -149,7 +159,7 @@ static NSString *kSegueDetailsToAbout = @"segueDetailsToAbout";
     hud.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.50];
     hud.labelText = @"Obtaining data...";
 
-    [self.event shareEvent:self.event viewControoller:self completion:^{
+    [self.event shareEventWithViewController:self completion:^{
         [MBProgressHUD hideHUDForView:self.view animated:NO];
     }];
 
@@ -158,7 +168,7 @@ static NSString *kSegueDetailsToAbout = @"segueDetailsToAbout";
 
 
 - (IBAction)directionsButtonTouchupInside:(id)sender {
-    [self.event directionsToEvent:self.event];
+    [self.event directionsToEvent];
 }
 
 

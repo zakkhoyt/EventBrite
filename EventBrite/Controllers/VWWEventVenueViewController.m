@@ -12,6 +12,7 @@
 #import "VWWEventAnnotation.h"
 #import "VWWEventAnnotationView.h"
 #import "VWWUtility.h"
+#import "MBProgressHUD.h"
 
 @interface VWWEventVenueViewController ()
 
@@ -68,9 +69,18 @@
 
 #pragma mark IBActions
 - (IBAction)directionsButtonTouchUpInside:(id)sender {
-    [self.event directionsToEvent:self.event];
+    [self.event directionsToEvent];
 }
 
+- (IBAction)shareLocationButton:(id)sender {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.50];
+    hud.labelText = @"Obtaining data...";
+
+    [self.event shareEventLocationWithViewController:self completion:^{
+        [MBProgressHUD hideHUDForView:self.view animated:NO];
+    }];
+}
 
 #pragma mark MKMapViewDelegate
 
