@@ -1,0 +1,74 @@
+
+I have designed this app for iPhone and iOS 7+
+
+Assignment requrieents:
+* It should accept a keyword and a location
+    * This it does. "Location" was kind of vague, so I added fields for all parameters listed in your documentation
+
+* Display the results on a List or map view
+    * I went ahead and used a UITabBarController to display the first page of results in both List and Maps. 
+
+    
+* It should use Core Data to 
+    * import
+        * When the json is received, I parse it into model classed taht were created using the Core Data from schema wizard. I then subclassed NSManagedObject (VWWManagedObject) to accept a dictionary to populate the properties of these classed. After parsing is done, the objects are assemebled and then written to the database. The current search is stored in VWWSession which is where the detail view controller get the data from. These results are now non-volaitel and will appear in the previous search table after the app is closed/crashes, what have you.
+    * cache
+        * Since results are dumped to the database upon parsing, they can be used as a cache
+    * Display search results
+        * This is done in a number of ways as you will see in the application
+
+* Bonus points for using any iOS 7 features.
+    * I used some translucent nav bars which you should be able to see the maps trough.
+    * Airdrop is obtained for free in UIActivityViewController
+
+* Designing the app with localization in mind
+    * (TOOD): Use string files to populate UIControls for perpahs a spanish example. This will update the language of the input fields and such, but I didn't notice how to change the search query langauge in the documentation.
+
+* Writing a few unit tests.
+    * I had a lot of unit tests as I was developing the CoreData read/writing, and the json parser classed. Most have been deleted as they are not really relevant for the end stage of this project. I did leave o unit test that:
+        * (See EventBriteTests.m) Makes a query, which uses that RESTEngine and RESTParser, then writes the results to the database. Then, all records are pulled from the database and then iterated trhough checking for validity according to your documentation pages:
+            * http://developer.eventbrite.com/doc/events/event_search/
+            * http://developer.eventbrite.com/doc/events/event_search/
+            * http://developer.eventbrite.com/doc/venues/
+            * http://developer.eventbrite.com/doc/venues/
+
+* Background App Refresh
+    * TODO: Create a singleton class that pulls which queries each search, parses, then either delete/write, or update. Which ever is more feasible.
+* Airdrop
+    * This is included. When you are viewing an event, there is a share button. I add to UIActivityController, the logoImage (prefeteched, event.description. and generate a CLLocation object. Airdrop is something you get for free using this technique in iOS 7. The content that is shared can be changed according to specs.
+* Maps wayfinding
+    * When you are viewing either the Event over view, or the event venue, there is a "directions" button in the bottom toolbar.
+* Custom UIView
+    * There are plenty of examples of extending UIViews in the this applications. For example, UITableViewCells, and MKAnnotationView. I can show you more examples of UIView subclassed which use CoreGraphics and touch detection in my other applications. I also use UIView animate* functions quite heavily in my Smile application. Will demo in person.
+* Controller Transition
+    * I am aminly using a UINavigationController in this appcilations which limits you to a left/right transition. I've tossed in a few UIStoryboardSegue subclassed for alternate UIViewController transitions.
+
+
+
+
+
+
+Technical decisions:
+
+
+Tradeoffs:
+
+
+Current issues:
+* I didn't see a standard JSON model definition in your site's documentataion regarding formats of json entries. 
+    * One example is start_date. I would expect this to be returned in a set parsable format and then easily creat NSDate objects with them. 
+        * As is I'm storing them as NSStrings, and displaying the as they are delivered.
+
+
+What's left to do:
+
+* UIImage for map annotations:
+    * When an event search is parsed. i'm prefetching the logo as a UIImage and setting the VWWEvent.logoImage property. However you cannot easily storea in image in the database.
+        * Work arounds include storing the images locally and then entering a filepath into the data base
+    * If you bring up an old search, the logos will not be shown on the map's annotations because they need to be ready at instantiation, thus the default logo will be used.
+
+* Evnet search paging. 
+    * Currently a search call will return a page of size 10 (up to 10). If I had more time I would impelment a pagination model to continue fetching the rest of the events either:
+        * in the backfound (resource waste), 
+        * When the user scrolls down in the UITableView. Using UITableViewDelegates, you can detect when the user wants to load more. This is a pretty standard mode (infinite scrolling), and I implement this in my current Webshots project.
+
