@@ -40,30 +40,51 @@
 
 
 - (void)deleteAllObjects{
-//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:_managedObjectContext];
-//    [fetchRequest setEntity:entity];
+////    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+////    NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:_managedObjectContext];
+////    [fetchRequest setEntity:entity];
+////    
+////    NSError *error;
+////    NSArray *items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+////    
+////    for (NSManagedObject *managedObject in items) {
+////    	[_managedObjectContext deleteObject:managedObject];
+////    	NSLog(@"%@ object deleted",entityDescription);
+////    }
+////    if (![_managedObjectContext save:&error]) {
+////    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
+////    }
 //    
-//    NSError *error;
-//    NSArray *items = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
 //    
-//    for (NSManagedObject *managedObject in items) {
-//    	[_managedObjectContext deleteObject:managedObject];
-//    	NSLog(@"%@ object deleted",entityDescription);
+//    NSArray *stores = [_persistentStoreCoordinator persistentStores];
+//    
+//    for(NSPersistentStore *store in stores) {
+//        [_persistentStoreCoordinator removePersistentStore:store error:nil];
+//        [[NSFileManager defaultManager] removeItemAtPath:store.URL.path error:nil];
 //    }
-//    if (![_managedObjectContext save:&error]) {
-//    	NSLog(@"Error deleting %@ - error:%@",entityDescription,error);
-//    }
+//    
+//    _persistentStoreCoordinator = nil;
     
+    VWWCoreData *coreData = [VWWCoreData sharedInstance];
+    NSManagedObjectContext *context = [coreData managedObjectContext];
+
     
-    NSArray *stores = [_persistentStoreCoordinator persistentStores];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"VWWEventsSearch" inManagedObjectContext:context];
+
+    NSError *cdError;
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&cdError];
     
-    for(NSPersistentStore *store in stores) {
-        [_persistentStoreCoordinator removePersistentStore:store error:nil];
-        [[NSFileManager defaultManager] removeItemAtPath:store.URL.path error:nil];
+    for (NSManagedObject *product in fetchedObjects) {
+        [context deleteObject:product];
     }
     
-    _persistentStoreCoordinator = nil;
+    if (![context save:&cdError]) {
+        NSLog(@"Whoops, couldn't save: %@", [cdError localizedDescription]);
+        NSAssert(nil, @"Could not save managed context");
+    }
+
 }
 
 

@@ -85,13 +85,24 @@
     (*eventsSearch).searchResults = (searchResults);
     
     
-    
-    // Commit to CoreData
-    NSError *cdError;
-    if (![context save:&cdError]) {
-        NSLog(@"Whoops, couldn't save: %@", [cdError localizedDescription]);
-        NSAssert(nil, @"Could not save managed context");
+    if((*eventsSearch).searchResults.eventsSummary.totalItems.integerValue == 0){
+        NSLog(@"NOPE");
+        // Clear the context and then null the block parameters
+        [context deleteObject:*eventsSearch];
+        
+        (*eventsSearch) = nil;
     }
+    else{
+        // Commit to CoreData
+        NSError *cdError;
+        if (![context save:&cdError]) {
+            NSLog(@"Whoops, couldn't save: %@", [cdError localizedDescription]);
+            NSAssert(nil, @"Could not save managed context");
+        }
+    }
+
+    
+
 
     return YES;
     

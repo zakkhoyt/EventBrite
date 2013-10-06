@@ -11,6 +11,7 @@
 #import "VWWRESTEngine.h"
 #import "VWWSession.h"
 #import "VWWCoreData.h"
+#import "VWWUtility.h"
 
 static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
 
@@ -90,10 +91,13 @@ static NSString *kSegueSearchToTabs = @"segueSearchToTabs";
                                            completionBlock:^(VWWEventsSearch *eventsSearch) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                                
-                                               
-                                               [VWWSession sharedInstance].currentEventsSearch = eventsSearch;
-                                               
-                                               [self performSegueWithIdentifier:kSegueSearchToTabs sender:eventsSearch];
+                                               if(eventsSearch == nil){
+                                                   [VWWUtility errorAlert:@"Bummer!" title:@"No results were found"];
+                                               }
+                                               else{
+                                                   [VWWSession sharedInstance].currentEventsSearch = eventsSearch;
+                                                   [self performSegueWithIdentifier:kSegueSearchToTabs sender:eventsSearch];
+                                               }
                                            } errorBlock:^(NSError *error) {
                                                [MBProgressHUD hideHUDForView:self.view animated:YES];
                                            }];

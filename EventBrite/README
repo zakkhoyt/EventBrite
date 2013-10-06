@@ -1,4 +1,5 @@
 
+----------------------------------------------------------------------------------------------------
 I have designed this app for iPhone and iOS 7+
 
 Assignment requrieents:
@@ -46,20 +47,31 @@ Assignment requrieents:
 
 
 
-
-
+----------------------------------------------------------------------------------------------------
 Technical decisions:
 
+* UITableView vs UICollectionView:
+    * I decided to use all UITableViews in this application. I really like what you can do with UICollection views as far as customizing behavior and looks, but this data really lends itself to a table format. 
+* Background processiong
+    * I do all queries using background queues, the switch to the main queue for the completion blocks. 
+* Using forms for HTTP requests. i prefer to use forms vs passing the params in the URL. MKNetowrkKit will convert these for you for GET, but I like how you can just use a VWWHTTPForm to submit the parameters. 
+* JSON model objects
+    * I have impelmented the NSString desctiption method for these classed (VWWManagedObject requires that subclasses implement this method
 
+
+
+----------------------------------------------------------------------------------------------------
 Tradeoffs:
-
-
-Current issues:
 * I didn't see a standard JSON model definition in your site's documentataion regarding formats of json entries. 
     * One example is start_date. I would expect this to be returned in a set parsable format and then easily creat NSDate objects with them. 
         * As is I'm storing them as NSStrings, and displaying the as they are delivered.
+    * Colors are another. Since you can store strings in the database, that's what I did and added a category to UIColor which parses the string an creates colors from RGB components.
+    
 
 
+
+
+----------------------------------------------------------------------------------------------------
 What's left to do:
 
 * UIImage for map annotations:
@@ -71,4 +83,18 @@ What's left to do:
     * Currently a search call will return a page of size 10 (up to 10). If I had more time I would impelment a pagination model to continue fetching the rest of the events either:
         * in the backfound (resource waste), 
         * When the user scrolls down in the UITableView. Using UITableViewDelegates, you can detect when the user wants to load more. This is a pretty standard mode (infinite scrolling), and I implement this in my current Webshots project.
+
+* Refreshing past searches.
+    * I haven't implementd this, but covered plans of how I might do that above. 
+    
+    
+----------------------------------------------------------------------------------------------------
+Features that might be nice to implement given more time
+* Colors
+    * Use event.box* to color the tabel separators, etc
+
+* A details screen for each ticket type
+* Duplicate searches are currently entered into the database, when really the original entry should be updated.
+* Each of the details screens only display one or two properties about that detail. For example event.orgainzer.description is the only thing displaye  in that screen. Sometimes it appears empty when in fact there are things like URL that are sometime populated. 
+
 
