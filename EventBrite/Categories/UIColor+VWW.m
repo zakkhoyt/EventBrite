@@ -28,4 +28,16 @@
     CGFloat green = (CGFloat)random()/(CGFloat)RAND_MAX;
     return [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
 }
+
++(UIColor*)colorFromHexString:(NSString*)hexString{
+    NSScanner* scanner = [NSScanner scannerWithString:hexString];
+    unsigned int hex = 0;
+    if ([scanner scanHexInt:&hex]) {
+        int r = (hex >> 16) & 0xFF;
+        int g = (hex >>  8) & 0xFF;
+        int b = (hex      ) & 0xFF;
+        return [UIColor colorWithRed:r/(float)0xFF green:g/(float)0xFF blue:b/(float)0xFF alpha:1.0];
+    }
+    return nil;
+}
 @end

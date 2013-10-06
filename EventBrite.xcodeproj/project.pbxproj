@@ -24,6 +24,10 @@
 		C634744C1800B59300CC96CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C634744B1800B59300CC96CC /* MapKit.framework */; };
 		C63474531800B9AD00CC96CC /* VWWEventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474521800B9AD00CC96CC /* VWWEventAnnotation.m */; };
 		C63474561800BA3500CC96CC /* VWWEventAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474551800BA3500CC96CC /* VWWEventAnnotationView.m */; };
+		C634745A1800C83900CC96CC /* VWWEventOrganizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474591800C83900CC96CC /* VWWEventOrganizerViewController.m */; };
+		C634745D1800C85100CC96CC /* VWWEventVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634745C1800C85100CC96CC /* VWWEventVenueViewController.m */; };
+		C63474601800C86300CC96CC /* VWWEventTicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634745F1800C86300CC96CC /* VWWEventTicketsViewController.m */; };
+		C63474631800CDEF00CC96CC /* VWWEventAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */; };
 		C6537E0917FE507800A56A7C /* event_01 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0817FE507800A56A7C /* event_01 */; };
 		C6537E0B17FE509000A56A7C /* event_02 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0A17FE509000A56A7C /* event_02 */; };
 		C6537E0D17FE50A800A56A7C /* event_03 in Resources */ = {isa = PBXBuildFile; fileRef = C6537E0C17FE50A800A56A7C /* event_03 */; };
@@ -136,6 +140,14 @@
 		C63474521800B9AD00CC96CC /* VWWEventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventAnnotation.m; sourceTree = "<group>"; };
 		C63474541800BA3500CC96CC /* VWWEventAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventAnnotationView.h; sourceTree = "<group>"; };
 		C63474551800BA3500CC96CC /* VWWEventAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventAnnotationView.m; sourceTree = "<group>"; };
+		C63474581800C83900CC96CC /* VWWEventOrganizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventOrganizerViewController.h; sourceTree = "<group>"; };
+		C63474591800C83900CC96CC /* VWWEventOrganizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventOrganizerViewController.m; sourceTree = "<group>"; };
+		C634745B1800C85100CC96CC /* VWWEventVenueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventVenueViewController.h; sourceTree = "<group>"; };
+		C634745C1800C85100CC96CC /* VWWEventVenueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventVenueViewController.m; sourceTree = "<group>"; };
+		C634745E1800C86300CC96CC /* VWWEventTicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventTicketsViewController.h; sourceTree = "<group>"; };
+		C634745F1800C86300CC96CC /* VWWEventTicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventTicketsViewController.m; sourceTree = "<group>"; };
+		C63474611800CDEF00CC96CC /* VWWEventAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWEventAboutViewController.h; sourceTree = "<group>"; };
+		C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWEventAboutViewController.m; sourceTree = "<group>"; };
 		C6537E0817FE507800A56A7C /* event_01 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_01; sourceTree = "<group>"; };
 		C6537E0A17FE509000A56A7C /* event_02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_02; sourceTree = "<group>"; };
 		C6537E0C17FE50A800A56A7C /* event_03 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event_03; sourceTree = "<group>"; };
@@ -283,13 +295,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C6054FA317FF9EE900357620 /* PreviousSearches */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = PreviousSearches;
-			sourceTree = "<group>";
-		};
 		C6054FA417FFA14F00357620 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +356,16 @@
 			name = Annotations;
 			sourceTree = "<group>";
 		};
+		C63474571800C45A00CC96CC /* Tab group */ = {
+			isa = PBXGroup;
+			children = (
+				C6537E3617FE8AF700A56A7C /* Table */,
+				C6537E3517FE8AED00A56A7C /* Map */,
+				C6537E3817FE8DB900A56A7C /* EventDetails */,
+			);
+			name = "Tab group";
+			sourceTree = "<group>";
+		};
 		C6537E3417FE8ADB00A56A7C /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,20 +395,19 @@
 			name = Table;
 			sourceTree = "<group>";
 		};
-		C6537E3717FE8B0300A56A7C /* Results */ = {
-			isa = PBXGroup;
-			children = (
-				C6537E3617FE8AF700A56A7C /* Table */,
-				C6537E3517FE8AED00A56A7C /* Map */,
-			);
-			name = Results;
-			sourceTree = "<group>";
-		};
 		C6537E3817FE8DB900A56A7C /* EventDetails */ = {
 			isa = PBXGroup;
 			children = (
 				C6537E3917FE8DCA00A56A7C /* VWWEventDetailsViewController.h */,
 				C6537E3A17FE8DCA00A56A7C /* VWWEventDetailsViewController.m */,
+				C634745E1800C86300CC96CC /* VWWEventTicketsViewController.h */,
+				C634745F1800C86300CC96CC /* VWWEventTicketsViewController.m */,
+				C63474581800C83900CC96CC /* VWWEventOrganizerViewController.h */,
+				C63474591800C83900CC96CC /* VWWEventOrganizerViewController.m */,
+				C634745B1800C85100CC96CC /* VWWEventVenueViewController.h */,
+				C634745C1800C85100CC96CC /* VWWEventVenueViewController.m */,
+				C63474611800CDEF00CC96CC /* VWWEventAboutViewController.h */,
+				C63474621800CDEF00CC96CC /* VWWEventAboutViewController.m */,
 			);
 			name = EventDetails;
 			sourceTree = "<group>";
@@ -520,13 +534,11 @@
 		C6B4810F17FE27D10047EB66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6054FA417FFA14F00357620 /* Home */,
-				C6054FA317FF9EE900357620 /* PreviousSearches */,
 				C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */,
 				C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */,
+				C6054FA417FFA14F00357620 /* Home */,
 				C6537E3417FE8ADB00A56A7C /* Search */,
-				C6537E3717FE8B0300A56A7C /* Results */,
-				C6537E3817FE8DB900A56A7C /* EventDetails */,
+				C63474571800C45A00CC96CC /* Tab group */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -825,10 +837,12 @@
 				C6B4815C17FE2A0B0047EB66 /* Reachability.m in Sources */,
 				C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */,
 				C63474561800BA3500CC96CC /* VWWEventAnnotationView.m in Sources */,
+				C63474601800C86300CC96CC /* VWWEventTicketsViewController.m in Sources */,
 				C694FE0A17FF47CA003E729E /* VWWCoreData.m in Sources */,
 				C6B4816917FE2A0B0047EB66 /* UIImage+WebP.m in Sources */,
 				C6B481C017FE416B0047EB66 /* VWWGetEventSearchForm.m in Sources */,
 				C634744318009B0F00CC96CC /* VWWEventsSearch.m in Sources */,
+				C634745D1800C85100CC96CC /* VWWEventVenueViewController.m in Sources */,
 				C6B4815A17FE2A0B0047EB66 /* MKNetworkEngine.m in Sources */,
 				C6B481C517FE48AC0047EB66 /* VWWSearchViewController.m in Sources */,
 				C6B4815617FE2A0B0047EB66 /* NSDictionary+RequestEncoding.m in Sources */,
@@ -865,6 +879,7 @@
 				C6B4817917FE2B620047EB66 /* VWWSession.m in Sources */,
 				C634744118009B0F00CC96CC /* VWWEventOrganizer.m in Sources */,
 				C6054FB117FFA1C300357620 /* VWWHomePreviousSearchTableViewCell.m in Sources */,
+				C634745A1800C83900CC96CC /* VWWEventOrganizerViewController.m in Sources */,
 				C6B4816517FE2A0B0047EB66 /* SDWebImagePrefetcher.m in Sources */,
 				C6537E3317FE8AD100A56A7C /* VWWResultsTableViewController.m in Sources */,
 				C6B4816617FE2A0B0047EB66 /* UIButton+WebCache.m in Sources */,
@@ -874,6 +889,7 @@
 				C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */,
 				C6B4816817FE2A0B0047EB66 /* UIImage+MultiFormat.m in Sources */,
 				C6B481A617FE324A0047EB66 /* VWWUserDefaults.m in Sources */,
+				C63474631800CDEF00CC96CC /* VWWEventAboutViewController.m in Sources */,
 				C6B4816117FE2A0B0047EB66 /* SDWebImageDecoder.m in Sources */,
 				C6B4816D17FE2ADC0047EB66 /* UIColor+VWW.m in Sources */,
 				C6B4817C17FE2BFD0047EB66 /* NSDictionary+TypedGetters.m in Sources */,

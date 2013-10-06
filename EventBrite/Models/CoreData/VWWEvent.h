@@ -44,3 +44,11 @@
 - (void)removeEventTickets:(NSSet *)values;
 
 @end
+
+
+@interface VWWEvent (events)
+-(void)shareEvent:(VWWEvent*)event
+   viewControoller:(UIViewController*)viewController
+        completion:(VWWEmptyBlock)completion;
+-(void)directionsToEvent:(VWWEvent*)event;
+@end

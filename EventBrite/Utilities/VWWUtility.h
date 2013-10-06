@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class VWWEvent;
 
 @interface VWWUtility : NSObject
 
@@ -29,3 +30,4 @@
 @interface VWWUtility (strings)
 + (BOOL)isValidEmail:(NSString *)email;
 @end
+

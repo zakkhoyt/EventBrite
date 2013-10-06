@@ -15,6 +15,7 @@
 
 static NSString *kSegueTableToDetails = @"segueTableToDetails";
 
+
 @interface VWWResultsTableViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *events;

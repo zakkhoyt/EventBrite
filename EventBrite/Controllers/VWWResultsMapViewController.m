@@ -177,6 +177,7 @@
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
 //    MyLocation *location = (MyLocation*)view.annotation;
+    NSLog(@"%s", __func__);
     
 //    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
 //    [location.mapItem openInMapsWithLaunchOptions:launchOptions];

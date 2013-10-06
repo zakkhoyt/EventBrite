@@ -13,4 +13,12 @@ __attribute__ ((unused)) static NSString *kVWWAddressKey = @"address";
 __attribute__ ((unused)) static NSString *kVWWRegionKey = @"region";
 __attribute__ ((unused)) static NSString *kVWWPostalCodeKey = @"postal_code";
 __attribute__ ((unused)) static NSString *kVWWCountryKey = @"country";
+
+
+
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeAbout = @"about";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeVenue = @"venue";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeTickets = @"tickets";
+__attribute__ ((unused)) static NSString *kEventDetailsTableViewTypeOrganizer = @"organizer";
+
 #endif

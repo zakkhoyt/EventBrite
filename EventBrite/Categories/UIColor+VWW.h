@@ -14,4 +14,5 @@
 +(UIColor*)vwwLightBlueColor;
 +(UIColor*)vwwDarkBlueColor;
 +(UIColor*)randomColor;
++(UIColor*)colorFromHexString:(NSString*)hexString;
 @end

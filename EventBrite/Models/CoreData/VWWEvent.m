@@ -12,6 +12,8 @@
 #import "VWWEventVenue.h"
 #import "VWWSearchResults.h"
 #import "NSDictionary+TypedGetters.h"
+#import "SDWebImageManager.h"
+
 
 @implementation VWWEvent
 
@@ -116,4 +118,57 @@
             self.logo];
 }
 
+@end
+
+
+
+
+
+
+
+@implementation VWWEvent (events)
+
+-(void)shareEvent:(VWWEvent*)event viewControoller:(UIViewController*)viewController completion:(VWWEmptyBlock)completion{
+    void (^shareEvent)(UIImage *image) = ^(UIImage *image){
+        
+        CLLocation *location = [[CLLocation alloc]initWithLatitude:event.eventVenue.latitude.floatValue longitude:event.eventVenue.longitude.floatValue];
+        
+        NSString *shareString = [NSString stringWithFormat:@"Check out what I found using EventBrite. %@ %fx%f",
+                                 event.title,
+                                 event.eventVenue.latitude.floatValue,
+                                 event.eventVenue.longitude.floatValue];
+        NSMutableArray *items = [@[shareString, location]mutableCopy];
+        if(image) [items addObject:image];
+        NSMutableArray *activities = [@[]mutableCopy];
+        UIActivityViewController *activityViewController = [[UIActivityViewController alloc]initWithActivityItems:items
+                                                                                            applicationActivities:activities];
+        
+        activityViewController.completionHandler = ^(NSString *activityType, BOOL completed){
+            completion();
+        };
+        
+        [viewController presentViewController:activityViewController animated:YES completion:nil];
+    };
+    
+    //    __weak VWWEventDetailsViewController *weakSelf = self;
+    NSURL *logoURL = [NSURL URLWithString:event.logo];
+    [[SDWebImageManager sharedManager] downloadWithURL:logoURL
+                                               options:SDWebImageRetryFailed
+                                              progress:^(NSUInteger receivedSize, long long expectedSize) {
+                                              } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished) {
+                                                  shareEvent(image);
+                                              }];
+}
+
+-(void)directionsToEvent:(VWWEvent*)event{
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(event.eventVenue.latitude.floatValue, event.eventVenue.longitude.floatValue);
+    MKPlacemark* place = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil];
+    MKMapItem* destination = [[MKMapItem alloc] initWithPlacemark: place];
+    destination.name = event.title;
+    NSArray* items = [[NSArray alloc] initWithObjects: destination, nil];
+    NSDictionary* options = [[NSDictionary alloc] initWithObjectsAndKeys:
+                             MKLaunchOptionsDirectionsModeDriving,
+                             MKLaunchOptionsDirectionsModeKey, nil];
+    [MKMapItem openMapsWithItems: items launchOptions: options];
+}
 @end

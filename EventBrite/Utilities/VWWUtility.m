@@ -6,6 +6,10 @@
 //  Copyright (c) 2013. Zakk Hoyt
 //
 #import "VWWUtility.h"
+#import <MapKit/MapKit.h>
+#import "VWWEvent.h"
+#import "VWWEventVenue.h"
+#import "SDWebImageManager.h"
 
 @interface VWWUtility ()
 @property (nonatomic, strong) NSDateFormatter *internetDateFormatter;
@@ -74,13 +78,13 @@
         return @"just now";
     }
     else if(minutes < 60){
-        return [NSString stringWithFormat:@"%ld minutes ago", (NSInteger)minutes];
+        return [NSString stringWithFormat:@"%d minutes ago", (NSInteger)minutes];
     }
     else if(hours < 24){
-        return [NSString stringWithFormat:@"%ld hours ago", (NSInteger)hours];
+        return [NSString stringWithFormat:@"%d hours ago", (NSInteger)hours];
     }
     else{
-        return [NSString stringWithFormat:@"%ld days ago", (NSInteger)days];
+        return [NSString stringWithFormat:@"%d days ago", (NSInteger)days];
     }
 }
 @end
@@ -106,3 +110,7 @@
     return 0 < [emailValidationRegEx numberOfMatchesInString:email options:0 range:NSMakeRange(0, [email length])];
 }
 @end
+
+
+
+
