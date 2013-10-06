@@ -232,7 +232,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Uhw-hj-eJm"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="san francisco" borderStyle="line" placeholder="EX: San Francisco" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgk-TP-yVS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="EX: San Francisco" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgk-TP-yVS">
                                 <rect key="frame" x="101" y="48" width="209" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1016,7 +1016,6 @@ https://github.com/zakkhoyt/EventBrite
         <image name="list_32" width="32" height="32"/>
         <image name="map_32" width="32" height="32"/>
         <image name="vww_128" width="128" height="128"/>
-        <image name="vww_128" width="128" height="128"/>
         <image name="vww_60" width="60" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1025,7 +1024,7 @@ https://github.com/zakkhoyt/EventBrite
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HJ7-EA-lYL"/>
+        <segue reference="vXF-tc-aha"/>
         <segue reference="860-2w-3AI"/>
     </inferredMetricsTieBreakers>
 </document>

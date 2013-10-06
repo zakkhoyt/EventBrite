@@ -33,7 +33,6 @@
 		C6347665180134A300CC96CC /* VWWPushCrossfadeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C6347664180134A300CC96CC /* VWWPushCrossfadeSegue.m */; };
 		C634766918013CC700CC96CC /* VWWHomeAboutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C634766818013CC700CC96CC /* VWWHomeAboutTableViewCell.m */; };
 		C634766D18013DE100CC96CC /* VWWAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C634766C18013DE100CC96CC /* VWWAboutViewController.m */; };
-		C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */; };
 		C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */; };
 		C6537E2D17FE8A9400A56A7C /* VWWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */; };
 		C6537E3017FE8AB500A56A7C /* VWWResultsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6537E2F17FE8AB500A56A7C /* VWWResultsMapViewController.m */; };
@@ -159,7 +158,6 @@
 		C634766818013CC700CC96CC /* VWWHomeAboutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWHomeAboutTableViewCell.m; sourceTree = "<group>"; };
 		C634766B18013DE100CC96CC /* VWWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWAboutViewController.h; sourceTree = "<group>"; };
 		C634766C18013DE100CC96CC /* VWWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWAboutViewController.m; sourceTree = "<group>"; };
-		C6537E2617FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
 		C6537E2817FE8A2F00A56A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EventBrite/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		C6537E2B17FE8A9400A56A7C /* VWWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWTabBarController.h; sourceTree = "<group>"; };
 		C6537E2C17FE8A9400A56A7C /* VWWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWTabBarController.m; sourceTree = "<group>"; };
@@ -425,7 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				C6347666180134B400CC96CC /* Segues */,
-				C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */,
 				C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */,
 			);
 			path = UserInterface;
@@ -877,7 +874,6 @@
 				C6537E2A17FE8A2F00A56A7C /* Main_iPhone.storyboard in Resources */,
 				C6B480E817FE26D20047EB66 /* Images.xcassets in Resources */,
 				C6B481C217FE46F20047EB66 /* Assignment in Resources */,
-				C6537E2917FE8A2F00A56A7C /* Main_iPad.storyboard in Resources */,
 				C6B480D717FE26D20047EB66 /* InfoPlist.strings in Resources */,
 				C6B481BB17FE3C140047EB66 /* Settings.bundle in Resources */,
 			);
@@ -989,15 +985,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C6537E2517FE8A2F00A56A7C /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6537E2617FE8A2F00A56A7C /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			path = "../User Interface";
-			sourceTree = "<group>";
-		};
 		C6537E2717FE8A2F00A56A7C /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1109,6 +1096,7 @@
 				GCC_PREFIX_HEADER = "EventBrite/EventBrite-Prefix.pch";
 				INFOPLIST_FILE = "EventBrite/EventBrite-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1122,6 +1110,7 @@
 				GCC_PREFIX_HEADER = "EventBrite/EventBrite-Prefix.pch";
 				INFOPLIST_FILE = "EventBrite/EventBrite-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
