@@ -19,52 +19,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EventBrite/Controllers/VWWEventTicketsViewController.m"
-            timestampString = "402707782.906959"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-viewWillAppear:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[VWWEventTicketsViewController viewWillAppear:]"
-                  moduleName = "EventBrite"
-                  urlString = "file:///Users/zakkhoyt/Code/repositories/vww/EventBrite/EventBrite/Controllers/VWWEventTicketsViewController.m"
-                  timestampString = "402707995.463161"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "355">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[VWWEventTicketsViewController viewWillAppear:]"
-                  moduleName = "EventBrite"
-                  urlString = "file:///Users/zakkhoyt/Code/repositories/vww/EventBrite/EventBrite/Controllers/VWWEventTicketsViewController.m"
-                  timestampString = "402707995.46341"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "832">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "EventBrite/Controllers/VWWEventAboutViewController.m"
             timestampString = "402717463.363946"
             startingColumnNumber = "9223372036854775807"
@@ -89,6 +43,52 @@
             endingLineNumber = "180"
             landmarkName = "-mapView:annotationView:calloutAccessoryControlTapped:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventBrite/Controllers/VWWEventTicketTableViewCell.m"
+            timestampString = "402720511.534686"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "aboutLabel"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VWWEventTicketTableViewCell aboutLabel]"
+                  moduleName = "EventBrite"
+                  urlString = "file:///Users/zakkhoyt/Code/repositories/vww/EventBrite/EventBrite/Controllers/VWWEventTicketTableViewCell.m"
+                  timestampString = "402720511.539149"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VWWEventTicketTableViewCell setAboutLabel:]"
+                  moduleName = "EventBrite"
+                  urlString = "file:///Users/zakkhoyt/Code/repositories/vww/EventBrite/EventBrite/Controllers/VWWEventTicketTableViewCell.m"
+                  timestampString = "402720511.539461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
